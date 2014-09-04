@@ -1,4 +1,5 @@
 .vim/backups
+.vim/undo
 .vim/tmp
 .vim/spell
 .vim/bundle
