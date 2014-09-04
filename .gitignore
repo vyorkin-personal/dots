@@ -1,0 +1,9 @@
+.vim/backups
+.vim/tmp
+.vim/spell
+.vim/bundle
+.vim/sessions
+
+.irssi/away.log
+
+tags
