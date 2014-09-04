@@ -2,6 +2,15 @@
 " must come first cuz it changes other options as a side effect
 set nocompatible
 
+" leader key should be set
+" before loading plugins
+let mapleader="\<Space>"        " use <Space> as leader key
+
+" load plugins if any
+if filereadable(expand("~/.vim/vundle.vim"))
+  source ~/.vim/vundle.vim
+endif
+
 set number                      " turn on line numbers
 set relativenumber              " use relative numbers
 set numberwidth=3               " min num of cols to use for the line numbers
@@ -88,22 +97,13 @@ set cole=1                      " enable conceal
 set conceallevel=2              " concealed text is completely hidden
 set concealcursor=nc            " don't reveal the conceals unless on insert or visual modes
 
-" if gui enabled
-if has("gui_running")
-  set guioptions-=TmrRlLb       " never show the toolbar & scrollbars
-
-  set lines=42
-  set columns=100
-endif
-
 set ttimeout                    " use key sequence timeouts
 set ttimeoutlen=100             " how long to wait for a key seq to complete
 
-let mapleader="\<Space>"        " use <Space> as leader key
-
 au VimResized * :wincmd =       " resize splits when the window is resized
 au FocusLost * :wa              " save all changed buffers on focus lost
-" restore cursor position 
+
+" restore cursor position
 au BufReadPost *
   \ if line("'\"") > 1 && line("'\"") <= line("$") |
   \   exe "normal! g`\"" | 
