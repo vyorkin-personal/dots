@@ -1,9 +1,6 @@
 [submodule ".vim/bundle/vundle"]
 	path = .vim/bundle/vundle
 	url = https://github.com/gmarik/Vundle.vim.git
-[submodule ".oh-my-zsh"]
-	path = .oh-my-zsh
-	url = git://github.com/robbyrussell/oh-my-zsh.git
 [submodule ".rbenv/plugins/rbenv-aliases"]
 	path = .rbenv/plugins/rbenv-aliases
 	url = https://github.com/tpope/rbenv-aliases.git
@@ -43,3 +40,6 @@
 [submodule ".rbenv/plugins/ruby-build"]
 	path = .rbenv/plugins/ruby-build
 	url = https://github.com/sstephenson/ruby-build.git
+[submodule ".oh-my-zsh"]
+	path = .oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
