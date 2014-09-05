@@ -11,10 +11,12 @@ if filereadable(expand("~/.vim/vundle.vim"))
   source ~/.vim/vundle.vim
 endif
 
+" numbers
 set number                      " turn on line numbers
 set relativenumber              " use relative numbers
 set numberwidth=3               " min num of cols to use for the line numbers
 
+" misc
 set mouse=a                     " enable mouse (in all modes)
 set backspace=indent,eol,start  " allow backspace in insert mode
 set history=100                 " how many commands & search patterns to keep in history
@@ -24,34 +26,38 @@ set ruler                       " always display the current cursor position (ro
 set ttyfast                     " use fast terminal connection
 set shortmess=atI               " use short messages, skip :intro, truncate file msg to fit on the cmd line
 
+set autoread                    " automatically read file when it has been changed outside of Vim
+set autowriteall                " always write modified files (don't need to set autowrite)
+
+set ttimeout                    " use key sequence timeouts
+set ttimeoutlen=100             " how long to wait for a key seq to complete
+
+" line wrapping & text formatting
 set nowrap                      " don't wrap long lines
 set linebreak                   " use 'breakat' to decide when to wrap long lines
 set whichwrap=b,s,<,>,[,]       " allow wrap while moving with space, backspace, arrows (in normal & insert modes)
 set textwidth=80                " maximum width of text (useful for formatting with gq)
 set formatoptions=qlcrnj1       " format options that doesn't suck
 
-" display unprintable characters
-set list
+" don't display hidden chars cuz its too distracting
+set nolist
 " strings to use in list mode (tabs, end of line, trailing spaces, etc)
 set lcs=tab:▸\ ,eol:¬,trail:·,extends:>,precedes:<
 
 " status line
 set laststatus=2                " always show status line
-set cmdheight=2                 " use 2 lines to display commands (height of line at the bottom)
 set showcmd                     " display incomplete commands
 set showmode                    " show current mode
 
-" indentation: keep tabstop on 8 & use softtabstop set to 2
+" indentation: keep tabstop on 8
+" use softtabstop set to 2
 set autoindent                  " copy indent from current line when starting a new line
 set smartindent                 " enable smart indent
-set smarttab                    " use shiftwidth to insert blanks on <Tab>
+set smarttab                    " use shiftwidth to insert blanks on <Tab> in front of a line, same for <BS>
 set shiftwidth=2                " number of spaces to use for each (auto)indent
-set softtabstop=2               " number of spaces that a <Tab> counts for edit operations
+set softtabstop=2               " number of spaces that a <Tab> counts for edit operations (treat 2 spaces like a real <Tab>)
 set expandtab                   " always insert spaces instead of tabs
 set shiftround                  " round indent when shifting
-
-set autoread                    " automatically read file when it has been changed outside of Vim
-set autowriteall                " always write modified files (don't need to set autowrite)
 
 " search
 set ignorecase                  " ignore case when searching
@@ -72,8 +78,6 @@ set sidescrolloff=12            " horizontal offset
 set sidescroll=2                " minimal number of columns to scroll horizontally
 set scrolljump=2                " number of lines to scroll when the cursor gets off the screen
 
-set cursorline                  " highline the screen line of the cursor
-
 if &t_Co > 1                    " if terminal supports colors
   syntax on                     " turn on syntax highlighting
   set hlsearch                  " highlight search matches
@@ -88,7 +92,6 @@ set nowritebackup               " don't write backups
 filetype plugin indent on
 
 " keep undo history across sessions by storing it in file
-silent !mkdir -p ~/.vim/undo > /dev/null 2>&1
 set udir=~/.vim/undo/           " dir to store files with undo history
 set udf                         " auto save/restore undo history on buffer write/read
 
@@ -97,12 +100,15 @@ set cole=1                      " enable conceal
 set conceallevel=2              " concealed text is completely hidden
 set concealcursor=nc            " don't reveal the conceals unless on insert or visual modes
 
-set ttimeout                    " use key sequence timeouts
-set ttimeoutlen=100             " how long to wait for a key seq to complete
+" hate holding <Shift> every type i need to enter a cmd
+nnoremap ; :
+nnoremap : ;
 
 au VimResized * :wincmd =       " resize splits when the window is resized
 au FocusLost * :wa              " save all changed buffers on focus lost
 
+au BufUnload * :mkview          " save the default fold view before writing a buffer
+au BufReadPost * :loadview      " load the default fold view after reading a buffer
 " restore cursor position
 au BufReadPost *
   \ if line("'\"") > 1 && line("'\"") <= line("$") |

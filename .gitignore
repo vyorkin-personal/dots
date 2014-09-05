@@ -1,9 +1,11 @@
 .vim/backups
-.vim/undo
+.vim/undo/*
+.vim/view/*
 .vim/tmp
 .vim/spell
 .vim/bundle
 .vim/sessions
+.vim/.netrwhist
 
 .irssi/away.log
 
