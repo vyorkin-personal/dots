@@ -6,10 +6,21 @@ set nocompatible
 " before loading plugins
 let mapleader="\<Space>"        " use <Space> as leader key
 
+filetype off                    " vundle requires filetype to be off initially
+
 " load plugins if any
 if filereadable(expand("~/.vim/vundle.vim"))
   source ~/.vim/vundle.vim
 endif
+
+if &t_Co > 1                    " if terminal supports colors
+  syntax on                     " turn on syntax highlighting
+  set hlsearch                  " highlight search matches
+endif
+
+" filetype detection
+filetype plugin on              " ft plugin files
+filetype indent on              " ft indent files
 
 " numbers
 set number                      " turn on line numbers
@@ -25,6 +36,9 @@ set lazyredraw                  " don't redraw while in macros
 set ruler                       " always display the current cursor position (row, col)
 set ttyfast                     " use fast terminal connection
 set shortmess=atI               " use short messages, skip :intro, truncate file msg to fit on the cmd line
+
+" folding
+set foldnestmax=3               " deepest fold in 3 levels
 
 set autoread                    " automatically read file when it has been changed outside of Vim
 set autowriteall                " always write modified files (don't need to set autowrite)
@@ -78,20 +92,14 @@ set sidescrolloff=12            " horizontal offset
 set sidescroll=2                " minimal number of columns to scroll horizontally
 set scrolljump=2                " number of lines to scroll when the cursor gets off the screen
 
-if &t_Co > 1                    " if terminal supports colors
-  syntax on                     " turn on syntax highlighting
-  set hlsearch                  " highlight search matches
-endif
-
 " turn off swap files & backups
 " cuz its really annoying
 set noswapfile                  " don't use buffer swap files
 set nowritebackup               " don't write backups
 
-" switch on: filetype detection, filetype plugin files, filetype indent files
-filetype plugin indent on
-
 " keep undo history across sessions by storing it in file
+
+silent !mkdir ~/.vim/backups > /dev/null 2>&1
 set udir=~/.vim/undo/           " dir to store files with undo history
 set udf                         " auto save/restore undo history on buffer write/read
 
@@ -104,11 +112,14 @@ set concealcursor=nc            " don't reveal the conceals unless on insert or 
 nnoremap ; :
 nnoremap : ;
 
-au VimResized * :wincmd =       " resize splits when the window is resized
-au FocusLost * :wa              " save all changed buffers on focus lost
+au VimResized * wincmd =        " resize splits when the window is resized
+au FocusLost * wa               " save all changed buffers on focus lost
 
-au BufUnload * :mkview          " save the default fold view before writing a buffer
-au BufReadPost * :loadview      " load the default fold view after reading a buffer
+" save the default fold view before writing a buffer
+au BufWinLeave *.* mkview!      
+" load the default fold view after reading a buffer
+au BufWinEnter *.* silent loadview
+"
 " restore cursor position
 au BufReadPost *
   \ if line("'\"") > 1 && line("'\"") <= line("$") |

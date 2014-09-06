@@ -1,4 +1,3 @@
-filetype off                    " vundle requires filetype to be off initially
 set rtp+=~/.vim/bundle/vundle   " add vundle to runtime path
 
 " set up vundle & as a side effect:
@@ -6,9 +5,9 @@ set rtp+=~/.vim/bundle/vundle   " add vundle to runtime path
 "   the :Plugin command will be defined
 call vundle#rc()
 
-Plugin 'gmarik/vundle'		" must come first
+" must come first
+Plugin 'gmarik/vundle'
 
 if filereadable(expand("~/.vim/plugins.vim"))
   source ~/.vim/plugins.vim
 endif
-
