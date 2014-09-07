@@ -1,2 +1,0 @@
-alias flt='LEIN_FAST_TRAMPOLINE=true lein trampoline test'
-alias flr='LEIN_FAST_TRAMPOLINE=true lein trampoline run'
