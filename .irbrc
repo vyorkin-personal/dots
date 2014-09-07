@@ -12,7 +12,6 @@ begin
   end
 
   require 'rubygems'
-  require 'sketches'
   require 'pry'
 
   Pry.start || exit
