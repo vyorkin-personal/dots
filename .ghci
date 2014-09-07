@@ -1,0 +1,8 @@
+:set prompt "∀x. x ⊢ "
+:set stop :list
+:set -XOverloadedStrings
+:set +t
+
+import Control.Monad
+import Control.Applicative
+import Control.Arrow

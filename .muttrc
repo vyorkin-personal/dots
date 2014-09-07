@@ -1,0 +1,17 @@
+source ~/.dotsecrets/.mutt_secrets
+
+auto_view text/html
+
+set folder="imaps://imap.gmail.com:993"
+set spoolfile="+INBOX"
+set postponed="+[Google Mail]/Drafts"
+
+set header_cache=~/.mutt/cache/headers
+set message_cachedir=~/.mutt/cache/bodies
+set certificate_file=~/.mutt/certificates
+
+bind editor <space> noop
+macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
+macro index ga "<change-folder>=[Google Mail]/All Mail<enter>" "Go to all mail"
+macro index gs "<change-folder>=[Google Mail]/Sent Mail<enter>" "Go to Sent Mail"
+macro index gd "<change-folder>=[Google Mail]/Drafts<enter>" "Go to drafts"
