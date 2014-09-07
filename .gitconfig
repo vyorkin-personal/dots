@@ -137,5 +137,5 @@
   decorate = short
 [init]
   templatedir = ~/.git_template
-[pushe]
-	default = matching
+[push]
+  default = matching
