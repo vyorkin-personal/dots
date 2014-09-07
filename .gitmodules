@@ -43,3 +43,18 @@
 [submodule ".oh-my-zsh"]
 	path = .oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule "dotpryrc"]
+	path = dotpryrc
+	url = git@github.com:vyorkin/dotpryrc.git
+[submodule "zsh-autosuggestions"]
+	path = zsh-autosuggestions
+	url = https://github.com/tarruda/zsh-autosuggestions.git
+[submodule "zsh-history-substring-search"]
+	path = zsh-history-substring-search
+	url = https://github.com/zsh-users/zsh-history-substring-search.git
+[submodule "zsh-syntax-highlighting"]
+	path = zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "dotsecrets"]
+	path = dotsecrets
+	url = git@bitbucket.org:vyorkin/dotsecrets.git
