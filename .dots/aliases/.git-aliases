@@ -1,0 +1,79 @@
+alias gi='vim .gitignore'
+
+alias st='git st'
+
+alias gs='git s'
+alias gsl='git sl'
+
+alias gst='git ss'
+alias gss='git sl'
+alias gsp='git sp'
+alias gsa='git sa'
+alias gsd='git sd'
+
+alias gsh='git show'
+
+alias gcm='git c'
+alias gci='git ci'
+alias gco='git co'
+alias gcp='git cp'
+
+alias ga='git a'
+alias gaa='git aa'
+alias gau='git au'
+
+alias guns='git unstage'
+alias gunc='git uncommit'
+
+alias gm='git merge'
+alias gms='git merge --squash'
+alias gam='git amend --reset-author'
+
+alias grv='git r'
+alias grr='git remote rm'
+alias grad='git remote add'
+
+alias gr='git rb'
+alias gra='git ra'
+alias ggrc='git rc'
+alias gbi='git rebase --interactive'
+
+alias gl='git l'
+alias glc='git changes'
+alias gls='git short'
+alias glcl='git changelog'
+alias glsnc='git shortnocolor'
+
+alias gf='git fetch'
+
+alias gd='git diff'
+alias gdc='git diff --cached -w'
+
+alias gb='git b'
+alias gbd='git b -D -w'
+
+alias gpl='git pl'
+alias gplp='git plp'
+alias gplr='git up'
+alias gps='git push'
+
+alias gnb='git nb'
+
+alias grs='git reset'
+alias grsh='git reset --hard'
+
+alias gcln='git clean'
+alias gclndf='git clean -df'
+alias gclndfx='git clean -dfx'
+
+alias gsm='git submodule'
+alias gsmi='git submodule init'
+alias gsmu='git submodule update'
+alias gsmui='git submodule update --init'
+
+alias gt='git t'
+
+alias gbg='git bisect good'
+alias gbb='git bisect bad'
+
+alias c='git clone'
