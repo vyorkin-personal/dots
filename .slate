@@ -1,0 +1,192 @@
+config defaultToCurrentScreen true
+
+config nudgePercentOf  screenSize
+config resizePercentOf screenSize
+
+config secondsBetweenRepeat 0.1
+config checkDefaultsOnLoad true
+config focusCheckWidthMax 3000
+
+config windowHintsShowIcons true
+config windowHintsIgnoreHiddenWindows false
+config windowHintsSpread true
+config windowHintsSpreadPadding 40
+config windowHintsSpreadSearchWidth 80
+config windowHintsSpreadSearchHeight 80
+
+config switchIconPadding 2
+config switchBackgroundColor 50;53;58;0.7
+config switchSelectedPadding 4
+config switchIconSize 96
+config switchShowTitles true
+config switchFontSize 11
+config switchRoundedCornerSize 4
+config undoOps move,resize
+
+config keyboardLayout qwerty
+
+# App aliases
+
+alias browser 'Google Chrome Canary'
+alias editor 'MacVim'
+alias terminal 'iTerm'
+alias mail 'Mail'
+
+# Monitor aliases
+
+alias mon-laptop 0
+alias mon-dell   1
+
+# Misc aliases
+
+alias showHintsLeftHand hint AOEUIYQJKX
+alias showNormalHint hint AOEUIDHTNSYXFBPKGMCW
+
+# Abstract positions
+
+alias full          move screenOriginX;screenOriginY screenSizeX;screenSizeY
+
+alias lefthalf      move screenOriginX;screenOriginY screenSizeX/2;screenSizeY
+alias righthalf     move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY
+
+alias rightmost     move screenOriginX+screenSizeX*0.75;screenOriginY screenSizeX/4;screenSizeY
+alias rightless     move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/4;screenSizeY
+
+alias leftmost      move screenOriginX;screenOriginY screenSizeX/4;screenSizeY
+alias leftless      move screenOriginX+screenSizeX/4;screenOriginY screenSizeX/4;screenSizeY
+
+# Concrete positions
+
+alias 1-full        move screenOriginX;screenOriginY screenSizeX;screenSizeY ${mon-laptop}
+alias 1-left        move screenOriginX;screenOriginY screenSizeX/2;screenSizeY ${mon-laptop}
+alias 1-right       move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY ${mon-laptop}
+
+alias 2-left        move screenOriginX;screenOriginY screenSizeX/2;screenSizeY ${mon-dell}
+alias 2-right       move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY ${mon-dell}
+alias 2-righttop    move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY/2 ${mon-dell}
+alias 2-rightbottom move screenOriginX+screenSizeX/2;screenOriginY+screenSizeY/2 screenSizeX/2;screenSizeY/2 ${mon-dell}
+
+alias 2-rightmost   move screenOriginX+screenSizeX/4;screenOriginY screenSizeX/4;screenSizeY ${mon-dell}
+alias 2-rightless   move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/4;screenSizeY ${mon-dell}
+
+alias 2-leftmost    move screenOriginX;screenOriginY screenSizeX/4;screenSizeY ${mon-dell}
+alias 2-leftless    move screenOriginX+screenSizeX/4;screenOriginY screenSizeX/4;screenSizeY ${mon-dell}
+
+# 2 Monitor layout
+
+layout 2monitors ${terminal}:MAIN_FIRST       ${2-rightbottom} | ${1-left}
+layout 2monitors 'Safari':REPEAT              ${2-left}
+layout 2monitors ${browser}:REPEAT            ${2-left}
+layout 2monitors 'Sublime Text 2':REPEAT      ${1-full}
+layout 2monitors ${editor}:REPEAT             ${1-full}
+layout 2monitors ${mail}:MAIN_FIRST           ${2-left}
+layout 2monitors 'Path Finder':MAIN_FIRST     ${2-righttop}
+layout 2monitors 'Xcode':REPEAT               ${1-full}
+layout 2monitors 'Eclipse':REPEAT             ${1-full}
+layout 2monitors 'iTunes':REPEAT              ${1-full}
+layout 2monitors 'Skype':REPEAT               ${2-leftless}
+layout 2monitors 'Messages':REPEAT            ${2-leftmost}
+
+# 1 Monitor layout
+
+layout 1monitor ${terminal}:MAIN_FIRST        ${1-full}
+layout 1monitor 'Sublime Text 2':MAIN_FIRST   ${1-left}
+layout 1monitor ${editor}:MAIN_FIRST          ${1-left}
+layout 1monitor 'Safari':REPEAT               ${1-full}
+layout 1monitor ${browser}:REPEAT             ${1-full}
+layout 1monitor ${mail}:MAIN_FIRST            ${1-full}
+layout 1monitor 'Path Finder':MAIN_FIRST      ${1-full}
+layout 1monitor 'Xcode':REPEAT                ${1-full}
+layout 1monitor 'Eclipse':REPEAT              ${1-full}
+layout 1monitor 'iTunes':REPEAT               ${1-full}
+leyout 1monitor 'Skype':REPEAT                ${1-left}
+layout 1monitor 'Messages':REPEAT             ${1-left}
+
+# Default Layouts
+
+default 2monitors resolutions:${mon-laptop};${mon-dell}
+default 1monitor  resolutions:${mon-laptop}
+
+# Grid
+
+bind g:cmd grid padding:5 0:8,3 1:6,2
+
+# Numpad location bindings
+
+bind pad0 ${showHintsLeftHand}
+bind pad1 ${leftless}
+bind pad2 push bottom bar-resize:screenSizeY/2
+
+bind pad3 ${rightless}
+bind pad4 ${lefthalf}
+bind pad5 ${full}
+bind pad6 ${righthalf}
+bind pad7 ${leftmost}
+bind pad8 push top bar-resize:screenSizeY/2
+bind pad9 ${rightmost}
+
+bind padEnter grid padding:5 ${mon-laptop}:6,2 ${mon-dell}:8,3
+
+bind pad+ throw next
+bind pad. focus behind
+
+bind pad* layout 2monitors
+bind pad/ layout 1monitor
+
+# Nudge Bindings
+
+bind l:shift;alt nudge +5% +0
+bind h:shift;alt nudge -5% +0
+bind k:shift;alt nudge +0 -5%
+bind j:shift;alt nudge +0 +5%
+
+bind k:cmd;alt focus behind
+bind j:cmd;alt focus behind
+
+bind e:cmd ${showNormalHint}
+
+# ======================================
+# The HYPER key
+# ======================================
+
+alias hyper ctrl;shift;alt;cmd
+
+bind z:${hyper} undo
+
+# Location bindings
+bind u:cmd;ctrl ${lefthalf}
+bind i:cmd;ctrl ${righthalf}
+
+bind h:cmd;ctrl ${leftless}
+bind g:cmd;ctrl ${leftmost}
+
+bind r:cmd;ctrl ${full}
+
+bind l:cmd;ctrl ${rightless}
+bind ;:cmd;ctrl ${rightmost}
+
+bind n:${hyper} throw next
+
+bind 2:${hyper} layout 2monitors
+
+bind 1:${hyper} layout 1monitor
+
+# Focus Bindings
+
+bind l:${hyper} focus right
+bind h:${hyper} focus left
+bind k:${hyper} focus up
+bind j:${hyper} focus down
+
+# App bindings
+
+bind e:${hyper} focus ${browser}
+bind u:${hyper} focus ${editor}
+bind x:${hyper} focus 'Xcode'
+bind g:${hyper} focus 'GitHub'
+bind m:${hyper} focus ${mail}
+bind i:${hyper} focus ${terminal}
+bind o:${hyper} focus 'Path Finder'
+bind s:${hyper} focus 'Skype'
+bind v:${hyper} focus 'nvALT'
+
