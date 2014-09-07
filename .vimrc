@@ -103,6 +103,8 @@ silent !mkdir ~/.vim/backups > /dev/null 2>&1
 set udir=~/.vim/undo/           " dir to store files with undo history
 set udf                         " auto save/restore undo history on buffer write/read
 
+colorscheme Tomorrow-Night-Bright 
+
 " conceal settings
 set cole=1                      " enable conceal
 set conceallevel=2              " concealed text is completely hidden

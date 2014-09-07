@@ -26,5 +26,8 @@ Plugin 'rking/ag.vim'
 Plugin 'mbbill/undotree'
 Plugin 'bling/vim-airline'
 
+" color themes
+Plugin 'altercation/vim-colors-solarized'
+
 " utils
 Plugin 'guns/xterm-color-table.vim'
