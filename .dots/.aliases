@@ -1,1 +1,0 @@
-for f in $DOTS/aliases/.*; do source $f; done

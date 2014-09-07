@@ -82,8 +82,8 @@ bindkey '^X2' predict-off
 # setup rbenv
 eval "$(rbenv init -)"
 
-export DOTS=$HOME/.dots
+export DOTFILES=$HOME/.dotfiles
 
 # load custom functions & aliases
-source $DOTS/.functions
-source $DOTS/.aliases
+source $DOTFILES/index
+source $DOTFILES/functions

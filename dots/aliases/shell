@@ -1,0 +1,45 @@
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
+alias ~='cd ~'
+
+alias -g C='|wc -l'
+alias -g H='| head'
+alias -g L='| less'
+alias -g N='| /dev/null'
+alias -g S='| sort'
+alias -g G='| grep'
+
+alias ll='ls -l'
+alias lla='ls -lA'
+alias la='ls -A'
+
+# Common shell functions
+alias less='less -r'
+alias tf='tail -f'
+alias l='less'
+alias lh='ls -alt | head' # see the last modified files
+alias screen='TERM=screen screen'
+alias cl='clear'
+
+alias tfdl='tail -f log/development.log'
+alias tftl='tail -f log/test.log'
+
+alias sgi='sudo gem install --no-ri --no-rdoc'
+
+alias todo='open nvalt://find/todo'
+
+# Keys
+alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> copied'"
+
+# PS
+alias psa="ps aux"
+alias psg="ps aux | grep "
+alias psr='ps aux | grep ruby'
+
+# show me files matching "ls grep"
+alias lsg='ll | grep'
+
+alias ttt='rbenv ctags & gem ctags'

@@ -1,47 +1,47 @@
-[submodule ".vim/bundle/vundle"]
-	path = .vim/bundle/vundle
-	url = https://github.com/gmarik/Vundle.vim.git
-[submodule ".rbenv/plugins/rbenv-aliases"]
-	path = .rbenv/plugins/rbenv-aliases
+[submodule "vim/bundle/Vundle.vim"]
+	path = vim/bundle/Vundle.vim
+	url = https://github.com/gmarik/Vundle.git
+[submodule "rbenv/plugins/rbenv-aliases"]
+	path = rbenv/plugins/rbenv-aliases
 	url = https://github.com/tpope/rbenv-aliases.git
-[submodule ".rbenv/plugins/rbenv-ctags"]
-	path = .rbenv/plugins/rbenv-ctags
+[submodule "rbenv/plugins/rbenv-ctags"]
+	path = rbenv/plugins/rbenv-ctags
 	url = https://github.com/tpope/rbenv-ctags.git
-[submodule ".rbenv/plugins/rbenv-binstubs"]
-	path = .rbenv/plugins/rbenv-binstubs
+[submodule "rbenv/plugins/rbenv-binstubs"]
+	path = rbenv/plugins/rbenv-binstubs
 	url = https://github.com/ianheggie/rbenv-binstubs.git
-[submodule ".rbenv/plugins/rbenv-communal-gems"]
-	path = .rbenv/plugins/rbenv-communal-gems
+[submodule "rbenv/plugins/rbenv-communal-gems"]
+	path = rbenv/plugins/rbenv-communal-gems
 	url = https://github.com/tpope/rbenv-communal-gems.git
-[submodule ".rbenv/plugins/rbenv-default-gems"]
-	path = .rbenv/plugins/rbenv-default-gems
+[submodule "rbenv/plugins/rbenv-default-gems"]
+	path = rbenv/plugins/rbenv-default-gems
 	url = https://github.com/sstephenson/rbenv-default-gems.git
-[submodule ".rbenv/plugins/rbenv-gem-rehash"]
-	path = .rbenv/plugins/rbenv-gem-rehash
+[submodule "rbenv/plugins/rbenv-gem-rehash"]
+	path = rbenv/plugins/rbenv-gem-rehash
 	url = https://github.com/sstephenson/rbenv-gem-rehash.git
-[submodule ".rbenv/plugins/rbenv-plug"]
-	path = .rbenv/plugins/rbenv-plug
+[submodule "rbenv/plugins/rbenv-plug"]
+	path = rbenv/plugins/rbenv-plug
 	url = https://github.com/znz/rbenv-plug.git
-[submodule ".rbenv/plugins/rbenv-update"]
-	path = .rbenv/plugins/rbenv-update
+[submodule "rbenv/plugins/rbenv-update"]
+	path = rbenv/plugins/rbenv-update
 	url = https://github.com/rkh/rbenv-update.git
-[submodule ".rbenv/plugins/rbenv-use"]
-	path = .rbenv/plugins/rbenv-use
+[submodule "rbenv/plugins/rbenv-use"]
+	path = rbenv/plugins/rbenv-use
 	url = https://github.com/rkh/rbenv-use.git
-[submodule ".rbenv/plugins/rbenv-user-gems"]
-	path = .rbenv/plugins/rbenv-user-gems
+[submodule "rbenv/plugins/rbenv-user-gems"]
+	path = rbenv/plugins/rbenv-user-gems
 	url = https://github.com/mislav/rbenv-user-gems.git
-[submodule ".rbenv/plugins/rbenv-vars"]
-	path = .rbenv/plugins/rbenv-vars
+[submodule "rbenv/plugins/rbenv-vars"]
+	path = rbenv/plugins/rbenv-vars
 	url = https://github.com/sstephenson/rbenv-vars.git
-[submodule ".rbenv/plugins/rbenv-whatis"]
-	path = .rbenv/plugins/rbenv-whatis
+[submodule "rbenv/plugins/rbenv-whatis"]
+	path = rbenv/plugins/rbenv-whatis
 	url = https://github.com/rkh/rbenv-whatis.git
-[submodule ".rbenv/plugins/ruby-build"]
-	path = .rbenv/plugins/ruby-build
+[submodule "rbenv/plugins/ruby-build"]
+	path = rbenv/plugins/ruby-build
 	url = https://github.com/sstephenson/ruby-build.git
-[submodule ".oh-my-zsh"]
-	path = .oh-my-zsh
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
 [submodule "dotpryrc"]
 	path = dotpryrc

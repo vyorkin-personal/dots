@@ -1,0 +1,22 @@
+# Common
+alias sites='cd ~/Sites'
+alias desk='cd ~/Desktop'
+alias docs='cd ~/Documents'
+
+# Projects
+alias work='cd ~/projects/work'
+alias play='cd ~/projects/play'
+alias avr='cd ~/projects/play/avr'
+alias arduino='cd ~/projects/play/arduino'
+
+alias gith='cd ~/projects/github'
+alias gh='cd ~/projects/github'
+
+## Undev
+alias rfpl='cd ~/projects/work/football-rfpl-cc'
+
+## My
+alias dotfiles='cd ~/projects/github/dotfiles'
+alias dots='cd ~/projects/github/dots'
+alias dotsecrets='cd ~/projects/github/dotsecrets'
+alias blog='cd ~/projects/github/vyorkin.github.io'
