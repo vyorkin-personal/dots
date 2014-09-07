@@ -17,9 +17,9 @@ set guioptions-=T
 set guicursor+=n-v-c:blinkon0
 
 if has("gui_gtk2")
-  set guifont=Inconsolata\ 12
+  set guifont=Inconsolata\ 9
 elseif has("gui_macvim")
-  set guifont=Menlo\ Regular:h12
+  set guifont=Menlo\ Regular:h11
 elseif has("gui_win32")
   set guifont=Consolas:h11:cANSI
 endif

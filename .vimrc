@@ -22,6 +22,10 @@ endif
 filetype plugin on              " ft plugin files
 filetype indent on              " ft indent files
 
+set hidden                      " buffer can be put to the background without writing to disk
+set wildmenu                    " show completion options
+set wildmode=list:longest       " shell-like completion behavior
+
 " numbers
 set number                      " turn on line numbers
 set relativenumber              " use relative numbers
@@ -114,8 +118,8 @@ set concealcursor=nc            " don't reveal the conceals unless on insert or 
 nnoremap ; :
 nnoremap : ;
 
-au VimResized * wincmd =        " resize splits when the window is resized
-au FocusLost * wa               " save all changed buffers on focus lost
+au VimResized * :wincmd =        " resize splits when the window is resized
+au FocusLost * :wa               " save all changed buffers on focus lost
 
 " save the default fold view before writing a buffer
 au BufWinLeave *.* mkview!      
