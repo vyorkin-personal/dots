@@ -118,8 +118,7 @@ set concealcursor=nc            " don't reveal the conceals unless on insert or 
 nnoremap ; :
 nnoremap : ;
 
-au VimResized * :wincmd =        " resize splits when the window is resized
-au FocusLost * :wa               " save all changed buffers on focus lost
+au FocusLost * :wa              " save all changed buffers on focus lost
 
 " save the default fold view before writing a buffer
 au BufWinLeave *.* mkview!      
