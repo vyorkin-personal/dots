@@ -45,9 +45,7 @@ source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 
 source $HOME/.zsh-history-substring-search/zsh-history-substring-search.zsh
-
 source $HOME/.zsh-autosuggestions/autosuggestions.zsh
-AUTOSUGGESTION_HIGHLIGHT_COLOR=9
 
 # enable autosuggestions automatically
 zle-line-init() {
