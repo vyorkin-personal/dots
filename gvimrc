@@ -14,6 +14,7 @@ set guioptions-=l
 set guioptions-=L
 set guioptions-=T
 
+set showtabline=0
 set guicursor+=n-v-c:blinkon0
 
 if has("gui_gtk2")
