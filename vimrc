@@ -103,7 +103,7 @@ set nowritebackup               " don't write backups
 
 " keep undo history across sessions by storing it in file
 
-silent !mkdir ~/.vim/backups > /dev/null 2>&1
+silent !mkdir ~/.vim/undo > /dev/null 2>&1
 set udir=~/.vim/undo/           " dir to store files with undo history
 set udf                         " auto save/restore undo history on buffer write/read
 
