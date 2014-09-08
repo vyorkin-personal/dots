@@ -27,8 +27,8 @@ set wildmenu                    " show completion options
 set wildmode=list:longest       " shell-like completion behavior
 
 " common ignore patterns
-so ~/.vim/plugins/wildignore.vim
-so ~/.vim/plugins/netrwhide.vim
+so ~/.vim/plugin/wildignore.vim
+so ~/.vim/plugin/netrwhide.vim
 
 " numbers
 set number                      " turn on line numbers
@@ -64,7 +64,7 @@ set formatoptions=qlcrnj1       " format options that doesn't suck
 " don't display hidden chars cuz its too distracting
 set nolist
 " strings to use in list mode (tabs, end of line, trailing spaces, etc)
-set lcs=tab:▸\ ,eol:¬,trail:·,extends:>,precedes:<
+set listchars=tab:▸\ ,eol:¬,trail:·,extends:>,precedes:<
 
 " status line
 set laststatus=2                " always show status line
@@ -97,8 +97,7 @@ set splitright                  " put a new window below the current one (1/10 s
 " scrolling
 set scrolloff=12                " vertical offset
 set sidescrolloff=12            " horizontal offset
-set sidescroll=2                " minimal number of columns to scroll horizontally
-set scrolljump=2                " number of lines to scroll when the cursor gets off the screen
+set sidescroll=1                " minimal number of columns to scroll horizontally
 
 " turn off swap files & backups
 " cuz its really annoying
