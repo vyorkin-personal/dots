@@ -1,4 +1,5 @@
 source ~/.dotsecrets/.mutt_secrets
+source ~/mutt-colors-solarized/mutt-colors-solarized-light-16.muttrc
 
 auto_view text/html
 

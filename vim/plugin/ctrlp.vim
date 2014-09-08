@@ -20,7 +20,6 @@ nn <silent> <C-b> :CtrlPBuffer<cr>
 " Alt-p to clear the cache
 nn <Esc>p :ClearCtrlPCache<cr>
 
-" Idea from : http://www.charlietanksley.net/blog/blog/2011/10/18/vim-navigation-with-lustyexplorer-and-lustyjuggler/
 " Open CtrlP starting from a particular path, making it much
 " more likely to find the correct thing first. mnemonic 'jump to [something]'
 nn ,jm :CtrlP app/models<CR>

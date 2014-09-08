@@ -48,7 +48,7 @@ set autoread                    " automatically read file when it has been chang
 set autowriteall                " always write modified files (don't need to set autowrite)
 
 set ttimeout                    " use key sequence timeouts
-set ttimeoutlen=100             " how long to wait for a key seq to complete
+set ttimeoutlen=30              " how long to wait for a key seq to complete
 
 " line wrapping & text formatting
 set nowrap                      " don't wrap long lines

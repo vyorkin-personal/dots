@@ -20,10 +20,12 @@ nnoremap ,. '.
 nnoremap <silent> ,qc :cclose<CR>
 nnoremap <silent> ,qo :copen<CR>
 
-" move up/down quickly by using M-j, M-k
+" move up/down quickly by using M-j, M-k (D-j, D-k on Mac)
 " which will move us around by functions
 nnoremap <silent> <M-j> }
 nnoremap <silent> <M-k> {
+nnoremap <silent> <D-j> }
+nnoremap <silent> <D-k> {
 
 au FileType ruby map <buffer> <M-j> ]m
 au FileType ruby map <buffer> <M-k> [m
@@ -31,6 +33,13 @@ au FileType rspec map <buffer> <M-j> }
 au FileType rspec map <buffer> <M-k> {
 au FileType javascript map <buffer> <M-j> }
 au FileType javascript map <buffer> <M-k> {
+
+au FileType ruby map <buffer> <D-j> ]m
+au FileType ruby map <buffer> <D-k> [m
+au FileType rspec map <buffer> <D-j> }
+au FileType rspec map <buffer> <D-k> {
+au FileType javascript map <buffer> <D-j> }
+au FileType javascript map <buffer> <D-k> {
 
 " move back and forth through previous and next buffers with ,z and ,x
 nnoremap <silent> ,z :bp<CR>
