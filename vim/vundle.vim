@@ -5,7 +5,7 @@ set rtp+=~/.vim/bundle/Vundle.vim   " add vundle to runtime path
 "   the :Plugin command will be defined
 call vundle#rc()
 
-Plugin "gmarik/Vundle.vim"
+Plugin 'gmarik/Vundle.vim'
 
 if filereadable(expand("~/.vim/plugins.vim"))
   source ~/.vim/plugins.vim
