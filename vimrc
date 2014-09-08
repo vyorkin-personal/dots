@@ -26,6 +26,10 @@ set hidden                      " buffer can be put to the background without wr
 set wildmenu                    " show completion options
 set wildmode=list:longest       " shell-like completion behavior
 
+" common ignore patterns
+so ~/.vim/plugins/wildignore.vim
+so ~/.vim/plugins/netrwhide.vim
+
 " numbers
 set number                      " turn on line numbers
 set relativenumber              " use relative numbers

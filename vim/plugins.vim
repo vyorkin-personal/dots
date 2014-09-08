@@ -86,7 +86,6 @@ Plugin 'cakebaker/scss-syntax.vim'
 " Markdown
 Plugin 'tpope/vim-markdown'
 Plugin 'jtratner/vim-flavored-markdown'
-Plugin 'suan/vim-instant-markdown'
 Plugin 'nelstrom/vim-markdown-preview'
 
 

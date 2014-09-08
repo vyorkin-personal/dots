@@ -1,26 +1,34 @@
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|\.gitkeep$'
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others']
 
-" Default to filename searches - so that appctrl will find application
-" controller
+if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+else
+  let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others']
+endif
+
+" use ctrlp-py-match that performs much faster (up to x22)
+" see FelikZ/ctrlp-py-matcher
+let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
+
+" default to filename searches - so that appctrl will find application controller
 let g:ctrlp_by_filename = 1
-let g:ctrlp_use_caching = 0
+let g:ctrlp_use_caching = 1
 let g:ctrlp_dotfiles = 0
-let g:ctrlp_clear_cache_on_exit = 0
+let g:ctrlp_clear_cache_on_exit = 1
 
-" We don't want to use Ctrl-p as the mapping because
+" we don't want to use Ctrl-p as the mapping because
 " it interferes with YankRing (paste, then hit ctrl-p)
 let g:ctrlp_map = ',,'
 
 nn <silent> ,, :CtrlP<CR>
 
-" Additional mapping for buffer search
+" additional mapping for buffer search
 nn <silent> <C-b> :CtrlPBuffer<cr>
 
 " Alt-p to clear the cache
 nn <Esc>p :ClearCtrlPCache<cr>
 
-" Open CtrlP starting from a particular path, making it much
+" open CtrlP starting from a particular path, making it much
 " more likely to find the correct thing first. mnemonic 'jump to [something]'
 nn ,jm :CtrlP app/models<CR>
 nn ,jc :CtrlP app/controllers<CR>

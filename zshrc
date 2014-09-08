@@ -78,7 +78,7 @@ bindkey '^X1' predict-on
 bindkey '^X2' predict-off
 
 # setup rbenv
-eval "$(rbenv init -)"
+eval "$(rbenv init - --no-rehash)"
 
 export DOTFILES=$HOME/.dotfiles
 

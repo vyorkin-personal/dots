@@ -1,6 +1,12 @@
 nnoremap <Leader>w :w<CR>       " faster way to save a file
 nmap <Leader><Leader> V         " enter visual model with <Leader><Leader>
 
+" bink K to grep word under cursor
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+
+" bind \ (backward slash) to grep shortcut
+command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
+
 " format the entire file
 nnoremap <Leader>fef :normal! gg=G``<CR>
 
