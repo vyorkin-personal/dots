@@ -1,20 +1,44 @@
 DOTFILES_DIRS="$HOME/projects/github/dots"
-EXCLUDES="Brewfile Caskfile README.md LICENSE"
-TAGS="awesome bash cvs erlang git haskell irc javascript macosx mail ruby sh tmux utils vim zsh"
+
+EXCLUDES="
+  Brewfile
+  Caskfile
+  README.md
+  LICENSE
+"
+
+TAGS="
+  bash
+  cvs
+  erlang
+  git
+  haskell
+  irc
+  javascript
+  macosx
+  mail
+  ruby
+  sh
+  tmux
+  utils
+  vim
+  zsh
+"
+
 SYMLINK_DIRS="
-	dotfiles/*
-	dotsecrets/*
-	config
-	git_template
-	irssi
-	weechat
-	slate
-	bundle
-	dotpryrc
-	gas
-	rbenv/*
-	cheat
-	vim
-	oh-my-zsh
-	zsh-*
+  dotfiles/*
+  dotsecrets/*
+  config
+  git_template
+  irssi
+  weechat/*
+  slate
+  bundle
+  dotpryrc
+  gas
+  rbenv/*
+  cheat
+  vim
+  oh-my-zsh
+  zsh-*
 "
