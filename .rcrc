@@ -3,6 +3,8 @@ DOTFILES_DIRS="$HOME/projects/github/dots"
 EXCLUDES="
   Brewfile
   Caskfile
+  Makefile
+  Rakefile
   README.md
   LICENSE
 "
