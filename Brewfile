@@ -24,6 +24,10 @@ install bash-completion
 # Install wget with IRI support
 install wget --enable-iri
 
+# dotfiles management
+tap thoughbot/formulae
+install rcm
+
 # Install RingoJS and Narwhal
 # Note that the order in which these are installed is important; see http://git.io/brew-narwhal-ringo.
 install ringojs
