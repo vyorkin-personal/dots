@@ -1,13 +1,13 @@
-vim/backups
-vim/undo/*
-vim/view/*
-vim/tmp
-vim/spell
-vim/bundle
-vim/sessions
-vim/.netrwhist
+tag-vim/vim/backups
+tag-vim/vim/undo/*
+tag-vim/vim/view/*
+tag-vim/vim/tmp
+tag-vim/vim/spell
+tag-vim/vim/bundle
+tag-vim/vim/sessions
+tag-vim/vim/.netrwhist
 
-irssi/away.log
+tag-irc/irssi/away.log
 
 tags
 
