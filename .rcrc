@@ -1,3 +1,3 @@
-DOTFILES_DIRS="/home/vyorkin/projects/github/dots"
-EXCLUDES="Caskfile README.md LICENSE"
+DOTFILES_DIRS="$HOME/projects/github/dots"
+EXCLUDES="Brewfile Caskfile README.md LICENSE"
 SYMLINK_DIRS="rbenv/plugins dotfiles/index dotfiles/functions dotsecrets/floorc dotsecrets/muttrc dotsecrets/secret_tokens"

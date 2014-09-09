@@ -123,7 +123,7 @@ set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 " auto save/restore undo history on buffer write/read
 set undofile
 
-colorscheme Tomorrow-Night-Bright 
+colorscheme Tomorrow-Night-Bright
 
 " conceal settings
 set cole=1                      " enable conceal

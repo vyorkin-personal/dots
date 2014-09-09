@@ -1,59 +1,59 @@
-[submodule "vim/bundle/Vundle.vim"]
-	path = vim/bundle/Vundle.vim
+[submodule "tag-vim/vim/bundle/vundle"]
+	path = tag-vim/vim/bundle/vundle
 	url = https://github.com/gmarik/Vundle.git
-[submodule "rbenv/plugins/rbenv-aliases"]
-	path = rbenv/plugins/rbenv-aliases
+[submodule "tag-ruby/rbenv/plugins/rbenv-aliases"]
+	path = tag-ruby/rbenv/plugins/rbenv-aliases
 	url = https://github.com/tpope/rbenv-aliases.git
-[submodule "rbenv/plugins/rbenv-ctags"]
-	path = rbenv/plugins/rbenv-ctags
+[submodule "tag-ruby/rbenv/plugins/rbenv-ctags"]
+	path = tag-ruby/rbenv/plugins/rbenv-ctags
 	url = https://github.com/tpope/rbenv-ctags.git
-[submodule "rbenv/plugins/rbenv-binstubs"]
-	path = rbenv/plugins/rbenv-binstubs
+[submodule "tag-ruby/rbenv/plugins/rbenv-binstubs"]
+	path = tag-ruby/rbenv/plugins/rbenv-binstubs
 	url = https://github.com/ianheggie/rbenv-binstubs.git
-[submodule "rbenv/plugins/rbenv-communal-gems"]
-	path = rbenv/plugins/rbenv-communal-gems
+[submodule "tag-ruby/rbenv/plugins/rbenv-communal-gems"]
+	path = tag-ruby/rbenv/plugins/rbenv-communal-gems
 	url = https://github.com/tpope/rbenv-communal-gems.git
-[submodule "rbenv/plugins/rbenv-default-gems"]
-	path = rbenv/plugins/rbenv-default-gems
+[submodule "tag-ruby/rbenv/plugins/rbenv-default-gems"]
+	path = tag-ruby/rbenv/plugins/rbenv-default-gems
 	url = https://github.com/sstephenson/rbenv-default-gems.git
-[submodule "rbenv/plugins/rbenv-gem-rehash"]
-	path = rbenv/plugins/rbenv-gem-rehash
+[submodule "tag-ruby/rbenv/plugins/rbenv-gem-rehash"]
+	path = tag-ruby/rbenv/plugins/rbenv-gem-rehash
 	url = https://github.com/sstephenson/rbenv-gem-rehash.git
-[submodule "rbenv/plugins/rbenv-plug"]
-	path = rbenv/plugins/rbenv-plug
+[submodule "tag-ruby/rbenv/plugins/rbenv-plug"]
+	path = tag-ruby/rbenv/plugins/rbenv-plug
 	url = https://github.com/znz/rbenv-plug.git
-[submodule "rbenv/plugins/rbenv-update"]
-	path = rbenv/plugins/rbenv-update
+[submodule "tag-ruby/rbenv/plugins/rbenv-update"]
+	path = tag-ruby/rbenv/plugins/rbenv-update
 	url = https://github.com/rkh/rbenv-update.git
-[submodule "rbenv/plugins/rbenv-use"]
-	path = rbenv/plugins/rbenv-use
+[submodule "tag-ruby/rbenv/plugins/rbenv-use"]
+	path = tag-ruby/rbenv/plugins/rbenv-use
 	url = https://github.com/rkh/rbenv-use.git
-[submodule "rbenv/plugins/rbenv-user-gems"]
-	path = rbenv/plugins/rbenv-user-gems
+[submodule "tag-ruby/rbenv/plugins/rbenv-user-gems"]
+	path = tag-ruby/rbenv/plugins/rbenv-user-gems
 	url = https://github.com/mislav/rbenv-user-gems.git
-[submodule "rbenv/plugins/rbenv-vars"]
-	path = rbenv/plugins/rbenv-vars
+[submodule "tag-ruby/rbenv/plugins/rbenv-vars"]
+	path = tag-ruby/rbenv/plugins/rbenv-vars
 	url = https://github.com/sstephenson/rbenv-vars.git
-[submodule "rbenv/plugins/rbenv-whatis"]
-	path = rbenv/plugins/rbenv-whatis
+[submodule "tag-ruby/rbenv/plugins/rbenv-whatis"]
+	path = tag-ruby/rbenv/plugins/rbenv-whatis
 	url = https://github.com/rkh/rbenv-whatis.git
-[submodule "rbenv/plugins/ruby-build"]
-	path = rbenv/plugins/ruby-build
+[submodule "tag-ruby/rbenv/plugins/ruby-build"]
+	path = tag-ruby/rbenv/plugins/ruby-build
 	url = https://github.com/sstephenson/ruby-build.git
-[submodule "oh-my-zsh"]
-	path = oh-my-zsh
+[submodule "tag-zsh/oh-my-zsh"]
+	path = tag-zsh/oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
-[submodule "dotpryrc"]
-	path = dotpryrc
+[submodule "tag-ruby/dotpryrc"]
+	path = tag-ruby/dotpryrc
 	url = git@github.com:vyorkin/dotpryrc.git
-[submodule "zsh-autosuggestions"]
-	path = zsh-autosuggestions
+[submodule "tag-zsh/zsh-autosuggestions"]
+	path = tag-zsh/zsh-autosuggestions
 	url = https://github.com/tarruda/zsh-autosuggestions.git
-[submodule "zsh-history-substring-search"]
-	path = zsh-history-substring-search
+[submodule "tag-zsh/zsh-history-substring-search"]
+	path = tag-zsh/zsh-history-substring-search
 	url = https://github.com/zsh-users/zsh-history-substring-search.git
-[submodule "zsh-syntax-highlighting"]
-	path = zsh-syntax-highlighting
+[submodule "tag-zsh/zsh-syntax-highlighting"]
+	path = tag-zsh/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
 [submodule "dotsecrets"]
 	path = dotsecrets
