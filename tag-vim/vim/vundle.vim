@@ -1,3 +1,6 @@
+set nocompatible
+filetype off
+
 set rtp+=~/.vim/bundle/vundle         " add vundle to runtime path
 
 " set up vundle & as a side effect:
