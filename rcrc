@@ -1,4 +1,4 @@
-DOTFILES_DIRS="$HOME/projects/github/dots"
+DOTFILES_DIRS="$HOME/.dots"
 
 EXCLUDES="
   Brewfile
@@ -38,7 +38,8 @@ SYMLINK_DIRS="
   bundle
   dotpryrc
   gas
-  rbenv/*
+  rbenv/plugins/*
+  rbenv/default-gems
   cheat
   vim
   oh-my-zsh
