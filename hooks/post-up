@@ -6,4 +6,4 @@ if [ ! -e $HOME/.vim/bundle/vundle ]; then
 fi
 
 # install vim plugins
-vim -u $HOME/.vim/plugins.vim +PluginInstall +qa
+vim -u $HOME/.vim/vundle.vim +PluginInstall +qa
