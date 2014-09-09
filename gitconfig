@@ -139,3 +139,7 @@
   templatedir = ~/.git_template
 [push]
   default = matching
+[merge]
+  ff = only
+[commit]
+  template = ~/.gitmessage
