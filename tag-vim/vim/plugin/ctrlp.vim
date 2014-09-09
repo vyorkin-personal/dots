@@ -8,7 +8,7 @@ endif
 
 " use ctrlp-py-match that performs much faster (up to x22)
 " see FelikZ/ctrlp-py-matcher
-" let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
+let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 
 " default to filename searches - so that appctrl will find application controller
 let g:ctrlp_by_filename = 1
