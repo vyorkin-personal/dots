@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# clone Vundle.vim if its not there already
+if [ ! -e $HOME/.vim/bundle/vundle ]; then
+  git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/vundle
+fi
+
+# install vim plugins
+vim -u $HOME/.vim/plugins.vim +PluginInstall +qa
