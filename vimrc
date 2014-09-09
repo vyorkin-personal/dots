@@ -25,6 +25,7 @@ filetype indent on              " ft indent files
 set hidden                      " buffer can be put to the background without writing to disk
 set wildmenu                    " show completion options
 set wildmode=list:longest       " shell-like completion behavior
+let g:netrw_liststyle=2
 
 " common ignore patterns
 so ~/.vim/plugin/wildignore.vim
@@ -67,9 +68,14 @@ set nolist
 set listchars=tab:▸\ ,eol:¬,trail:·,extends:>,precedes:<
 
 " status line
-set laststatus=2                " always show status line
+set laststatus=2                " always show status line (even on single window)
 set showcmd                     " display incomplete commands
 set showmode                    " show current mode
+
+
+" OmniCompletion settings
+set omnifunc=syntaxcomplete#Complete
+set completeopt=menu,preview,longest
 
 " indentation: keep tabstop on 8
 " use softtabstop set to 2
@@ -90,6 +96,10 @@ set incsearch                   " display the match for a search pattern when ha
 set showmatch                   " briefly jump to the matching bracket
 set matchtime=1                 " how long to show matching paren
 
+" don't squeeze window too much
+set winwidth=50
+set winminwidth=50
+
 " window splitting
 set splitbelow                  " put a new window on the right side
 set splitright                  " put a new window below the current one (1/10 sec)
@@ -104,11 +114,14 @@ set sidescroll=1                " minimal number of columns to scroll horizontal
 set noswapfile                  " don't use buffer swap files
 set nowritebackup               " don't write backups
 
-" keep undo history across sessions by storing it in file
+" dir to store temp files: swaps, undo history
+set undodir=~/.vim-tmp/undo/,~/.vim/undo/,~/.tmp,~/tmp,/var/tmp,/tmp
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
-silent !mkdir ~/.vim/undo > /dev/null 2>&1
-set udir=~/.vim/undo/           " dir to store files with undo history
-set udf                         " auto save/restore undo history on buffer write/read
+" keep undo history across sessions by storing it in file
+" auto save/restore undo history on buffer write/read
+set undofile
 
 colorscheme Tomorrow-Night-Bright 
 
