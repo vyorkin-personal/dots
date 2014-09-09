@@ -57,6 +57,10 @@ install ucspi-tcp # `tcpserver` et al.
 install webkit2png
 install xpdf
 install zopfli
+install ffmpeg
+install mplayer
+install mplayershell
+install youtube-dl
 
 install homebrew/versions/lua52
 
