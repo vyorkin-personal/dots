@@ -3,21 +3,82 @@
 
 install caskroom/cask/brew-cask
 tap caskroom/versions
+cask update
 
-cask install dropbox 2> /dev/null
+# cask install dropbox 2> /dev/null
+cask install caffeine 2> /dev/null
+cask install tiled 2> /dev/null
+cask install dash 2> /dev/null
 cask install google-chrome 2> /dev/null
 cask install google-chrome-canary 2> /dev/null
+cask install google-hangouts 2> /dev/null
+cask install skype 2> /dev/null
+cask install send-to-kindle 2> /dev/null
 cask install imagealpha 2> /dev/null
 cask install imageoptim 2> /dev/null
 cask install iterm2 2> /dev/null
+cask install totalterminal 2> /dev/null
 cask install macvim 2> /dev/null
+cask install flux 2> /dev/null
 cask install miro-video-converter 2> /dev/null
 cask install opera 2> /dev/null
 cask install opera-developer 2> /dev/null
 cask install opera-next 2> /dev/null
 cask install sublime-text 2> /dev/null
+cask install sublime-text3 2> /dev/null
+cask install heroku-toolbelt 2> /dev/null
 cask install the-unarchiver 2> /dev/null
 cask install torbrowser 2> /dev/null
 cask install transmission 2> /dev/null
+cask install transmit 2> /dev/null
 cask install virtualbox 2> /dev/null
 cask install vlc 2> /dev/null
+cask install audacity 2> /dev/null
+cask install handbrake 2> /dev/null
+cask install github 2> /dev/null
+cask install sourcetree 2> /dev/null
+cask install lighttable 2> /dev/null
+cask install vagrant 2> /dev/null
+cask install atom 2> /dev/null
+cask install alfred 2> /dev/null
+cask install evernote 2> /dev/null
+cask install poedit 2> /dev/null
+cask install sequel-pro 2> /dev/null
+cask install teamviewer 2> /dev/null
+cask install clock 2> /dev/null
+cask install toggldesktop 2> /dev/null
+cask install harvest 2> /dev/null
+cask install totalspaces 2> /dev/null
+cask install istat-menus 2> /dev/null
+cask install nvalt 2> /dev/null
+cask install skitch 2> /dev/null
+cask install bittorrent-sync 2> /dev/null
+cask install ivolume 2> /dev/null
+cask install textmate 2> /dev/null
+cask install anvil 2> /dev/null
+cask install commandq 2> /dev/null
+cask install mplayerx 2> /dev/null
+cask install onepassword 2> /dev/null
+cask install adium 2> /dev/null
+cask install superduper 2> /dev/null
+cask install karabiner 2> /dev/null
+cask install seil 2> /dev/null
+cask install slack 2> /dev/null
+cask install screenhero 2> /dev/null
+cask install mou 2> /dev/null
+cask install torbrowser 2> /dev/null
+cask install java 2> /dev/null
+cask install intellij-idea-ce 2> /dev/null
+cask install eclipse-ide 2> /dev/null
+cask install android-studio 2> /dev/null
+cask install genymotion 2> /dev/null
+
+cask alfred link
+
+tap caskroom/fonts
+cask install font-vollkorn 2> /dev/null
+cask install font-source-code-pro 2> /dev/null
+cask install font-source-sans-pro 2> /dev/null
+cask install font-comic-neue 2> /dev/null
+cask install font-courier-prime 2> /dev/null
+cask install font-source-serif-pro 2> /dev/null

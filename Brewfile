@@ -7,6 +7,15 @@ update
 # Upgrade any already-installed formulae
 upgrade
 
+install caskroom/cask/brew-cask
+
+tap homebrew/science
+
+install eigen
+install opencv
+
+install veclibfort
+
 # Install GNU core utilities (those that come with OS X are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 install coreutils
@@ -21,40 +30,75 @@ install gnu-sed --default-names
 install bash
 install bash-completion
 
+install reattach-to-user-namespace
+
+
 # Install wget with IRI support
 install wget --enable-iri
 
 # dotfiles management
-tap thoughbot/formulae
+tap thoughtbot/formulae
 install rcm
+install gitsh
+install liftoff
+
+install zsh
+install weechat
+install irssi
 
 # Install RingoJS and Narwhal
 # Note that the order in which these are installed is important; see http://git.io/brew-narwhal-ringo.
 install ringojs
 install narwhal
 
+install ant
+install maven
+install rbenv
+
 # Install more recent versions of some OS X tools
-install vim --override-system-vi
+install vim --override-system-vi --with-lua --with-perl --with-python3 --with-ruby
 install homebrew/dupes/grep
 install homebrew/dupes/screen
-install homebrew/php/php55 --with-gmp
+
+install python
+install python3
+install ghc
+install cabal-install
+
+install mysql
+install redis
+install boot2docker
+
+# Install XML libs
+install libxml2
+install libxslt
+
+install tmux
+install nginx
+install pow
+install ctags
+install llvm
 
 # Install other useful binaries
+install autossh
+install graphviz
+install the_silver_searcher
 install ack
 install bfg
-#install exiv2
 install foremost
+install svn
 install git
+install git-flow
 install hashpump
 install imagemagick --with-webp
 install lynx
 install nmap
 install node # This installs `npm` too using the recommended installation method
 install p7zip
-install pigz
 install pv
 install rename
 install rhino
+install sqlite
 install sqlmap
 install tree
 install ucspi-tcp # `tcpserver` et al.
