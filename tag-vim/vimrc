@@ -26,7 +26,7 @@ set hidden                      " buffer can be put to the background without wr
 set wildmenu                    " show completion options
 set wildmode=list:longest       " shell-like completion behavior
 
-let g:netrw_liststyle=2         " wide listing (multiple files in columns)
+let g:netrw_liststyle=3         " wide listing (multiple files in columns)
 
 " numbers
 set number                      " turn on line numbers
@@ -68,7 +68,6 @@ set listchars=tab:▸\ ,eol:¬,trail:·,extends:>,precedes:<
 set laststatus=2                " always show status line (even on single window)
 set showcmd                     " display incomplete commands
 set showmode                    " show current mode
-
 
 " OmniCompletion settings
 set omnifunc=syntaxcomplete#Complete
