@@ -1,3 +1,5 @@
+set pastetoggle=<F2>
+
 nn <Leader>w :w<CR>         " faster way to save a file
 nm <Leader><Leader> V       " enter visual model with <Leader><Leader>
 

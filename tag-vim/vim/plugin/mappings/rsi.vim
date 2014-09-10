@@ -15,3 +15,5 @@ nn ,. '.
 " jump to line and column by typing '<mark_char>
 nn ' `
 nn ` '
+
+nn <silent> // :nohlsearch<CR>
