@@ -7,3 +7,6 @@ fi
 
 # install vim plugins
 vim -u $HOME/.vim/vundle.vim +PluginInstall +qa
+cd $HOME/.vim/bundle/tern_for_vim
+npm install
+cd -
