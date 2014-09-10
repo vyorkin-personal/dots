@@ -5,7 +5,7 @@ install caskroom/cask/brew-cask
 tap caskroom/versions
 cask update
 
-# cask install dropbox 2> /dev/null
+cask install dropbox 2> /dev/null
 cask install caffeine 2> /dev/null
 cask install tiled 2> /dev/null
 cask install dash 2> /dev/null
