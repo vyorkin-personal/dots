@@ -8,3 +8,5 @@ rerun.txt
 tags
 tmp/**/*
 !tmp/cache/.keep
+*buffergator-tabs*
+.artifacts/
