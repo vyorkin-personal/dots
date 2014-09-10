@@ -1,8 +1,13 @@
-let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|\.gitkeep$'
-
 if executable('ag')
-  let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command =
+    \ 'ag %s -l --nocolor --files-with-matches -g "" --ignore "\.git$\|\.hg$\|\.svn$\|\.gitkeep"'
+
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
 else
+  " Fall back to using git ls-files if Ag is not available
+  let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|\.gitkeep$'
   let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others']
 endif
 
@@ -16,17 +21,23 @@ let g:ctrlp_use_caching = 0
 let g:ctrlp_dotfiles = 0
 let g:ctrlp_clear_cache_on_exit = 0
 
+" Don't jump to already open window. This is annoying if you are maintaining
+" several Tab workspaces and want to open two windows into the same file.
+let g:ctrlp_switch_buffer = 0
+
 " we don't want to use Ctrl-p as the mapping because
 " it interferes with YankRing (paste, then hit ctrl-p)
 let g:ctrlp_map = ',,'
 
+" the default Ctrl-p mapping interferes with YankRing
 nn <silent> ,, :CtrlP<CR>
 
 " additional mapping for buffer search
 nn <silent> <C-b> :CtrlPBuffer<cr>
 
-" Alt-p to clear the cache
+" Alt-p or Cmd-Ship-P to clear the cache
 nn <Esc>p :ClearCtrlPCache<cr>
+nn <silent> <D-P> :ClearCtrlPCache<cr>
 
 " open CtrlP starting from a particular path, making it much
 " more likely to find the correct thing first. mnemonic 'jump to [something]'

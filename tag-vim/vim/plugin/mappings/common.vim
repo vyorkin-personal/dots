@@ -4,6 +4,11 @@ nm <Leader><Leader> V       " enter visual model with <Leader><Leader>
 " bink K to grep word under cursor
 nn K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
+" make 0 go to the first character
+" rather than the beginning of the line
+nn 0 ^
+nn ^ 0
+
 " bind \ (backward slash) to grep shortcut
 com -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 

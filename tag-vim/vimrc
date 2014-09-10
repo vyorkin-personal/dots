@@ -25,7 +25,8 @@ filetype indent on              " ft indent files
 set hidden                      " buffer can be put to the background without writing to disk
 set wildmenu                    " show completion options
 set wildmode=list:longest       " shell-like completion behavior
-let g:netrw_liststyle=2
+
+let g:netrw_liststyle=2         " wide listing (multiple files in columns)
 
 " numbers
 set number                      " turn on line numbers
@@ -111,13 +112,15 @@ set noswapfile                  " don't use buffer swap files
 set nowritebackup               " don't write backups
 
 " dir to store temp files: swaps, undo history
-set undodir=~/.vim-tmp/undo/,~/.vim/undo/,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
-" keep undo history across sessions by storing it in file
-" auto save/restore undo history on buffer write/read
-set undofile
+if has('persistent_undo')
+  " keep undo history across sessions by storing it in file
+  " auto save/restore undo history on buffer write/read
+  set undodir=~/.vim-tmp/undo/,~/.vim/undo/,~/.tmp,~/tmp,/var/tmp,/tmp
+  set undofile
+endif
 
 colorscheme Tomorrow-Night-Bright
 
