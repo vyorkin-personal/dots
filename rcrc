@@ -1,6 +1,7 @@
 DOTFILES_DIRS="$HOME/.dots"
 
 EXCLUDES="
+  rcrc
   Brewfile
   Caskfile
   Makefile
@@ -28,18 +29,17 @@ TAGS="
 "
 
 SYMLINK_DIRS="
-  dotfiles/*
-  dotsecrets/*
+  dotfiles:*
+  dotsecrets:*
   config
   git_template
   irssi
-  weechat/*
+  weechat:*
   slate
   bundle
   dotpryrc
   gas
-  rbenv/plugins/*
-  rbenv/default-gems
+  plugins
   cheat
   vim
   oh-my-zsh
