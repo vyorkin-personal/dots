@@ -2,7 +2,7 @@ Plugin 'vim-scripts/paredit.vim'
 
 " Plugin 'majutsushi/tagbar'
 
-" Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-multiple-cursors'
 " Plugin 'jeetsukumaran/vim-buffergator'
 " Plugin 'sjbach/lusty'

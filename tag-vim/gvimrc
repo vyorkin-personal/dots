@@ -16,6 +16,7 @@ set guioptions-=T
 
 set showtabline=0
 set guicursor+=n-v-c:blinkon0
+set noballooneval             " dont show this crazy distracting thing
 
 if has("gui_gtk2")
   set guifont=Source\ Code\ Pro\ 10
