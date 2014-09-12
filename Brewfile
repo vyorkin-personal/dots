@@ -90,7 +90,7 @@ install svn
 install git
 install git-flow
 install hashpump
-install imagemagick --with-webp
+install imagemagick --with-webp --with-x11
 install lynx
 install nmap
 install node # This installs `npm` too using the recommended installation method

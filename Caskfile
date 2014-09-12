@@ -5,10 +5,10 @@ install caskroom/cask/brew-cask
 tap caskroom/versions
 cask update
 
+cask install xquartz
 cask install dropbox
 cask install caffeine
 cask install tiled
-cask install dash
 cask install google-chrome
 cask install google-chrome-canary
 cask install google-hangouts
@@ -93,6 +93,11 @@ cask install spotify
 cask install steam
 cask install tunnelbear
 cask install wineskin-winery
+
+# I should install your purchased Dash
+# from the AppStore
+#
+# cask install dash
 
 # i was unable to make this work
 # `cask alfred link`
