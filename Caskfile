@@ -93,6 +93,7 @@ cask install spotify
 cask install steam
 cask install tunnelbear
 cask install wineskin-winery
+cask install postgres
 
 # I should install your purchased Dash
 # from the AppStore
