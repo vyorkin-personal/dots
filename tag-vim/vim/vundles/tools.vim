@@ -1,6 +1,6 @@
 Plugin 'vim-scripts/paredit.vim'
 
-" Plugin 'majutsushi/tagbar'
+Plugin 'majutsushi/tagbar'
 
 Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-multiple-cursors'
@@ -13,5 +13,8 @@ Plugin 'SirVer/ultisnips'
 Plugin 'rking/ag.vim'
 Plugin 'mbbill/undotree'
 Plugin 'bling/vim-airline'
+
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
 
 " Plugin 'junegunn/goyo.vim'
