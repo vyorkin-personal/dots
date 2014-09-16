@@ -14,8 +14,9 @@ set guioptions-=l
 set guioptions-=L
 set guioptions-=T
 
-set showtabline=0
 set guicursor+=n-v-c:blinkon0
+
+set showtabline=0             " never show line with tab page labels
 set noballooneval             " dont show this crazy distracting thing
 
 if has("gui_gtk2")
