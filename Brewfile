@@ -89,6 +89,7 @@ install foremost
 install svn
 install git
 install git-flow
+install darcs
 install hashpump
 install imagemagick --with-webp --with-x11
 install lynx
