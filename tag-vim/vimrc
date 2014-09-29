@@ -123,9 +123,9 @@ set nowritebackup               " don't write backups
 colorscheme Tomorrow-Night-Bright
 
 " conceal settings
-set cole=1                      " enable conceal
 set conceallevel=2              " concealed text is completely hidden
-set concealcursor=nc            " don't reveal the conceals unless on insert or visual modes
+set concealcursor=c             " don't reveal the conceals unless on insert or visual modes
+                                " or concealed text is on the current line
 
 " hate holding <Shift> every type i need to enter a cmd
 nnoremap ; :
