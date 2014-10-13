@@ -12,6 +12,9 @@ alias arduino='cd ~/projects/play/arduino'
 alias gith='cd ~/projects/github'
 alias gh='cd ~/projects/github'
 
+alias gamedev='cd ~/gamedev'
+alias mycocos='cd ~/gamedev/my_cocos2dx'
+
 ## Undev
 alias rfpl='cd ~/projects/work/football-rfpl-cc'
 

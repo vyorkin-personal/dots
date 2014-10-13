@@ -85,3 +85,5 @@ export DOTFILES=$HOME/.dotfiles
 # load custom functions & aliases
 source $DOTFILES/index
 source $DOTFILES/functions
+
+source $HOME/.cocos2dx

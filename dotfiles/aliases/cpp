@@ -1,0 +1,1 @@
+alias g++11='gcc -std=c++11 -lstdc++'

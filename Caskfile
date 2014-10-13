@@ -69,8 +69,8 @@ cask install torbrowser
 cask install java
 cask install caskroom/versions/java7
 cask install intellij-idea-ce
-cask install eclipse-ide
-cask install android-studio
+# cask install eclipse-ide
+# cask install android-studio
 cask install aquamacs
 cask install arduino
 cask install boot2docker
