@@ -1,12 +1,12 @@
 Plugin 'vim-scripts/paredit.vim'
 
 Plugin 'majutsushi/tagbar'
-
+Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-multiple-cursors'
 " Plugin 'jeetsukumaran/vim-buffergator'
 " Plugin 'sjbach/lusty'
-" Plugin 'mhinz/vim-signify'
+Plugin 'mhinz/vim-signify'
 Plugin 'kien/ctrlp.vim'
 Plugin 'FelikZ/ctrlp-py-matcher'
 Plugin 'SirVer/ultisnips'

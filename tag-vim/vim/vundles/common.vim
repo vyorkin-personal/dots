@@ -10,3 +10,6 @@ Plugin 'tpope/vim-eunuch'
 Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-rsi'
 Plugin 'tpope/vim-sleuth'
+
+Plugin 'terryma/vim-expand-region'
+Plugin 'AndrewRadev/splitjoin.vim'
