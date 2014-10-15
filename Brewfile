@@ -43,6 +43,7 @@ install gitsh
 install liftoff
 
 install zsh
+install zsh-completions
 install weechat
 install irssi
 

@@ -26,3 +26,10 @@ elseif has("gui_macvim")
 elseif has("gui_win32")
   set guifont=Consolas:h11:cANSI
 endif
+
+" set transparency=20
+
+" start in fullscreen mode
+set fuopt+=maxhorz
+set fu
+

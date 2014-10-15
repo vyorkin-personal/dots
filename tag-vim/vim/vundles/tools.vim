@@ -1,5 +1,7 @@
 Plugin 'vim-scripts/paredit.vim'
 
+Plugin 'kikijump/tslime.vim'
+
 Plugin 'majutsushi/tagbar'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'scrooloose/syntastic'
@@ -17,4 +19,4 @@ Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 
-" Plugin 'junegunn/goyo.vim'
+Plugin 'junegunn/goyo.vim'

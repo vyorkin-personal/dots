@@ -6,8 +6,6 @@ function! GoyoBefore()
   if exists('$TMUX')
     silent !tmux set status off
   endif
-
-  silent! set nonumber
 endfunction
 
 function! GoyoAfter()
@@ -18,8 +16,6 @@ function! GoyoAfter()
   endif
 
   so ~/.vim/plugin/colors.vim
-
-  silent! set number
 endfunction
 
 let g:goyo_callbacks = [function('GoyoBefore'), function('GoyoAfter')]
