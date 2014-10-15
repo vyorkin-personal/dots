@@ -8,8 +8,10 @@ if [ -n "$DISPLAY" -a "$TERM" = "xterm" ]; then
   export TERM=xterm-256color
 fi
 
+export EDITOR=vim
+
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR=vim
+  # nothing to do here for now
 else
   export VISUAL=gvim
 fi
@@ -90,3 +92,10 @@ source $DOTFILES/index
 source $DOTFILES/functions
 
 source $HOME/.cocos2dx
+
+# powerline prompt
+# source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+
+# pure prompt
+autoload -U promptinit && promptinit
+prompt pure
