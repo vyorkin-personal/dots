@@ -44,7 +44,7 @@ install liftoff
 
 install zsh
 install zsh-completions
-install weechat
+install weechat --with-python --with-perl
 install irssi
 
 # Install RingoJS and Narwhal
