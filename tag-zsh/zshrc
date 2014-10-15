@@ -82,9 +82,6 @@ zle -N predict-off
 bindkey '^X1' predict-on
 bindkey '^X2' predict-off
 
-# setup rbenv
-eval "$(rbenv init - --no-rehash)"
-
 export DOTFILES=$HOME/.dotfiles
 
 # load custom functions & aliases
@@ -99,3 +96,7 @@ source $HOME/.cocos2dx
 # pure prompt
 autoload -U promptinit && promptinit
 prompt pure
+
+# setup rbenv
+eval "$(rbenv init - --no-rehash)"
+
