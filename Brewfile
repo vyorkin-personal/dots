@@ -47,6 +47,8 @@ install zsh-completions
 install weechat --with-python --with-perl
 install irssi
 
+install wireshark --with-qt
+
 # Install RingoJS and Narwhal
 # Note that the order in which these are installed is important; see http://git.io/brew-narwhal-ringo.
 install ringojs
