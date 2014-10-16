@@ -1,17 +1,20 @@
 " move up/down quickly by using M-j, M-k
 " which will move us around by functions
 "
-nn <silent> <M-j> }
-nn <silent> <M-k> {
+nn <silent> <C-j> }
+nn <silent> <C-k> {
 nn <silent> <D-j> }
 nn <silent> <D-k> {
 
-au FileType ruby map <buffer> <M-j> ]m
-au FileType ruby map <buffer> <M-k> [m
-au FileType rspec map <buffer> <M-j> }
-au FileType rspec map <buffer> <M-k> {
-au FileType javascript map <buffer> <M-j> }
-au FileType javascript map <buffer> <M-k> {
+au FileType cpp map <buffer> <C-j> }
+au FileType cpp map <buffer> <C-k> {
+
+au FileType ruby map <buffer> <C-j> ]m
+au FileType ruby map <buffer> <C-k> [m
+au FileType rspec map <buffer> <C-j> }
+au FileType rspec map <buffer> <C-k> {
+au FileType javascript map <buffer> <C-j> }
+au FileType javascript map <buffer> <C-k> {
 
 " use D-j, D-k on Mac
 au FileType ruby map <buffer> <D-j> ]m
