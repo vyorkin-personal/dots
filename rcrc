@@ -43,5 +43,6 @@ SYMLINK_DIRS="
   cheat
   vim
   oh-my-zsh
+  tmuxinator
   zsh-*
 "

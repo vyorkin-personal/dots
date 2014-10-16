@@ -1,0 +1,19 @@
+# ~/.tmuxinator/play_cocos.yml
+
+name: play_cocos
+root: ~/gamedev/my_cocos2dx/play
+socket_name: tmux_play_cocos
+
+windows:
+  - main:
+      layout: e220,193x53,0,0[194x38,0,0,0,194x14,0,39,2]
+      panes:
+        - editor: vim
+        - clear
+  - framework:
+      layout: e220,193x53,0,0[194x38,0,0,0,194x14,0,39,2]
+      panes:
+        - editor:
+          - cd ~/github/cocos2d-x && clear
+          - vim
+        - cd ~/github/cocos2d-x && clear
