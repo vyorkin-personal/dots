@@ -1,0 +1,12 @@
+# ~/.tmuxinator/play_cpp.yml
+
+name: play_cpp
+root: ~/projects/play/cpp
+socket_name: tmux_play_cpp
+
+windows:
+  - main:
+      layout: e220,193x53,0,0[194x38,0,0,0,194x14,0,39,2]
+      panes:
+        - editor: vim
+        - console: clear

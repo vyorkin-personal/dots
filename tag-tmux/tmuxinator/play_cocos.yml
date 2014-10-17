@@ -10,10 +10,21 @@ windows:
       panes:
         - editor: vim
         - clear
-  - framework:
-      layout: e220,193x53,0,0[194x38,0,0,0,194x14,0,39,2]
+  - examples:
+      layout: even-horizontal
       panes:
-        - editor:
+        - framework:
           - cd ~/github/cocos2d-x && clear
           - vim
-        - cd ~/github/cocos2d-x && clear
+        - examples:
+          - cd ~/gamedev/cocos2dx_examples && clear
+          - vim
+  - anax:
+    - cd ~/gamedev/cpp/anax
+    - vim
+  - entityx:
+    - cd ~/gamedev/cpp/entityx
+    - vim
+  - artemis:
+    - cd ~/gamedev/cpp/artemis
+    - vim
