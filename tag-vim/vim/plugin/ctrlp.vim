@@ -23,7 +23,6 @@ let g:ctrlp_clear_cache_on_exit = 1
 let g:ctrlp_match_window = 'top,order:btt,min:6,max:6,results:6'
 
 " some alternative ways to start CtrlP
-nn <Leader>o :CtrlP<CR>
 nn <silent> ,, :CtrlP<CR>
 
 " Additional mapping for buffer search
