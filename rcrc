@@ -9,6 +9,8 @@ EXCLUDES="
   README.md
   TODO.md
   LICENSE
+  powerline
+  utils
 "
 
 TAGS="
@@ -27,7 +29,6 @@ TAGS="
   utils
   vim
   zsh
-  powerline
 "
 
 SYMLINK_DIRS="
@@ -47,5 +48,4 @@ SYMLINK_DIRS="
   oh-my-zsh
   tmuxinator
   zsh-*
-  powerline:*
 "
