@@ -1,0 +1,37 @@
+{
+	"dividers": {
+		"left": {
+			"hard": " ",
+			"soft": "| "
+		},
+		"right": {
+			"hard": " ",
+			"soft": " |"
+		}
+	},
+	"segments": {
+		"right": [
+			{
+				"function": "powerline.segments.common.bat.battery",
+				"priority": 50
+			},
+			{
+				"function": "powerline.segments.common.sys.cpu_load_percent",
+				"priority": 50
+			},
+			{
+				"function": "powerline.segments.common.time.date"
+			},
+			{
+				"function": "powerline.segments.common.time.date",
+				"args": {
+					"format": "%H:%M",
+					"istime": true
+				}
+			},
+			{
+				"function": "powerline.segments.common.net.hostname"
+			}
+		]
+	}
+}
