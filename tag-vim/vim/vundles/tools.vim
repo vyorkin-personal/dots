@@ -20,3 +20,4 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 
 Plugin 'junegunn/goyo.vim'
+Plugin 'vitalk/vim-simple-todo'

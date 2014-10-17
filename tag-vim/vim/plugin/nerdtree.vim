@@ -9,6 +9,6 @@ let g:nerdtree_tabs_focus_on_files = 1
 " autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-nnoremap <leader>q :NERDTreeToggle<cr>
-nnoremap <leader>a :NERDTreeFocus<cr>
-nnoremap <leader>r :NERDTreeFind<cr>
+nn <Leader>q :NERDTreeToggle<cr>
+nn <Leader>a :NERDTreeFocus<cr>
+nn <Leader>r :NERDTreeFind<cr>

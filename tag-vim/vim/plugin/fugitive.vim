@@ -13,5 +13,5 @@ au User fugitive
 
 au BufReadPost fugitive://* set bufhidden=delete
 
-nnoremap <silent> ,dg :diffget<CR>
-nnoremap <silent> ,dp :diffput<CR>
+nn <silent> ,dg :diffget<CR>
+nn <silent> ,dp :diffput<CR>
