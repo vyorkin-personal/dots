@@ -49,3 +49,7 @@ SYMLINK_DIRS="
   tmuxinator
   zsh-*
 "
+
+COPY_ALWAYS="
+  tmux/plugins/*
+"

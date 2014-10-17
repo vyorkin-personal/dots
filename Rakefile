@@ -1,6 +1,8 @@
 require 'rake'
 require 'fileutils'
 
+POWERLINE_TMUX_PATH = '/usr/local/lib/python2.7/site-packages/powerline/bindings/tmux'
+
 namespace :install do
   desc 'install all'
   task :all do
@@ -15,7 +17,8 @@ namespace :install do
 
   desc 'link powerline configuration files'
   task :powerline_config do
-    `cp -R powerline/ ~/.config/powerline/`
+    `cp -R powerline/config/* ~/.config/powerline/`
+    `cp -R powerline/tmux/*.conf #{POWERLINE_TMUX_PATH}`
   end
 end
 
@@ -27,7 +30,7 @@ namespace :uninstall do
 
   desc 'uninstall powerline'
   task :powerline do
-    `pip uninstall powerline-status`
     `rm -rf ~/.config/powerline`
+    `pip uninstall powerline-status`
   end
 end
