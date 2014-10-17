@@ -7,6 +7,7 @@ EXCLUDES="
   Makefile
   Rakefile
   README.md
+  TODO.md
   LICENSE
 "
 
@@ -46,5 +47,5 @@ SYMLINK_DIRS="
   oh-my-zsh
   tmuxinator
   zsh-*
-  powerline
+  powerline:*
 "
