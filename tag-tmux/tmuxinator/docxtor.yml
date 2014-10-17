@@ -2,7 +2,6 @@
 
 name: docxtor
 root: ~/github/docxtor
-socket_name: tmux_docxtor
 
 windows:
   - main:

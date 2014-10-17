@@ -2,7 +2,6 @@
 
 name: synchronisable
 root: ~/github/synchronisable
-socket_name: tmux_synchronisable
 
 windows:
   - main:

@@ -2,7 +2,6 @@
 
 name: play_cocos
 root: ~/gamedev/my_cocos2dx/play
-socket_name: tmux_play_cocos
 
 windows:
   - main:

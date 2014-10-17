@@ -2,7 +2,6 @@
 
 name: play_cpp
 root: ~/projects/play/cpp
-socket_name: tmux_play_cpp
 
 windows:
   - main:
