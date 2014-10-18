@@ -1,4 +1,4 @@
-nn <Leader>f :Goyo<CR>
+nn <Leader><CR> :Goyo<CR>
 
 let g:goyo_width = 120
 
