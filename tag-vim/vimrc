@@ -129,8 +129,8 @@ set conceallevel=2              " concealed text is completely hidden
 set concealcursor=c             " don't reveal the conceals unless on insert or visual modes
 
 " hate holding <Shift> every type i need to enter a cmd
-nnoremap ; :
-nnoremap : ;
+nn ; :
+nn : ;
 
 " enable matchit.vim plugin
 runtime macros/matchit.vim
