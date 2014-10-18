@@ -22,6 +22,9 @@ endif
 filetype plugin on              " ft plugin files
 filetype indent on              " ft indent files
 
+set secure                      " don't allow autocmd, shell and write commands in .vimrc
+set exrc                        " search for .vimrc in the current dir
+
 set hidden                      " buffer can be put to the background without writing to disk
 set wildmenu                    " show completion options
 
