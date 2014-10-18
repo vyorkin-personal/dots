@@ -7,6 +7,12 @@ namespace :install do
   desc 'install all'
   task :all do
     run 'install:powerline'
+    run 'install:zsh_pure'
+  end
+
+  desc 'install pure zsh prompt'
+  task :zsh_pure do
+    `npm install --global pure-prompt`
   end
 
   desc 'install powerline'
@@ -26,6 +32,12 @@ namespace :uninstall do
   desc 'uninstall all'
   task :all do
     run 'uninstall:powerline'
+    run 'uninstall:zsh_pure'
+  end
+
+  desc 'uninstall pure zsh prompt'
+  task :zsh_pure do
+    `npm uninstall --global pure-prompt`
   end
 
   desc 'uninstall powerline'

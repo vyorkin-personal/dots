@@ -32,6 +32,7 @@ install bash-completion
 
 install reattach-to-user-namespace
 
+install ansifilter
 
 # Install wget with IRI support
 install wget --enable-iri

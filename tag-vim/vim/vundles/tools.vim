@@ -19,5 +19,7 @@ Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 
+Plugin 'wellle/tmux-complete.vim'
+
 Plugin 'junegunn/goyo.vim'
 Plugin 'vitalk/vim-simple-todo'

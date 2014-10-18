@@ -92,7 +92,7 @@ source $DOTFILES/functions
 
 source $HOME/.cocos2dx
 
-# powerline prompt
+# powerline prompt (slow)
 # source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # pure prompt
