@@ -89,7 +89,7 @@ cask install pg-commander
 cask install pgadmin3
 cask install rubymine
 cask install slate
-cask install spotify
+# cask install spotify
 cask install steam
 cask install tunnelbear
 cask install wineskin-winery
