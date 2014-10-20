@@ -14,8 +14,6 @@ function! GoyoAfter()
   elseif exists('$TMUX')
     silent !tmux set status on
   endif
-
-  so ~/.vim/plugin/colors.vim
 endfunction
 
 let g:goyo_callbacks = [function('GoyoBefore'), function('GoyoAfter')]
