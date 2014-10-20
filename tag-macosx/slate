@@ -27,7 +27,7 @@ config keyboardLayout qwerty
 
 # App aliases
 
-alias browser 'Google Chrome Canary'
+alias browser 'Safari'
 alias editor 'MacVim'
 alias terminal 'iTerm'
 alias mail 'Mail'
@@ -54,6 +54,8 @@ alias rightless     move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/4
 
 alias leftmost      move screenOriginX;screenOriginY screenSizeX/4;screenSizeY
 alias leftless      move screenOriginX+screenSizeX/4;screenOriginY screenSizeX/4;screenSizeY
+
+alias center        move screenOriginX+((screenSizeX-windowSizeX)/2);screenOriginY+((screenSizeY-windowSizeY)/2) windowSizeX;windowSizeY
 
 # Concrete positions
 
@@ -165,6 +167,8 @@ bind r:cmd;ctrl ${full}
 bind l:cmd;ctrl ${rightless}
 bind ;:cmd;ctrl ${rightmost}
 
+bind e:cmd;ctrl ${center}
+
 bind n:${hyper} throw next
 
 bind 2:${hyper} layout 2monitors
@@ -186,7 +190,7 @@ bind x:${hyper} focus 'Xcode'
 bind g:${hyper} focus 'GitHub'
 bind m:${hyper} focus ${mail}
 bind i:${hyper} focus ${terminal}
-bind o:${hyper} focus 'Path Finder'
+bind o:${hyper} focus 'Finder'
 bind s:${hyper} focus 'Skype'
 bind v:${hyper} focus 'nvALT'
 
