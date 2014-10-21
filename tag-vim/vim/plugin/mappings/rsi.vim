@@ -16,7 +16,4 @@ nn ,. '.
 nn ' `
 nn ` '
 
-nnoremap <CR> G
-nnoremap <BS> gg
-
 nn <silent> // :nohlsearch<CR>
