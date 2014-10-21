@@ -27,7 +27,7 @@ config keyboardLayout qwerty
 
 # App aliases
 
-alias browser 'Safari'
+alias browser 'Google Chrome'
 alias editor 'MacVim'
 alias terminal 'iTerm'
 alias mail 'Mail'
