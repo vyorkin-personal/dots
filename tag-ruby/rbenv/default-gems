@@ -17,6 +17,7 @@ pry-coolline
 pry-theme
 coderay
 pry-rescue
+pry-editline
 gist
 interactive_editor
 foreman
