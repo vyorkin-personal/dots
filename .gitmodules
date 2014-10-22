@@ -61,3 +61,6 @@
 [submodule "tag-tmux/tmux/plugins/tpm"]
 	path = tag-tmux/tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule "tag-ruby/rbenv/plugins/rbenv-readline"]
+	path = tag-ruby/rbenv/plugins/rbenv-readline
+	url = https://github.com/tpope/rbenv-readline.git
