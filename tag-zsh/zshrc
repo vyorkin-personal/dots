@@ -90,7 +90,7 @@ export DOTFILES=$HOME/.dotfiles
 source $DOTFILES/index
 source $DOTFILES/functions
 
-source $HOME/.cocos2dx
+source $HOME/.cocos2d
 
 # powerline prompt (slow)
 # source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
