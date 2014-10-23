@@ -1,0 +1,13 @@
+# ~/.tmuxinator/ecs.yml
+
+name: ecs
+root: ~/gamedev/ecs
+
+windows:
+  - main:
+      layout: even-horizontal
+      panes:
+        - project: vim
+        - example:
+          - cd ~/gamedev/cpp/artemisxx
+          - vim
