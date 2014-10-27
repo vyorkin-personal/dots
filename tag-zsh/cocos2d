@@ -1,12 +1,12 @@
-# Just uncomment what you need
+# Uncomment what you need
 
 # Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
-# export COCOS_CONSOLE_ROOT=/Users/vyorkin/github/cocos2d-x/tools/cocos2d-console/bin
-# export PATH=$COCOS_CONSOLE_ROOT:$PATH
-
-# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
-export COCOS_CONSOLE_ROOT=/Users/vyorkin/github/cocos2d-js/tools/cocos2d-console/bin
+export COCOS_CONSOLE_ROOT=/Users/vyorkin/github/cocos2d-x/tools/cocos2d-console/bin
 export PATH=$COCOS_CONSOLE_ROOT:$PATH
+
+# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
+# export COCOS_CONSOLE_ROOT=/Users/vyorkin/cocos2d-js-v3.1/tools/cocos2d-console/bin
+# export PATH=$COCOS_CONSOLE_ROOT:$PATH
 
 # Add environment variable NDK_ROOT for cocos2d-x
 export NDK_ROOT=/Users/vyorkin/android-ndk-r9d

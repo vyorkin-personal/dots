@@ -19,11 +19,11 @@ windows:
           - cd ~/gamedev/cocos2dx_examples && clear
           - vim
   - anax:
-    - cd ~/gamedev/cpp/anax
+    - cd ~/gamedev/ecs_examples/anax
     - vim
   - entityx:
-    - cd ~/gamedev/cpp/entityx
+    - cd ~/gamedev/ecs_examples/entityx
     - vim
   - artemis:
-    - cd ~/gamedev/cpp/artemis
+    - cd ~/gamedev/ecs_examples/artemis
     - vim

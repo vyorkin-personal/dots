@@ -9,5 +9,5 @@ windows:
       panes:
         - project: vim
         - example:
-          - cd ~/gamedev/cpp/artemisxx
+          - cd ~/gamedev/ecs_examples/artemisxx
           - vim
