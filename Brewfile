@@ -59,6 +59,8 @@ install ant
 install maven
 install rbenv
 
+install doxygen
+
 # Install more recent versions of some OS X tools
 install vim --override-system-vi --with-lua --with-perl --with-python3 --with-ruby
 install homebrew/dupes/grep
