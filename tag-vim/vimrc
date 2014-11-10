@@ -125,7 +125,7 @@ endif
 set noswapfile                  " don't use buffer swap files
 set nowritebackup               " don't write backups
 
-colorscheme solarized
+colorscheme hybrid
 
 " conceal settings
 set conceallevel=2              " concealed text is completely hidden
@@ -143,13 +143,11 @@ runtime macros/matchit.vim
 " save all changed buffers on focus lost
 au FocusLost * :wa              
 
-" save the default fold view before writing a buffer
-au BufWinLeave *.* mkview!      
-" load the default fold view after reading a buffer
-au BufWinEnter *.* silent loadview
-"
 " restore cursor position
 au BufReadPost *
   \ if line("'\"") > 1 && line("'\"") <= line("$") |
   \   exe "normal! g`\"" | 
   \ endif
+
+" filetype detection
+aut BufRead,BufNewFile *.tpp set filetype=cpp

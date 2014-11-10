@@ -2,6 +2,7 @@ Plugin 'vim-scripts/paredit.vim'
 
 Plugin 'kikijump/tslime.vim'
 
+Plugin 'vim-scripts/vim-auto-save'
 Plugin 'majutsushi/tagbar'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'scrooloose/syntastic'
@@ -24,4 +25,4 @@ Plugin 'wellle/tmux-complete.vim'
 Plugin 'junegunn/goyo.vim'
 Plugin 'vitalk/vim-simple-todo'
 
-Plugin 'porqz/KeyboardLayoutSwitcher'
+" Plugin 'porqz/KeyboardLayoutSwitcher'

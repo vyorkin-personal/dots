@@ -30,6 +30,6 @@ endif
 " set transparency=20
 
 " start in fullscreen mode
-set fuopt+=maxhorz
-set fu
+" set fuopt+=maxhorz
+" set fu
 
