@@ -76,6 +76,9 @@ set showmode                    " show current mode
 set omnifunc=syntaxcomplete#Complete
 set completeopt=menu,preview,longest
 
+" mkview saves all except local buffer/window options
+set viewoptions=cursor,folds,slash,unix
+
 " indentation:
 " keep tabstop on 8
 " use softtabstop set to 2
