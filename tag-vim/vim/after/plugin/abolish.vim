@@ -12,3 +12,5 @@ Abolish flaot float
 
 Abolish funciton function
 Abolish swithc switch
+
+Abolish enitty entity
