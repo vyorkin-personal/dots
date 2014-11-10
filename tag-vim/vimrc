@@ -148,3 +148,6 @@ au BufReadPost *
   \ if line("'\"") > 1 && line("'\"") <= line("$") |
   \   exe "normal! g`\"" | 
   \ endif
+
+" filetype detection
+au BufRead,BufNewFile *.tpp,*.inl,*.cxx,*.cc set filetype=cpp
