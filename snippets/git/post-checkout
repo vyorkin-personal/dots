@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# use `hookup` gem if it's installed
+if command -v hookup > /dev/null; then
+  hookup post-checkout "$@"
+else
+  # otherwise, do it yourself
+  [ -f Gemfile ] && bundle install > /dev/null &
+  [ -f db/schema.rb ] && bin/rake db:migrate > /dev/null &
+fi

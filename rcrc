@@ -11,6 +11,7 @@ EXCLUDES="
   LICENSE
   powerline
   utils
+  snippets
 "
 
 TAGS="
