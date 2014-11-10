@@ -56,6 +56,7 @@ alias leftmost      move screenOriginX;screenOriginY screenSizeX/4;screenSizeY
 alias leftless      move screenOriginX+screenSizeX/4;screenOriginY screenSizeX/4;screenSizeY
 
 alias center        move screenOriginX+((screenSizeX-windowSizeX)/2);screenOriginY+((screenSizeY-windowSizeY)/2) windowSizeX;windowSizeY
+alias zoom          move screenOriginX+80;screenOriginY+50 screenSizeX-160;screenSizeY-100
 
 # Concrete positions
 
@@ -168,6 +169,7 @@ bind l:cmd;ctrl ${rightless}
 bind ;:cmd;ctrl ${rightmost}
 
 bind e:cmd;ctrl ${center}
+bind t:cmd;ctrl ${zoom}
 
 bind n:${hyper} throw next
 
