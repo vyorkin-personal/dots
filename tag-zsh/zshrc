@@ -92,6 +92,10 @@ source $DOTFILES/functions
 
 source $HOME/.cocos2d
 
+export DOCKER_CERT_PATH=/Users/vyorkin/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+export DOCKER_HOST=tcp://192.168.59.103:2376
+
 # powerline prompt (slow)
 # source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 

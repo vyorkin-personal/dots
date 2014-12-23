@@ -30,6 +30,8 @@ install gnu-sed --default-names
 install bash
 install bash-completion
 
+install mongodb
+
 install reattach-to-user-namespace
 
 install ansifilter

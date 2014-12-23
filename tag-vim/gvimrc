@@ -22,7 +22,7 @@ set noballooneval             " dont show this crazy distracting thing
 if has("gui_gtk2")
   set guifont=Source\ Code\ Pro\ 10
 elseif has("gui_macvim")
-  set guifont=Menlo\ Regular:h11
+  set guifont=Menlo\ Regular:h13
 elseif has("gui_win32")
   set guifont=Consolas:h11:cANSI
 endif
