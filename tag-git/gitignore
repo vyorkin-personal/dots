@@ -11,3 +11,4 @@ tmp/**/*
 *buffergator-tabs*
 .artifacts/
 Session.vim
+.powder
