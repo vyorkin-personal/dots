@@ -1,5 +1,7 @@
 # Install command-line tools using Homebrew
 # Usage: `brew bundle Brewfile`
+#
+# LOT OF USEFULL SHIT!
 
 # Make sure we’re using the latest Homebrew
 update
