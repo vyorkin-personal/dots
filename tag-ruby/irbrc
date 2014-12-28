@@ -1,3 +1,9 @@
+
+require 'irb/completion'
+require 'irb/ext/save-history'
+
+# TODO: That's not the way how this shit works, fix it
+
 RUBY2ABI = {
   '1.9' => '1.9.1',
   '2.1' => '2.1.0'
