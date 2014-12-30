@@ -1,7 +1,6 @@
 # Install command-line tools using Homebrew
 # Usage: `brew bundle Brewfile`
 #
-# LOT OF USEFULL SHIT!
 
 # Make sure we’re using the latest Homebrew
 update
@@ -17,6 +16,10 @@ install eigen
 install opencv
 
 install veclibfort
+
+install mono
+tap aspnet/k
+install kvm
 
 # Install GNU core utilities (those that come with OS X are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
