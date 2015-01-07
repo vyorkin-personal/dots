@@ -47,9 +47,11 @@ install wget --enable-iri
 # dotfiles management
 tap thoughtbot/formulae
 install rcm
+
 install gitsh
 install liftoff
 
+install fish
 install zsh
 install zsh-completions
 install weechat --with-python --with-perl
