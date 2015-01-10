@@ -51,6 +51,8 @@ install rcm
 install gitsh
 install liftoff
 
+install spark
+
 install fish
 install zsh
 install zsh-completions
