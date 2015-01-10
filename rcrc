@@ -12,6 +12,7 @@ EXCLUDES="
   powerline
   utils
   snippets
+  misc
 "
 
 TAGS="

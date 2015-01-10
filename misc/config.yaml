@@ -1,0 +1,39 @@
+directory: /Volumes/Depot/beets
+library: /Volumes/Depot/data/musiclibrary.blb
+import:
+  move: yes
+
+plugins: fromfilename fetchart lastgenre lyrics smartplaylist mbsync web info ihate random duplicates play
+
+lastfm:
+  user: VYorkin
+
+ihate:
+  warn:
+      - artist:rnb
+      - genre:soul
+      - genre:rock album:tribute
+  skip:
+      - genre::russian\srock
+      - genre:polka
+      - artist:manowar
+      - album:christmas
+
+play:
+  command: /Applications/iTunes.app/Contents/MacOS/iTunes
+  use_folders: true
+
+smartplaylist:
+  playlist_dir: /Volumes/Depot/playlists
+  playlists:
+    - name: all.m3u
+      query: ''
+
+    - name: '%lower{$genre}.m3u'
+      query: ''
+
+    - name: 'released in $year.m3u'
+      query: 'year::(199[0-9]|200[0-9]|201[0-5])'
+
+    - name: 'played at least once.m3u'
+      query: 'play_count:1..'
