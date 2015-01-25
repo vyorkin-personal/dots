@@ -51,6 +51,9 @@ install rcm
 install gitsh
 install liftoff
 
+tap karan/karan
+install gitignore
+
 install spark
 
 install fish
