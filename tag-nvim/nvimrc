@@ -1,0 +1,142 @@
+call plug#begin('~/.nvim/plugged')
+
+" common
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-scriptease'
+Plug 'tpope/vim-vinegar'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-rsi'
+Plug 'tpope/vim-sleuth'
+Plug 'tpope/vim-obsession'
+Plug 'tpope/vim-capslock'
+
+" git
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-git'
+Plug 'tpope/git-bump'
+
+call plug#end()
+
+" use <Space> as leader key
+let mapleader="\<Space>"        
+
+if &t_Co > 1                    " if terminal supports colors
+  syntax on                     " turn on syntax highlighting
+  set hlsearch                  " highlight search matches
+endif
+
+" filetype detection
+filetype plugin on              " ft plugin files
+filetype indent on              " ft indent files
+
+set secure                      " don't allow autocmd, shell and write commands in .vimrc
+set exrc                        " search for .vimrc in the current dir
+
+set hidden                      " buffer can be put to the background without writing to disk
+set wildmenu                    " show completion options
+
+let g:netrw_liststyle=3         " wide listing (multiple files in columns)
+
+" numbers
+set numberwidth=3               " min num of cols to use for the line numbers
+set norelativenumber            " dont use relative numbers
+set nonumber                    " turn off line numbers
+
+" misc
+set mouse=a                     " enable mouse (in all modes)
+set backspace=indent,eol,start  " allow backspace in insert mode
+set history=100                 " how many commands & search patterns to keep in history
+set visualbell                  " no sounds
+set lazyredraw                  " don't redraw while in macros
+set ruler                       " always display the current cursor position (row, col)
+set ttyfast                     " use fast terminal connection
+set shortmess=atI               " use short messages, skip :intro, truncate file msg to fit on the cmd line
+
+" folding
+set foldnestmax=3               " deepest fold in 3 levels
+set foldcolumn=1                " column on the left that indicates open and closed folds
+
+set autoread                    " automatically read file when it has been changed outside of Vim
+set autowriteall                " always write modified files (don't need to set autowrite)
+
+set ttimeout                    " use key sequence timeouts
+set ttimeoutlen=30              " how long to wait for a key seq to complete
+
+" line wrapping & text formatting
+set nowrap                      " don't wrap long lines
+set linebreak                   " use 'breakat' to decide when to wrap long lines
+set whichwrap=b,s,<,>,[,]       " allow wrap while moving with space, backspace, arrows (in normal & insert modes)
+set textwidth=80                " maximum width of text (useful for formatting with gq)
+set formatoptions=qlcrnj1       " format options that doesn't suck
+
+" don't display hidden chars cuz its too distracting
+set nolist
+" strings to use in list mode (tabs, end of line, trailing spaces, etc)
+set listchars=tab:▸\ ,eol:¬,trail:·,extends:>,precedes:<
+
+" status line
+set laststatus=2                " always show status line (even on single window)
+set showcmd                     " display incomplete commands
+set showmode                    " show current mode
+
+" OmniCompletion settings
+set omnifunc=syntaxcomplete#Complete
+set completeopt=menu,preview,longest
+
+" mkview saves all except local buffer/window options
+set viewoptions=cursor,folds,slash,unix
+
+" indentation:
+" keep tabstop on 8
+" use softtabstop set to 2
+set autoindent                  " copy indent from current line when starting a new line
+set smartindent                 " enable smart indent
+set smarttab                    " use shiftwidth to insert blanks on <Tab> in front of a line, same for <BS>
+set shiftwidth=2                " number of spaces to use for each (auto)indent
+set softtabstop=2               " number of spaces that a <Tab> counts for edit operations (treat 2 spaces like a real <Tab>)
+set expandtab                   " always insert spaces instead of tabs
+set shiftround                  " round indent when shifting
+
+" search
+set ignorecase                  " ignore case when searching
+set smartcase                   " override ignorecase if the search pattern contains upper case letters
+set incsearch                   " display the match for a search pattern when halfway typing it
+
+" bracket matching
+set showmatch                   " briefly jump to the matching bracket
+set matchtime=1                 " how long to show matching paren
+
+" don't squeeze window too much
+set winwidth=50
+set winminwidth=30
+
+" window splitting
+set splitbelow                  " put a new window on the right side
+set splitright                  " put a new window below the current one (1/10 sec)
+
+" scrolling
+set scrolloff=12                " vertical offset
+set sidescrolloff=12            " horizontal offset
+set sidescroll=1                " minimal number of columns to scroll horizontally
+
+" turn off swap files & backups
+" cuz its really annoying
+set noswapfile                  " don't use buffer swap files
+set nowritebackup               " don't write backups
+
+colorscheme solarized
+
+" conceal settings
+set conceallevel=2              " concealed text is completely hidden
+set concealcursor=c             " don't reveal the conceals unless on insert or visual modes
+
+" hate holding <Shift> every type i need to enter a cmd
+nn ; :
+nn : ;
+
