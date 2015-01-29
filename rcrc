@@ -30,6 +30,7 @@ TAGS="
   tmux
   utils
   vim
+  nvim
   zsh
 "
 
@@ -47,6 +48,7 @@ SYMLINK_DIRS="
   plugins
   cheat
   vim
+  nvim
   oh-my-zsh
   tmuxinator
   zsh-*

@@ -7,6 +7,9 @@ tag-vim/vim/bundle
 tag-vim/vim/sessions
 tag-vim/vim/.netrwhist
 
+tag-nvim/nvim/plugged/
+tag-nvim/nvim/.netrwhist
+
 tag-irc/irssi/away.log
 
 tags
