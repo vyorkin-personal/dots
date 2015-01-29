@@ -21,6 +21,9 @@ install mono
 tap aspnet/k
 install kvm
 
+tap neovim/homebrew-neovim
+install --HEAD neovim
+
 # Install GNU core utilities (those that come with OS X are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 install coreutils
@@ -55,6 +58,8 @@ tap karan/karan
 install gitignore
 
 install spark
+
+install zmap
 
 install fish
 install zsh

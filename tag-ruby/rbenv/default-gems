@@ -26,6 +26,7 @@ interactive_editor
 foreman
 gas
 gas_stats
-pry-byebug -v 1.1.1
+pry-byebug
 minitest-byebug
 powder
+gem-shut-the-fuck-up
