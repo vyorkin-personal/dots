@@ -128,7 +128,7 @@ endif
 set noswapfile                  " don't use buffer swap files
 set nowritebackup               " don't write backups
 
-colorscheme solarized
+colorscheme fu
 
 " conceal settings
 set conceallevel=2              " concealed text is completely hidden
@@ -154,3 +154,4 @@ au BufReadPost *
 
 " filetype detection
 au BufRead,BufNewFile *.tpp,*.inl,*.cxx,*.cc set filetype=cpp
+au BufRead,BufNewFile *.es6 set filetype=javascript
