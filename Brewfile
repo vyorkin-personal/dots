@@ -108,6 +108,8 @@ install pow
 install ctags
 install llvm
 
+install gs
+
 # Install other useful binaries
 install autossh
 install graphviz

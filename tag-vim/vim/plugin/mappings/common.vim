@@ -1,3 +1,18 @@
+" hate holding <Shift> every type i need to enter a cmd
+nn ; :
+nn : ;
+
+" exit insert mode without using <Esc> + autosave current buffer
+ino jk <Esc>:w<cr>
+
+" start an external command with a single bang
+nn ! :!
+
+" make 0 go to the first character
+" rather than the beginning of the line
+nn 0 ^
+nn ^ 0
+
 " toggle paste mode
 set pastetoggle=<F11>
 
@@ -9,11 +24,6 @@ nmap <Leader><Leader> V     " enter visual model with <Leader><Leader>
 
 " bink K to grep word under cursor
 nn K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
-
-" make 0 go to the first character
-" rather than the beginning of the line
-nn 0 ^
-nn ^ 0
 
 " bind \ (backward slash) to grep shortcut
 com -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
