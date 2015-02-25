@@ -7,6 +7,8 @@ Abolish con{ati}{tia}ner container
 Abolish teh the
 Abolish i{cn}l{du}e include
 
+Abolish tran{sfro}{sofr}m transform
+
 Abolish yei{ld,dl} yield
 Abolish flaot float
 

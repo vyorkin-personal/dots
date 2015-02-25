@@ -1,6 +1,6 @@
 config defaultToCurrentScreen true
 
-config nudgePercentOf  screenSize
+config nudgePercentOf screenSize
 config resizePercentOf screenSize
 
 config secondsBetweenRepeat 0.1
@@ -19,7 +19,7 @@ config switchBackgroundColor 50;53;58;0.7
 config switchSelectedPadding 4
 config switchIconSize 96
 config switchShowTitles true
-config switchFontSize 11
+config switchFontSize 10
 config switchRoundedCornerSize 4
 config undoOps move,resize
 
@@ -27,7 +27,7 @@ config keyboardLayout qwerty
 
 # App aliases
 
-alias browser 'Google Chrome'
+alias browser 'Google Chrome Canary'
 alias editor 'MacVim'
 alias terminal 'iTerm'
 alias mail 'Mail'
