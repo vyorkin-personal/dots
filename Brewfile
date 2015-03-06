@@ -1,148 +1,219 @@
-# Install command-line tools using Homebrew
-# Usage: `brew bundle Brewfile`
-#
+tap 'caskroom/cask'
+tap 'caskroom/versions'
+tap 'caskroom/fonts'
+tap 'homebrew/science'
+tap 'neovim/homebrew-neovim'
+tap 'aspnet/k'
+tap 'thoughtbot/formulae'
+tap 'karan/karan'
+tap 'jlhonora/lsusb'
 
-# Make sure we’re using the latest Homebrew
-update
+brew 'eigen'
+brew 'opencv'
 
-# Upgrade any already-installed formulae
-upgrade
+brew 'veclibfort'
 
-install caskroom/cask/brew-cask
+brew 'mono'
+brew 'kvm'
 
-tap homebrew/science
+brew '--HEAD neovim'
 
-install eigen
-install opencv
+# install GNU core utilities (those that come with OS X are outdated)
+# don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
+brew 'coreutils'
+# install some other useful utilities like `sponge`
+brew 'moreutils'
+# install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed
+brew 'findutils'
+# install GNU `sed`, overwriting the built-in `sed`
+brew 'gnu-sed', args: ['default-names']
 
-install veclibfort
+# install Bash 4
+# note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before running `chsh`.
+brew 'bash'
+brew 'bash-completion'
 
-install mono
-tap aspnet/k
-install kvm
+brew 'mongodb'
+brew 'reattach-to-user-namespace'
+brew 'ansifilter'
+brew 'wget', args: ['enable-iri']
+brew 'rcm'
+brew 'gitsh'
+brew 'liftoff'
+brew 'gitignore'
+brew 'spark'
+brew 'zmap'
+brew 'fish'
+brew 'zsh'
+brew 'zsh-completions'
+brew 'weechat', args: ['with-python', 'with-perl']
+brew 'irssi'
+brew 'wireshark', args: ['with-qt']
+brew 'lsusb'
 
-tap neovim/homebrew-neovim
-install --HEAD neovim
+# install RingoJS and Narwhal
+# note that the order in which these are installed is important
+# see http://git.io/brew-narwhal-ringo.
+brew 'ringojs'
+brew 'narwhal'
 
-# Install GNU core utilities (those that come with OS X are outdated)
-# Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
-install coreutils
-# Install some other useful utilities like `sponge`
-install moreutils
-# Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed
-install findutils
-# Install GNU `sed`, overwriting the built-in `sed`
-install gnu-sed --default-names
-# Install Bash 4
-# Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before running `chsh`.
-install bash
-install bash-completion
+brew 'ant'
+brew 'maven'
+brew 'rbenv'
 
-install mongodb
+brew 'doxygen'
 
-install reattach-to-user-namespace
+# install more recent versions of some OS X tools
+brew 'vim', args: ['override-system-vi', 'with-lua', 'with-perl', 'with-python3', 'with-ruby']
+brew 'homebrew/dupes/grep'
+brew 'homebrew/dupes/screen'
 
-install ansifilter
+brew 'python'
+brew 'python3'
+brew 'ghc'
+brew 'cabal-install'
 
-# Install wget with IRI support
-install wget --enable-iri
+brew 'mysql'
+brew 'redis'
+brew 'boot2docker'
 
-# dotfiles management
-tap thoughtbot/formulae
-install rcm
+# install XML libs
+brew 'libxml2'
+brew 'libxslt'
 
-install gitsh
-install liftoff
+brew 'tmux'
+brew 'nginx'
+brew 'pow'
+brew 'ctags'
+brew 'llvm'
+brew 'gs'
+brew 'autossh'
+brew 'graphviz'
+brew 'the_silver_searcher'
+brew 'ack'
+brew 'bfg'
+brew 'foremost'
+brew 'svn'
+brew 'git'
+brew 'git-flow'
+brew 'darcs'
+brew 'hashpump'
+brew 'imagemagick', args: ['with-webp', 'with-x11']
+brew 'lynx'
+brew 'nmap'
+brew 'node'
+brew 'p7zip'
+brew 'pv'
+brew 'rename'
+brew 'rhino'
+brew 'sqlite'
+brew 'sqlmap'
+brew 'tree'
+brew 'ucspi-tcp'
+brew 'webkit2png'
+brew 'xpdf'
+brew 'zopfli'
+brew 'ffmpeg'
+brew 'mplayer'
+brew 'mplayershell'
+brew 'youtube-dl'
+brew 'homebrew/versions/lua52'
 
-tap karan/karan
-install gitignore
+cask 'xquartz'
+cask 'dropbox'
+cask 'caffeine'
+cask 'tiled'
+cask 'google-chrome'
+cask 'google-chrome-canary'
+cask 'google-hangouts'
+cask 'skype'
+cask 'send-to-kindle'
+cask 'imagealpha'
+cask 'imageoptim'
+cask 'iterm2'
+cask 'totalterminal'
+cask 'macvim'
+cask 'flux'
+cask 'miro-video-converter'
+cask 'opera'
+cask 'opera-developer'
+cask 'opera-next'
+cask 'sublime-text'
+cask 'sublime-text3'
+cask 'heroku-toolbelt'
+cask 'the-unarchiver'
+cask 'torbrowser'
+cask 'transmission'
+cask 'transmit'
+cask 'virtualbox'
+cask 'vlc'
+cask 'audacity'
+cask 'handbrake'
+cask 'github'
+cask 'sourcetree'
+cask 'lighttable'
+cask 'vagrant'
+cask 'atom'
+cask 'alfred'
+cask 'evernote'
+cask 'poedit'
+cask 'sequel-pro'
+cask 'teamviewer'
+cask 'clock'
+cask 'toggldesktop'
+cask 'totalspaces'
+cask 'istat-menus'
+cask 'nvalt'
+cask 'skitch'
+cask 'bittorrent-sync'
+cask 'textmate'
+cask 'anvil'
+cask 'commandq'
+cask 'mplayerx'
+cask 'onepassword'
+cask 'adium'
+cask 'superduper'
+cask 'karabiner'
+cask 'seil'
+cask 'slack'
+cask 'screenhero'
+cask 'mou'
+cask 'torbrowser'
+cask 'java'
+cask 'caskroom/versions/java7'
+cask 'intellij-idea-ce'
+cask 'aquamacs'
+cask 'arduino'
+cask 'boot2docker'
+cask 'brackets'
+cask 'breach'
+cask 'calibre'
+cask 'daisydisk'
+cask 'forklift'
+cask 'genymotion'
+cask 'graphviz'
+cask 'kindle'
+cask 'kitematic'
+cask 'komanda'
+cask 'macdown'
+cask 'pg-commander'
+cask 'pgadmin3'
+cask 'rubymine'
+cask 'slate'
+cask 'steam'
+cask 'tunnelbear'
+cask 'wineskin-winery'
+cask 'postgres'
+# cask 'spotify'
+# cask 'eclipse-ide'
+# cask 'android-studio'
 
-install spark
+# add /opt/homebrew-cask/Caskroom
+# to aflred Search Scopes manually
 
-install zmap
-
-install fish
-install zsh
-install zsh-completions
-install weechat --with-python --with-perl
-install irssi
-
-install wireshark --with-qt
-
-
-tap jlhonora/lsusb
-install lsusb
-
-# Install RingoJS and Narwhal
-# Note that the order in which these are installed is important; see http://git.io/brew-narwhal-ringo.
-install ringojs
-install narwhal
-
-install ant
-install maven
-install rbenv
-
-install doxygen
-
-# Install more recent versions of some OS X tools
-install vim --override-system-vi --with-lua --with-perl --with-python3 --with-ruby
-install homebrew/dupes/grep
-install homebrew/dupes/screen
-
-install python
-install python3
-install ghc
-install cabal-install
-
-install mysql
-install redis
-install boot2docker
-
-# Install XML libs
-install libxml2
-install libxslt
-
-install tmux
-install nginx
-install pow
-install ctags
-install llvm
-
-install gs
-
-# Install other useful binaries
-install autossh
-install graphviz
-install the_silver_searcher
-install ack
-install bfg
-install foremost
-install svn
-install git
-install git-flow
-install darcs
-install hashpump
-install imagemagick --with-webp --with-x11
-install lynx
-install nmap
-install node # This installs `npm` too using the recommended installation method
-install p7zip
-install pv
-install rename
-install rhino
-install sqlite
-install sqlmap
-install tree
-install ucspi-tcp # `tcpserver` et al.
-install webkit2png
-install xpdf
-install zopfli
-install ffmpeg
-install mplayer
-install mplayershell
-install youtube-dl
-
-install homebrew/versions/lua52
-
-# Remove outdated versions from the cellar
-cleanup
+cask 'font-vollkorn'
+cask 'font-source-code-pro'
+cask 'font-source-sans-pro'
+cask 'font-comic-neue'
+cask 'font-courier-prime'
+cask 'font-source-serif-pro'
