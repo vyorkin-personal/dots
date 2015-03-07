@@ -8,13 +8,12 @@ tap 'jlhonora/lsusb'
 
 brew 'caskroom/cask/brew-cask'
 
-brew 'eigen'
-brew 'opencv'
+brew 'eigen'      # c++ template library for linear algebra: matrices, vectors, numerical solvers, and related algorithms
+brew 'opencv'     # computer vision and machine learning software library
+brew 'veclibfort' # full GNU Fortran compatibility for Apple's vecLib BLAS/LAPACK
 
-brew 'veclibfort'
-
-brew 'mono'
-brew 'kvm'
+brew 'mono'       # cross platform, open source .NET framework
+brew 'kvm'        # K version manager, see https://github.com/aspnet/Home/wiki/version-manager
 
 brew '--HEAD neovim'
 
@@ -33,23 +32,25 @@ brew 'gnu-sed', args: ['default-names']
 brew 'bash'
 brew 'bash-completion'
 
-brew 'mongodb'
-brew 'reattach-to-user-namespace'
-brew 'ansifilter'
 brew 'wget', args: ['enable-iri']
-brew 'rcm'
-brew 'gitsh'
-brew 'liftoff'
-brew 'gitignore'
-brew 'spark'
-brew 'zmap'
+brew 'reattach-to-user-namespace'
+brew 'mongodb'
+brew 'ansifilter'   # strips ANSI codes or converts them to HTML, TeX, LaTeX, RTF or BBCode
+brew 'rcm'          # rc file (dotfile) management
+brew 'gitsh'        # an interactive shell for git
+brew 'liftoff'      # CLI for creating and configuring new Xcode projects
+brew 'gitignore'    # "joe", a tool that generates .gitignore files from the command line
+brew 'spark'        # ▁▂▃▅▂▇
+brew 'zmap'         # cool network scanner
+brew 'nmap'
+brew 'lsusb'
 brew 'fish'
 brew 'zsh'
 brew 'zsh-completions'
+
+brew 'wireshark', args: ['with-qt']
 brew 'weechat', args: ['with-python', 'with-perl']
 brew 'irssi'
-brew 'wireshark', args: ['with-qt']
-brew 'lsusb'
 
 # install RingoJS and Narwhal
 # note that the order in which these are installed is important
@@ -70,6 +71,7 @@ brew 'homebrew/dupes/screen'
 
 brew 'python'
 brew 'python3'
+
 brew 'ghc'
 brew 'cabal-install'
 
@@ -103,7 +105,6 @@ cask 'xquartz'
 brew 'imagemagick', args: ['with-webp', 'with-x11']
 
 brew 'lynx'
-brew 'nmap'
 brew 'node'
 brew 'p7zip'
 brew 'pv'
@@ -132,7 +133,6 @@ cask 'send-to-kindle'
 cask 'imagealpha'
 cask 'imageoptim'
 cask 'iterm2'
-cask 'totalterminal'
 cask 'macvim'
 cask 'flux'
 cask 'miro-video-converter'
@@ -209,9 +209,7 @@ cask 'postgres'
 # cask 'eclipse-ide'
 # cask 'android-studio'
 
-# add /opt/homebrew-cask/Caskroom
-# to aflred Search Scopes manually
-
+cask 'font-inconsolata'
 cask 'font-vollkorn'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
