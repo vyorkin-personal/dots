@@ -6,8 +6,8 @@ POWERLINE_TMUX_PATH = '/usr/local/lib/python2.7/site-packages/powerline/bindings
 namespace :install do
   desc 'install all'
   task :all do
-    run 'install:powerline'
-    run 'install:zsh_pure'
+    Rake::Task['install:powerline']
+    Rake::Task['install:zsh_pure']
   end
 
   desc 'install pure zsh prompt'
@@ -18,7 +18,7 @@ namespace :install do
   desc 'install powerline'
   task :powerline do
     `pip install --user git+git://github.com/Lokaltog/powerline`
-    run 'install:powerline_config'
+    Rake::Task['install:powerline_config']
   end
 
   desc 'link powerline configuration files'
@@ -31,8 +31,8 @@ end
 namespace :uninstall do
   desc 'uninstall all'
   task :all do
-    run 'uninstall:powerline'
-    run 'uninstall:zsh_pure'
+    Rake::Task['uninstall:powerline']
+    Rake::Task['uninstall:zsh_pure']
   end
 
   desc 'uninstall pure zsh prompt'
