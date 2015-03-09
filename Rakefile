@@ -6,33 +6,39 @@ POWERLINE_TMUX_PATH = '/usr/local/lib/python2.7/site-packages/powerline/bindings
 namespace :install do
   desc 'install all'
   task :all do
-    Rake::Task['install:powerline']
-    Rake::Task['install:zsh_pure']
+    Rake::Task['install:powerline'].invoke
+    Rake::Task['install:zsh_pure'].invoke
   end
 
   desc 'install pure zsh prompt'
   task :zsh_pure do
+    puts 'installing pure-prompt...'
     `npm install --global pure-prompt`
+    puts 'done'
   end
 
   desc 'install powerline'
   task :powerline do
+    puts 'installing powerline...'
     `pip install --user git+git://github.com/Lokaltog/powerline`
-    Rake::Task['install:powerline_config']
+    puts 'done'
+    Rake::Task['install:powerline_config'].invoke
   end
 
   desc 'link powerline configuration files'
   task :powerline_config do
+    puts 'copying powerline config files...'
     `cp -R powerline/config/* ~/.config/powerline/`
     `cp -R powerline/tmux/*.conf #{POWERLINE_TMUX_PATH}`
+    puts 'done'
   end
 end
 
 namespace :uninstall do
   desc 'uninstall all'
   task :all do
-    Rake::Task['uninstall:powerline']
-    Rake::Task['uninstall:zsh_pure']
+    Rake::Task['uninstall:powerline'].invoke
+    Rake::Task['uninstall:zsh_pure'].invoke
   end
 
   desc 'uninstall pure zsh prompt'

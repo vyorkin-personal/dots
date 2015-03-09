@@ -3,7 +3,6 @@
 install:
 	rcup -v -d ~/.dots
 	brew bundle Brewfile
-	brew bundle Caskfile
 	rake install:all
 
 uninstall:
