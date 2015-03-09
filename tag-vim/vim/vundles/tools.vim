@@ -24,5 +24,6 @@ Plugin 'wellle/tmux-complete.vim'
 
 Plugin 'junegunn/goyo.vim'
 Plugin 'vitalk/vim-simple-todo'
+Plugin 'blueyed/vim-diminactive'
 
 " Plugin 'porqz/KeyboardLayoutSwitcher'
