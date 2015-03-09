@@ -1,7 +1,7 @@
 .PHONY: install, uninstall
 
 install:
-	rcup -v
+	rcup -v -d ~/.dots
 	brew bundle Brewfile
 	brew bundle Caskfile
 	rake install:all
