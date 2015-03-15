@@ -4,7 +4,8 @@ install:
 	brew tap thoughtbot/formulae
 	brew install rcm
 	rcup -v -d ~/.dots
-	brew bundle Brewfile
+	brew tap Homebrew/brewdler
+	brew brewdle
 	rake install:all
 
 uninstall:
