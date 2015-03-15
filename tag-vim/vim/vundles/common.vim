@@ -14,5 +14,6 @@ Plugin 'tpope/vim-obsession'
 Plugin 'tpope/vim-capslock'
 
 Plugin 'terryma/vim-expand-region'
-Plugin 'AndrewRadev/splitjoin.vim'
-Plugin 'vim-scripts/restore_view.vim'
+
+" Plugin 'AndrewRadev/splitjoin.vim'
+" Plugin 'vim-scripts/restore_view.vim'
