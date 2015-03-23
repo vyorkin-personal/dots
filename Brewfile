@@ -36,6 +36,8 @@ brew 'bash-completion'
 
 brew 'wget', args: ['enable-iri']
 brew 'reattach-to-user-namespace'
+brew 'clipper'
+brew 'selecta'
 brew 'mongodb'
 brew 'ansifilter'   # strips ANSI codes or converts them to HTML, TeX, LaTeX, RTF or BBCode
 brew 'rcm'          # rc file (dotfile) management

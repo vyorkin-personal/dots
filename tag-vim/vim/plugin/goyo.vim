@@ -1,6 +1,6 @@
 nn <Leader><CR> :Goyo<CR>
 
-let g:goyo_width = 120
+let g:goyo_width = 140
 
 function! GoyoBefore()
   if exists('$TMUX')

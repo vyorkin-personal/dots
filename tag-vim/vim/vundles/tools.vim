@@ -23,3 +23,4 @@ Plugin 'vitalk/vim-simple-todo'
 Plugin 'wellle/tmux-complete.vim'
 
 Plugin 'jez/vim-superman'
+
