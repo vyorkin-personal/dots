@@ -111,10 +111,6 @@ layout 1monitor 'Messages':REPEAT             ${1-left}
 default 2monitors resolutions:${mon-laptop};${mon-dell}
 default 1monitor  resolutions:${mon-laptop}
 
-# Grid
-
-bind g:cmd grid padding:5 0:8,3 1:6,2
-
 # Numpad location bindings
 
 bind pad0 ${showHintsLeftHand}
@@ -128,8 +124,6 @@ bind pad6 ${righthalf}
 bind pad7 ${leftmost}
 bind pad8 push top bar-resize:screenSizeY/2
 bind pad9 ${rightmost}
-
-bind padEnter grid padding:5 ${mon-laptop}:6,2 ${mon-dell}:8,3
 
 bind pad+ throw next
 bind pad. focus behind
@@ -156,6 +150,10 @@ bind e:cmd ${showNormalHint}
 alias hyper ctrl;shift;alt;cmd
 
 bind z:${hyper} undo
+
+# Grid
+
+bind g:cmd grid padding:5 0:8,3 1:6,2
 
 # Location bindings
 bind u:cmd;ctrl ${lefthalf}
