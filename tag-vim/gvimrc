@@ -2,7 +2,7 @@ set visualbell                " no sounds
 
 " window size
 set lines=42
-set columns=100
+set columns=170
 
 set guioptions+=e
 set guioptions+=c             " use console dialogs instead of gui popups
@@ -22,7 +22,7 @@ set noballooneval             " dont show this crazy distracting thing
 if has("gui_gtk2")
   set guifont=Source\ Code\ Pro\ 10
 elseif has("gui_macvim")
-  set guifont=Menlo\ Regular:h13
+  set guifont=Source\ Code\ Pro\ 10
 elseif has("gui_win32")
   set guifont=Consolas:h11:cANSI
 endif
@@ -30,6 +30,6 @@ endif
 " set transparency=20
 
 " start in fullscreen mode
-" set fuopt+=maxhorz
+" set fuopt=maxhorz,maxvert,background:Normal
 " set fu
 

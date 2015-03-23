@@ -25,6 +25,7 @@ alias screen='TERM=screen screen'
 alias cl='clear'
 
 alias tfdl='tail -f log/development.log'
+alias tfpl='tail -f log/production.log'
 alias tftl='tail -f log/test.log'
 
 alias sgi='sudo gem install --no-ri --no-rdoc'

@@ -6,7 +6,7 @@
 [github]
   user = vyorkin
 [alias]
-  count   = !git shortlog -sn
+  count = !git shortlog -sn
 
   a = add                           # add
   aa = add -A

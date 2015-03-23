@@ -12,8 +12,8 @@ Plugin 'tpope/vim-rsi'
 Plugin 'tpope/vim-sleuth'
 Plugin 'tpope/vim-obsession'
 Plugin 'tpope/vim-capslock'
-
+Plugin 'chrisbra/vim-diff-enhanced'
 Plugin 'terryma/vim-expand-region'
-
-" Plugin 'AndrewRadev/splitjoin.vim'
-" Plugin 'vim-scripts/restore_view.vim'
+Plugin 'Wolfy87/vim-expand'
+Plugin 'AndrewRadev/splitjoin.vim'
+Plugin 'vim-scripts/restore_view.vim'

@@ -67,7 +67,6 @@ nn ,jen :CtrlP config/environments<CR>
 " nn ,jven :CtrlP vendor<CR>
 
 " app/gem specific jumps
-" nn ,jsin :CtrlP app/synchronisers<CR>
 nn ,jup :CtrlP app/uploaders<CR>
 
 nn ,jra :CtrlP config/rails_admin<CR>

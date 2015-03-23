@@ -74,6 +74,8 @@ brew 'homebrew/dupes/screen'
 brew 'python'
 brew 'python3'
 
+brew 'pyqt5'
+
 brew 'ghc'
 brew 'cabal-install'
 
@@ -203,6 +205,7 @@ cask 'pg-commander'
 cask 'pgadmin3'
 cask 'rubymine'
 cask 'slate'
+cask 'amethyst'
 cask 'steam'
 cask 'tunnelbear'
 cask 'wineskin-winery'

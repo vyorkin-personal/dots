@@ -144,14 +144,15 @@ runtime macros/matchit.vim
 " autocommands
 
 " save all changed buffers on focus lost
-" au FocusLost * :wa              
-
-" restore cursor position
-au BufReadPost *
-  \ if line("'\"") > 1 && line("'\"") <= line("$") |
-  \   exe "normal! g`\"" | 
-  \ endif
+augroup autosave
+  autocmd!
+  au FocusLost * :wa
+augroup END
 
 " filetype detection
-au BufRead,BufNewFile *.tpp,*.inl,*.cxx,*.cc set filetype=cpp
-au BufRead,BufNewFile *.es6 set filetype=javascript
+augroup ftdetection
+  autocmd!
+  au BufRead,BufNewFile *.tpp,*.inl,*.cxx,*.cc set filetype=cpp
+  au BufRead,BufNewFile *.es6 set filetype=javascript
+  au BufRead,BufNewFile *.nvim set filetype=vim
+augroup END
