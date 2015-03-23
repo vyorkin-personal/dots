@@ -17,7 +17,6 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'EinfachToll/DidYouMean'
 Plugin 'dietsche/vim-lastplace'
 Plugin 'junegunn/goyo.vim'
-Plugin 'blueyed/vim-diminactive'
 
 Plugin 'mhinz/vim-signify'
 Plugin 'vitalk/vim-simple-todo'

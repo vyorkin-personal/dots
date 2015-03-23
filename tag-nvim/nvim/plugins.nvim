@@ -147,7 +147,6 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'EinfachToll/DidYouMean'
 Plug 'dietsche/vim-lastplace'
 Plug 'junegunn/goyo.vim'
-Plug 'blueyed/vim-diminactive'
 
 Plug 'mhinz/vim-signify'
 Plug 'vitalk/vim-simple-todo'
