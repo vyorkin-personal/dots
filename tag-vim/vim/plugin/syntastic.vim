@@ -7,7 +7,7 @@ let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 " angularjs specific ignores
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-", "lacks \"src", "trimming empty"]
 
-let g:syntastic_check_on_open=1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
 let g:syntastic_error_symbol = '>'

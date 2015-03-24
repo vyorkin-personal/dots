@@ -1,11 +1,13 @@
 " use <Space> as leader key
-let mapleader="\<Space>"        
+let mapleader="\<Space>"
 
-call plug#begin('~/.nvim/plugged')
+let $SKIP_HOOKUP = 1
+
+call plug#begin('~/.vim/plugged')
 
 " load plugins if any
-if filereadable(expand("~/.nvim/plugins.nvim"))
-  source ~/.nvim/plugins.nvim
+if filereadable(expand("~/.vim/plugins.vim"))
+  source ~/.vim/plugins.vim
 endif
 
 call plug#end()

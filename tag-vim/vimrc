@@ -2,16 +2,24 @@
 " must come first cuz it changes other options as a side effect
 set nocompatible
 
-" leader key should be set
-" before loading plugins
-let mapleader="\<Space>"        " use <Space> as leader key
+" use <Space> as leader key
+let mapleader="\<Space>"        
 
-filetype off                    " vundle requires filetype to be off initially
+let $SKIP_HOOKUP = 1
+
+call plug#begin('~/.vim/plugged')
 
 " load plugins if any
-if filereadable(expand("~/.vim/vundle.vim"))
-  source ~/.vim/vundle.vim
+if filereadable(expand("~/.vim/plugins.vim"))
+  source ~/.vim/plugins.vim
 endif
+
+call plug#end()
+
+" use plugin settings from ~/.vim for now
+for f in split(glob('~/.vim/plugin/**/*.vim'), '\n')
+  exe 'source' f
+endfor
 
 if &t_Co > 1                    " if terminal supports colors
   syntax on                     " turn on syntax highlighting

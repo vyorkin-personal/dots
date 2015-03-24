@@ -25,9 +25,6 @@ nmap <Leader><Leader> V     " enter visual model with <Leader><Leader>
 " bink K to grep word under cursor
 nn K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
-" bind \ (backward slash) to grep shortcut
-com -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
-
 " format the entire file
 nn <Leader>fef :normal! gg=G``<CR>
 
