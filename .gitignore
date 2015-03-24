@@ -3,11 +3,10 @@ tag-vim/vim/undo/*
 tag-vim/vim/view/*
 tag-vim/vim/tmp
 tag-vim/vim/spell
-tag-vim/vim/bundle
+tag-vim/vim/plugged/
 tag-vim/vim/sessions
 tag-vim/vim/.netrwhist
 
-tag-nvim/nvim/plugged/
 tag-nvim/nvim/.netrwhist
 tag-nvim/nvim/view/*
 
