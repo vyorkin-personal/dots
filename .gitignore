@@ -12,7 +12,9 @@ tag-nvim/nvim/view/*
 
 tag-irc/irssi/away.log
 
-tags
-.ruby-version
+tag-javascript/npm-debug.log
 
+tags
+npm-debug.log
+.ruby-version
 .DS_Store

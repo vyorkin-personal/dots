@@ -1,18 +1,10 @@
 #!/bin/sh
 
-# clone Vundle.vim if its not there already
-if [ ! -e $HOME/.vim/bundle/vundle ]; then
-  git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/vundle
-fi
-
 # make dirs for storing vim temp files
 mkdir -p ~/.vim-tmp
 mkdir -p ~/.tmp
 
-# install vim plugins
-# vim -u $HOME/.vim/vundle.vim +PluginInstall +qa
-
-cd $HOME/.vim/bundle/tern_for_vim
+cd $HOME/.vim/plugged/tern_for_vim
 npm install
 cd -
 

@@ -106,3 +106,5 @@ prompt pure
 # setup rbenv
 eval "$(rbenv init - --no-rehash)"
 
+export NVM_DIR=~/.nvm
+source ~/.nvm/nvm.sh

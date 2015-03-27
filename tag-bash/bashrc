@@ -35,3 +35,6 @@ export HISTIGNORE="%*"
 if [ -f '/usr/local/etc/bash_completion.d/git-completion.bash' ]; then
   source '/usr/local/etc/bash_completion.d/git-completion.bash'
 fi
+
+export NVM_DIR="/Users/vyorkin/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

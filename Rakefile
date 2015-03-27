@@ -8,6 +8,25 @@ namespace :install do
   task :all do
     Rake::Task['install:powerline'].invoke
     Rake::Task['install:zsh_pure'].invoke
+    Rake::Task['install:nvm'].invoke
+    Rake::Task['install:prerequisites'].invoke
+    Rake::Task['install:devtools_terminal'].invoke
+  end
+
+  desc 'setup prerequisites'
+  task :prerequisites do
+    puts 'setting up prerequisites...'
+    `stty sane`
+    puts 'done'
+  end
+
+  desc 'install devtools terminal'
+  task :devtools_terminal do
+    puts 'installing devtools terminal nodejs proxy...'
+    puts 'for more info see: https://chrome.google.com/webstore/detail/devtools-terminal/leakmhneaibbdapdoienlkifomjceknl/'
+    `npm install -g devtools-terminal`
+    `sudo devtools-terminal --install --id=leakmhneaibbdapdoienlkifomjceknl`
+    puts 'done'
   end
 
   desc 'install pure zsh prompt'
@@ -30,6 +49,13 @@ namespace :install do
     puts 'copying powerline config files...'
     `cp -R powerline/config/* ~/.config/powerline/`
     `cp -R powerline/tmux/*.conf #{POWERLINE_TMUX_PATH}`
+    puts 'done'
+  end
+
+  desc 'install node version manager'
+  task :nvm do
+    puts 'installing nvm...'
+    `curl https://raw.githubusercontent.com/creationix/nvm/v0.24.0/install.sh | bash`
     puts 'done'
   end
 end
