@@ -108,3 +108,4 @@ eval "$(rbenv init - --no-rehash)"
 
 export NVM_DIR=~/.nvm
 source ~/.nvm/nvm.sh
+[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn

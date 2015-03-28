@@ -10,17 +10,17 @@ config focusCheckWidthMax 3000
 config windowHintsShowIcons true
 config windowHintsIgnoreHiddenWindows false
 config windowHintsSpread true
-config windowHintsSpreadPadding 40
-config windowHintsSpreadSearchWidth 80
-config windowHintsSpreadSearchHeight 80
+config windowHintsSpreadPadding 12
+config windowHintsSpreadSearchWidth 40
+config windowHintsSpreadSearchHeight 40
 
 config switchIconPadding 2
-config switchBackgroundColor 50;53;58;0.7
-config switchSelectedPadding 4
-config switchIconSize 96
+config switchBackgroundColor 0;0;0;0.7
+config switchSelectedPadding 2
+config switchIconSize 4
 config switchShowTitles true
-config switchFontSize 10
-config switchRoundedCornerSize 4
+config switchFontSize 8
+config switchRoundedCornerSize 2
 config undoOps move,resize
 
 config keyboardLayout qwerty

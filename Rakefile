@@ -3,6 +3,13 @@ require 'fileutils'
 
 POWERLINE_TMUX_PATH = '/usr/local/lib/python2.7/site-packages/powerline/bindings/tmux'
 
+NODEJS_COMMON_PACKAGES = <<-PKGS
+bower duo grunt-cli broccoli-cli gulp yo jspm 
+avn avn-nvm browserify webpack jasmine jake madge 
+forever nodemon jscs how-to-npm protractor psi jshint eslint jsdoc 
+watch js-beautify nsp gitbook-cli plato sloc npmd@1
+PKGS
+
 namespace :install do
   desc 'install all'
   task :all do
@@ -20,6 +27,15 @@ namespace :install do
     puts 'done'
   end
 
+  desc 'install common nodejs global packages'
+  task :nodejs_packages do
+    puts 'installing common nodejs global packages...'
+    `npm i -g #{NODEJS_COMMON_PACKAGES}`
+    puts 'configuring packages...'
+    `avn setup`
+    puts 'done'
+  end
+
   desc 'install devtools terminal'
   task :devtools_terminal do
     puts 'installing devtools terminal nodejs proxy...'
@@ -32,7 +48,7 @@ namespace :install do
   desc 'install pure zsh prompt'
   task :zsh_pure do
     puts 'installing pure-prompt...'
-    `npm install --global pure-prompt`
+    `npm install -g pure-prompt`
     puts 'done'
   end
 
@@ -65,11 +81,19 @@ namespace :uninstall do
   task :all do
     Rake::Task['uninstall:powerline'].invoke
     Rake::Task['uninstall:zsh_pure'].invoke
+    Rake::Task['uninstall:nodejs_packages'].invoke
+  end
+
+  desc 'install common nodejs global packages'
+  task :nodejs_packages do
+    puts 'installing common nodejs global packages...'
+    `npm uninstall -g #{NODEJS_COMMON_PACKAGES}`
+    puts 'done'
   end
 
   desc 'uninstall pure zsh prompt'
   task :zsh_pure do
-    `npm uninstall --global pure-prompt`
+    `npm uninstall -g pure-prompt`
   end
 
   desc 'uninstall powerline'
