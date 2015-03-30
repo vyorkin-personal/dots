@@ -20,7 +20,7 @@ set pastetoggle=<F11>
 nn <silent> <F12> :set number! relativenumber!<CR>
 
 nn <Leader>w :w<CR>         " faster way to save a file
-nmap <Leader><Leader> V     " enter visual model with <Leader><Leader>
+nn <Leader><Leader> V     " enter visual model with <Leader><Leader>
 
 " bink K to grep word under cursor
 nn K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>

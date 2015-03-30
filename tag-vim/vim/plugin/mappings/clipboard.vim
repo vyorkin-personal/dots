@@ -1,6 +1,6 @@
-vmap <Leader>y "+y
-vmap <Leader>d "+d
-nmap <Leader>p "+p
-nmap <Leader>P "+P
-vmap <Leader>p "+p
-vmap <Leader>P "+P
+vn <Leader>y "+y
+vn <Leader>d "+d
+nn <Leader>p "+p
+nn <Leader>P "+P
+vn <Leader>p "+p
+vn <Leader>P "+P
