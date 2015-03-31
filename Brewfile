@@ -225,3 +225,16 @@ cask 'font-source-sans-pro'
 cask 'font-comic-neue'
 cask 'font-courier-prime'
 cask 'font-source-serif-pro'
+
+# quick look plugins:
+# https://github.com/sindresorhus/quick-look-plugins
+cask 'qlcolorcode'
+cask 'qlstephen'
+cask 'qlmarkdown'
+cask 'quicklook-json'
+cask 'qlprettypatch'
+cask 'quicklook-csv'
+cask 'betterzipql'
+cask 'qlimagesize'
+cask 'webpquicklook'
+cask 'suspicious-package'
