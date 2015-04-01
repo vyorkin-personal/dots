@@ -108,7 +108,7 @@
 [core]
   autocrlf = false
   excludesfile = ~/.gitignore
-  editor = vim
+  editor = nvim
 [advice]
   statusHints = false
 [apply]

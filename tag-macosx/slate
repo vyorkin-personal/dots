@@ -88,7 +88,7 @@ layout 2monitors 'Path Finder':MAIN_FIRST     ${2-righttop}
 layout 2monitors 'Xcode':REPEAT               ${1-full}
 layout 2monitors 'Eclipse':REPEAT             ${1-full}
 layout 2monitors 'iTunes':REPEAT              ${1-full}
-layout 2monitors 'Skype':REPEAT               ${2-leftless}
+layout 2monitors 'Slack':REPEAT               ${2-leftless}
 layout 2monitors 'Messages':REPEAT            ${2-leftmost}
 
 # 1 Monitor layout
@@ -103,7 +103,7 @@ layout 1monitor 'Path Finder':MAIN_FIRST      ${1-full}
 layout 1monitor 'Xcode':REPEAT                ${1-full}
 layout 1monitor 'Eclipse':REPEAT              ${1-full}
 layout 1monitor 'iTunes':REPEAT               ${1-full}
-leyout 1monitor 'Skype':REPEAT                ${1-left}
+leyout 1monitor 'Slack':REPEAT                ${1-left}
 layout 1monitor 'Messages':REPEAT             ${1-left}
 
 # Default Layouts
@@ -193,6 +193,6 @@ bind g:${hyper} focus 'GitHub'
 bind m:${hyper} focus ${mail}
 bind i:${hyper} focus ${terminal}
 bind o:${hyper} focus 'Finder'
-bind s:${hyper} focus 'Skype'
+bind s:${hyper} focus 'Slack'
 bind v:${hyper} focus 'nvALT'
 
