@@ -24,6 +24,7 @@ namespace :install do
   task :prerequisites do
     puts 'setting up prerequisites...'
     `stty sane`
+    `defaults write org.R-project.R force.LANG en_US.UTF-8`
     puts 'done'
   end
 
