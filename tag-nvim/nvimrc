@@ -134,6 +134,14 @@ cabbrev qw :wq
 " enable matchit.vim plugin
 runtime macros/matchit.vim
 
+" hack to make <c-h> mappings work
+" see:
+" https://github.com/neovim/neovim/issues/2048#issuecomment-78045837
+" https://github.com/neovim/neovim/issues/2294
+if has('nvim')
+  nmap <BS> <C-W>h
+endif
+
 " autocommands
 
 " save all changed buffers on focus lost
