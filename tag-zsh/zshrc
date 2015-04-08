@@ -13,7 +13,7 @@ export EDITOR=vim
 if [[ -n $SSH_CONNECTION ]]; then
   # nothing to do here for now
 else
-  export VISUAL=gvim
+  export VISUAL=nvim
 fi
 
 # load additional completions
