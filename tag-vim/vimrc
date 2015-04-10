@@ -136,7 +136,7 @@ endif
 set noswapfile                  " don't use buffer swap files
 set nowritebackup               " don't write backups
 
-colorscheme fu
+colorscheme solarized
 
 " conceal settings
 set conceallevel=2              " concealed text is completely hidden
