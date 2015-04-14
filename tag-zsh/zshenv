@@ -6,4 +6,7 @@ export LC_ALL=$LANG
 # Specify your defaults in this environment variable
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
+# Use overcommit for all repositories you create/clone
+export GIT_TEMPLATE_DIR=`overcommit --template-dir`
+
 source ~/.dotsecrets/secret_tokens

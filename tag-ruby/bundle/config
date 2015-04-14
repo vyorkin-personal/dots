@@ -1,4 +1,5 @@
 ---
 BUNDLE_JOBS: '4'
-BUNDLE_BUILD__NOKOGIRI: --use-system-libraries
-BINDLE_BIN: false
+BUNDLE_BUILD__NOKOGIRI: "--use-system-libraries BINDLE_BIN: false"
+BUNDLE_GEM__COC: 0
+BUNDLE_GEM__TEST: rspec
