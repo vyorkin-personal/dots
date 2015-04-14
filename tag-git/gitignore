@@ -11,3 +11,4 @@ tmp/**/*
 .artifacts/
 Session.vim
 .powder
+.rspec-local
