@@ -7,7 +7,7 @@ NODEJS_COMMON_PACKAGES = <<-PKGS
 bower duo grunt-cli broccoli-cli gulp yo khaos jspm 
 avn avn-nvm browserify webpack webpack-dev-server jasmine jake madge 
 forever nodemon jscs how-to-npm protractor psi jshint eslint jsdoc 
-watch js-beautify nsp gitbook-cli plato sloc npmd@1 live-server
+watch js-beautify nsp gitbook-cli plato sloc npmd@1 live-server git-guilt
 PKGS
 
 namespace :install do

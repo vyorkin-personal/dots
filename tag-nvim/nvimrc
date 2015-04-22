@@ -121,7 +121,7 @@ set sidescroll=1                " minimal number of columns to scroll horizontal
 set noswapfile                  " don't use buffer swap files
 set nowritebackup               " don't write backups
 
-colorscheme solarized
+colorscheme fu
 
 " conceal settings
 set conceallevel=2              " concealed text is completely hidden

@@ -106,6 +106,9 @@ prompt pure
 # setup rbenv
 eval "$(rbenv init - --no-rehash)"
 
+# Use overcommit for all repositories you create/clone
+export GIT_TEMPLATE_DIR=`overcommit --template-dir`
+
 export NVM_DIR=~/.nvm
 source ~/.nvm/nvm.sh
 [[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn

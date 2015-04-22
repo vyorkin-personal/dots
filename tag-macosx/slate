@@ -194,5 +194,6 @@ bind m:${hyper} focus ${mail}
 bind i:${hyper} focus ${terminal}
 bind o:${hyper} focus 'Finder'
 bind s:${hyper} focus 'Slack'
+bind p:${hyper} focus 'Skype'
 bind v:${hyper} focus 'nvALT'
 
