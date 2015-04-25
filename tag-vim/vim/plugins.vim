@@ -14,7 +14,6 @@ Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-capslock'
 
-Plug 'jiangmiao/auto-pairs'
 Plug 'chrisbra/vim-diff-enhanced'
 Plug 'terryma/vim-expand-region'
 Plug 'Wolfy87/vim-expand'

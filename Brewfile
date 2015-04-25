@@ -128,6 +128,7 @@ brew 'mplayer'
 brew 'mplayershell'
 brew 'youtube-dl'
 brew 'homebrew/versions/lua52'
+brew 'thefuck'
 
 cask 'dropbox'
 cask 'caffeine'

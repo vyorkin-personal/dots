@@ -44,3 +44,5 @@ alias psr='ps aux | grep ruby'
 alias lsg='ll | grep'
 
 alias ttt='rbenv ctags & gem ctags'
+
+alias fuck='$(thefuck $(fc -ln -1))'
