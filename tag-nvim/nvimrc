@@ -116,6 +116,17 @@ set scrolloff=12                " vertical offset
 set sidescrolloff=12            " horizontal offset
 set sidescroll=1                " minimal number of columns to scroll horizontally
 
+" dir to store temp files: swaps, undo history
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+
+if has('persistent_undo')
+  " keep undo history across sessions by storing it in file
+  " auto save/restore undo history on buffer write/read
+  set undodir=~/.vim-tmp/undo/,~/.vim/undo/,~/.tmp,~/tmp,/var/tmp,/tmp
+  set undofile
+endif
+
 " turn off swap files & backups
 " cuz its really annoying
 set noswapfile                  " don't use buffer swap files

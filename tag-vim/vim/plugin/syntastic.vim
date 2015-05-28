@@ -1,5 +1,6 @@
 let g:syntastic_javascript_checkers = ['jsxhint']
 let g:syntastic_haml_checkers = ['haml_lint']
+let g:syntastic_html_checkers = ['']
 
 let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'

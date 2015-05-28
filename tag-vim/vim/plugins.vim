@@ -38,6 +38,7 @@ Plug 'morhetz/gruvbox'
 
 " html, css, less, sass
 Plug 'othree/html5.vim'
+Plug 'digitaltoad/vim-jade'
 Plug 'mattn/emmet-vim'
 Plug 'groenewege/vim-less'
 Plug 'ap/vim-css-color'
