@@ -1,6 +1,6 @@
 tap 'caskroom/fonts'
 tap 'homebrew/science'
-tap 'neovim/homebrew-neovim'
+tap 'neovim/neovim'
 tap 'aspnet/k'
 tap 'thoughtbot/formulae'
 tap 'karan/karan'
@@ -14,8 +14,6 @@ brew 'veclibfort' # full GNU Fortran compatibility for Apple's vecLib BLAS/LAPAC
 
 brew 'mono'       # cross platform, open source .NET framework
 brew 'kvm'        # K version manager, see https://github.com/aspnet/Home/wiki/version-manager
-
-brew '--HEAD neovim'
 
 brew 'elasticsearch'
 

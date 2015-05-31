@@ -6,6 +6,7 @@ tag-vim/vim/spell
 tag-vim/vim/plugged/
 tag-vim/vim/sessions
 tag-vim/vim/.netrwhist
+tag-vim/vim/bundle
 
 tag-nvim/nvim/.netrwhist
 tag-nvim/nvim/view/*

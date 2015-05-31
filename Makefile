@@ -4,7 +4,7 @@ install:
 	brew tap thoughtbot/formulae
 	brew install rcm
 	rcup -v -d ~/.dots
-	brew tap Homebrew/brewdler
+	brew tap Homebrew/bundle
 	brew brewdle
 	rake install:all
 

@@ -14,6 +14,7 @@ PKGS
 namespace :install do
   desc 'install all'
   task :all do
+    Rake::Task['install:neovim'].invoke
     Rake::Task['install:powerline'].invoke
     Rake::Task['install:zsh_pure'].invoke
     Rake::Task['install:nvm'].invoke
@@ -35,6 +36,14 @@ namespace :install do
     `npm i -g #{NODEJS_COMMON_PACKAGES}`
     puts 'configuring packages...'
     `avn setup`
+    puts 'done'
+  end
+
+  desc 'install neovim'
+  task :neovim do
+    puts 'installing neovim...'
+    `brew install --HEAD neovim`
+    `pip install neovim`
     puts 'done'
   end
 
@@ -73,7 +82,7 @@ namespace :install do
   desc 'install node version manager'
   task :nvm do
     puts 'installing nvm...'
-    `curl https://raw.githubusercontent.com/creationix/nvm/v0.24.0/install.sh | bash`
+    `curl https://raw.githubusercontent.com/creationix/nvm/v0.25.3/install.sh | bash`
     puts 'done'
   end
 end
