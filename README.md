@@ -18,3 +18,8 @@ git submodule update --init
 make
 ```
 
+in case of problems with tern_for_vim:
+```
+cd $HOME/.vim/plugged/tern_for_vim
+npm install
+```

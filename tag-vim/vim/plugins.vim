@@ -102,7 +102,7 @@ Plug 'tpope/vim-projectionist'
 Plug 'tpope/vim-classpath'
 Plug 'guns/vim-clojure-static'
 Plug 'guns/vim-clojure-highlight'
-Plug 'amdt/vim-niji'
+Plug 'vim-scripts/vim-niji'
 
 " python
 Plug 'mitsuhiko/vim-python-combined'
