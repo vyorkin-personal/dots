@@ -38,3 +38,5 @@ fi
 
 export NVM_DIR="/Users/vyorkin/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+PATH=$PATH:$HOME/.manymo/bin # Add manymo to PATH for scripting
