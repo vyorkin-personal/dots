@@ -138,9 +138,12 @@ Plug 'nelstrom/vim-textobj-rubyblock'
 " tools
 Plug 'vim-scripts/paredit.vim'
 
+Plug 'scrooloose/syntastic'
+Plug 'myint/syntastic-extras'
+Plug 'roktas/syntastic-more'
+
 Plug 'majutsushi/tagbar'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'scrooloose/syntastic'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'kien/ctrlp.vim'
 Plug 'FelikZ/ctrlp-py-matcher'

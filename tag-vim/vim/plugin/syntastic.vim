@@ -2,6 +2,12 @@ let g:syntastic_javascript_checkers = ['jsxhint']
 let g:syntastic_haml_checkers = ['haml_lint']
 let g:syntastic_html_checkers = ['']
 
+let g:syntastic_make_checkers = ['gnumake']
+let g:syntastic_javascript_checkers = ['json_tool']
+let g:syntastic_gitcommit_checkers = ['language_check']
+let g:syntastic_python_checkers = ['pyflakes_with_warnings']
+let g:syntastic_yaml_checkers = ['pyyaml']
+
 let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 
