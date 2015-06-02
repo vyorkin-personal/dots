@@ -23,3 +23,9 @@ in case of problems with tern_for_vim:
 cd $HOME/.vim/plugged/tern_for_vim
 npm install
 ```
+
+update ruby-build
+
+```
+cd ~/.rbenv/plugins/ruby-build && git pull origin master
+```
