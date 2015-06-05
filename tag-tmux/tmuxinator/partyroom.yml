@@ -1,0 +1,12 @@
+# ~/.tmuxinator/partyroom.yml
+
+name: partyroom
+root: ~/programming/work/party_room/party_front
+
+windows:
+  - main:
+      layout: e220,193x53,0,0[194x38,0,0,0,194x14,0,39,2]
+      panes:
+        - editor: nvim
+        - console:
+          - npm start
