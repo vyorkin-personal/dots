@@ -1,4 +1,3 @@
-
 [[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
 
 PATH=$PATH:$HOME/.manymo/bin # Add manymo to PATH for scripting

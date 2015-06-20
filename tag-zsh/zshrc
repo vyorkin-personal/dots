@@ -1,4 +1,4 @@
-export PATH="$HOME/.rbenv/shims:/$HOME/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$HOME/.cabal/bin:$HOME/Library/Haskell/bin"
+export PATH="$HOME/.rbenv/shims:/$HOME/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$HOME/.cabal/bin:$HOME/Library/Haskell/bin:./node_modules/.bin"
 
 set -o vi
 
@@ -88,7 +88,6 @@ export DOTFILES=$HOME/.dotfiles
 
 # load custom functions & aliases
 source $DOTFILES/index
-source $DOTFILES/functions
 
 export DOCKER_CERT_PATH=$HOME/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1

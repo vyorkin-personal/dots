@@ -1,0 +1,1 @@
+function es6() { babel --stage=0 --experimental "$@" | iojs; }

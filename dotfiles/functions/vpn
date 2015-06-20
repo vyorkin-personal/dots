@@ -22,10 +22,3 @@ tell application "System Events"
 end tell
 EOF
 }
-
-function cwvpn() {
-  vpn-connect "nest.undev.ru (VPN)"
-}
-function dwvpn() {
-  vpn-disconnect "nest.undev.ru (VPN)"
-}

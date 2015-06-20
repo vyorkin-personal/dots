@@ -1,0 +1,12 @@
+# ~/.tmuxinator/react-starter.yml
+
+name: react-starter
+root: ~/projects/github/react-starter
+
+windows:
+  - main:
+      layout: e220,193x53,0,0[194x38,0,0,0,194x14,0,39,2]
+      panes:
+        - editor: nvim
+        - console:
+          - npm start
