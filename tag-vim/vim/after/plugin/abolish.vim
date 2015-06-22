@@ -17,3 +17,5 @@ Abolish swithc switch
 
 Abolish enitty entity
 Abolish asteriod asteroid
+
+Abolish extarct extract
