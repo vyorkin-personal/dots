@@ -129,6 +129,7 @@ brew 'homebrew/versions/lua52'
 brew 'thefuck'
 brew 'scala'
 brew 'sbt'
+brew 'httpie'
 
 cask 'dropbox'
 cask 'caffeine'
