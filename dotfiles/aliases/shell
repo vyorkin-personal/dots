@@ -45,4 +45,4 @@ alias lsg='ll | grep'
 
 alias ttt='rbenv ctags & gem ctags'
 
-alias fuck='$(thefuck $(fc -ln -1))'
+alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'

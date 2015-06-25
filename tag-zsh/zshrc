@@ -1,4 +1,4 @@
-export PATH="$HOME/.rbenv/shims:/$HOME/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$HOME/.cabal/bin:$HOME/Library/Haskell/bin:./node_modules/.bin"
+export PATH="$HOME/.rbenv/shims:/$HOME/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/$HOME/.local/bin:/usr/games:/usr/local/games:$HOME/.cabal/bin:$HOME/Library/Haskell/bin:./node_modules/.bin"
 
 set -o vi
 
