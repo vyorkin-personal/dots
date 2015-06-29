@@ -1,0 +1,2 @@
+alias cr='cabal run'
+alias cb='cabal build'

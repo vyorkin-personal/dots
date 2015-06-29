@@ -109,6 +109,7 @@ Plug 'mitsuhiko/vim-python-combined'
 
 " haskell
 Plug 'dag/vim2hs'
+Plug 'hspec/hspec.vim'
 
 " arduino
 Plug 'sudar/vim-arduino-syntax'
