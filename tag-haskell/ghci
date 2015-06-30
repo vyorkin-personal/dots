@@ -1,7 +1,6 @@
 :set prompt "∀x. x ⊢ "
 :set stop :list
 :set +t
-:set +m
 
 import Control.Monad
 import Control.Applicative
