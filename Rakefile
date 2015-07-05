@@ -8,7 +8,7 @@ bower duo grunt-cli broccoli-cli gulp yo khaos jspm
 avn avn-nvm browserify webpack webpack-dev-server jasmine jake madge 
 forever nodemon jscs csslint how-to-npm protractor psi jshint eslint jsdoc 
 watch js-beautify nsp gitbook-cli plato sloc npmd@1 live-server git-guilt doctoc
-trash localtunnel
+trash localtunnel svgo
 PKGS
 
 namespace :install do
