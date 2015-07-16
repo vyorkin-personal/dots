@@ -3,13 +3,16 @@ require 'fileutils'
 
 POWERLINE_TMUX_PATH = '/usr/local/lib/python2.7/site-packages/powerline/bindings/tmux'
 
-NODEJS_COMMON_PACKAGES = <<-PKGS
-bower duo grunt-cli broccoli-cli gulp yo khaos jspm 
-avn avn-nvm browserify webpack webpack-dev-server jasmine jake madge 
-forever nodemon jscs csslint how-to-npm protractor psi jshint eslint jsdoc 
-watch js-beautify nsp gitbook-cli plato sloc npmd@1 live-server git-guilt doctoc
-trash localtunnel svgo
-PKGS
+NODEJS_COMMON_PACKAGES = %w(
+  bower duo grunt-cli broccoli-cli gulp yo khaos jspm 
+  npm-check-updates avn avn-nvm browserify
+  webpack webpack-dev-server jasmine jake madge 
+  forever nodemon jscs csslint how-to-npm
+  protractor psi jshint eslint jsdoc 
+  watch js-beautify nsp gitbook-cli plato
+  sloc npmd@1 live-server git-guilt doctoc
+  trash localtunnel svgo
+)
 
 namespace :install do
   desc 'install all'
@@ -33,7 +36,7 @@ namespace :install do
   desc 'install common nodejs global packages'
   task :nodejs_packages do
     puts 'installing common nodejs global packages...'
-    `npm i -g #{NODEJS_COMMON_PACKAGES}`
+    `npm i -g #{NODEJS_COMMON_PACKAGES.join(' ')}`
     puts 'configuring packages...'
     `avn setup`
     puts 'done'
