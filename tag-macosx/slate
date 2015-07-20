@@ -189,7 +189,7 @@ bind j:${hyper} focus down
 bind e:${hyper} focus ${browser}
 bind u:${hyper} focus ${editor}
 bind x:${hyper} focus 'Xcode'
-bind g:${hyper} focus 'GitHub'
+bind g:${hyper} focus 'gitter'
 bind m:${hyper} focus ${mail}
 bind i:${hyper} focus ${terminal}
 bind o:${hyper} focus 'Finder'
