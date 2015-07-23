@@ -97,7 +97,7 @@ Plug 'vim-perl/vim-perl'
 
 " clojure
 Plug 'tpope/vim-fireplace'
-Plug 'tpope/vim-leiningen'
+Plug 'tpope/vim-salve'
 Plug 'tpope/vim-projectionist'
 Plug 'tpope/vim-classpath'
 Plug 'guns/vim-clojure-static'
