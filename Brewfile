@@ -17,6 +17,8 @@ brew 'kvm'        # K version manager, see https://github.com/aspnet/Home/wiki/v
 
 brew 'elasticsearch'
 
+brew 'gotags'
+
 # install GNU core utilities (those that come with OS X are outdated)
 # don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew 'coreutils'

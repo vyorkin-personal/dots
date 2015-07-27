@@ -159,9 +159,13 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'EinfachToll/DidYouMean'
 Plug 'dietsche/vim-lastplace'
 Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 
 Plug 'mhinz/vim-signify'
 Plug 'vitalk/vim-simple-todo'
 Plug 'wellle/tmux-complete.vim'
 
 Plug 'jez/vim-superman'
+
+Plug 'ryanoasis/vim-devicons'
+Plug 'ervandew/supertab'

@@ -19,8 +19,8 @@ let g:ctrlp_by_filename = 1
 let g:ctrlp_use_caching = 0
 let g:ctrlp_dotfiles = 0
 let g:ctrlp_clear_cache_on_exit = 1
-" i want it to be on top & i like it small & stay the same size
-let g:ctrlp_match_window = 'top,order:btt,min:6,max:6,results:6'
+" i want it to be on top & stay the same size
+let g:ctrlp_match_window = 'top,order:btt,min:12,max:12,results:12'
 
 " some alternative ways to start CtrlP
 nn <silent> ,, :CtrlP<CR>

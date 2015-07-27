@@ -19,12 +19,13 @@ set guicursor+=n-v-c:blinkon0
 set showtabline=0             " never show line with tab page labels
 set noballooneval             " dont show this crazy distracting thing
 
+" duplication here left intentionally
 if has("gui_gtk2")
-  set guifont=Source\ Code\ Pro\ 10
+  set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline\ Plus\ Nerd\ File\ Types:h14
 elseif has("gui_macvim")
-  set guifont=Source\ Code\ Pro\ 10
+  set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline\ Plus\ Nerd\ File\ Types:h14
 elseif has("gui_win32")
-  set guifont=Consolas:h11:cANSI
+  set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline\ Plus\ Nerd\ File\ Types:h14
 endif
 
 " set transparency=20

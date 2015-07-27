@@ -11,7 +11,7 @@ NODEJS_COMMON_PACKAGES = %w(
   protractor psi jshint eslint jsdoc 
   watch js-beautify nsp gitbook-cli plato
   sloc npmd@1 live-server git-guilt doctoc
-  trash localtunnel svgo
+  trash localtunnel svgo git+https://github.com/ramitos/jsctags.git
 )
 
 namespace :install do
