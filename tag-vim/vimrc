@@ -140,7 +140,7 @@ set background=dark
 if &diff
   colorscheme fu
 else
-  colorscheme Tomorrow-Night-Bright
+  colorscheme distinguished
 endif
 
 " conceal settings
@@ -171,4 +171,4 @@ augroup ftdetection
 augroup END
 
 " colorscheme switching for vimdiff
-au FilterWritePre * if &diff | colorscheme fu | AirlineTheme badwolf | endif
+au FilterWritePre * if &diff | colorscheme fu | AirlineTheme tomorrow | endif

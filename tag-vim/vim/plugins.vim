@@ -24,6 +24,8 @@ Plug 'vim-scripts/restore_view.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
 Plug 'tpope/git-bump'
+Plug 'mattn/webapi-vim'
+Plug 'mattn/gist-vim'
 
 " color schemes
 Plug 'altercation/vim-colors-solarized'
@@ -169,3 +171,4 @@ Plug 'jez/vim-superman'
 
 Plug 'ryanoasis/vim-devicons'
 Plug 'ervandew/supertab'
+Plug 'rizzatti/dash.vim'
