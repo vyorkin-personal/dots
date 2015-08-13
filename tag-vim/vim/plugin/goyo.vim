@@ -6,9 +6,11 @@ function! GoyoBefore()
   if exists('$TMUX')
     silent !tmux set status off
   endif
+  set wrap
 endfunction
 
 function! GoyoAfter()
+  set nowrap
   if has('gui_running')
     set showtabline=0
   elseif exists('$TMUX')

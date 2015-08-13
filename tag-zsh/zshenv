@@ -5,6 +5,7 @@ export LC_ALL=$LANG
 
 # Specify your defaults in this environment variable
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+export NODE_REPL_HISTORY_FILE=$HOME/.noderepl_history
 
 source ~/.dotsecrets/secret_tokens
 

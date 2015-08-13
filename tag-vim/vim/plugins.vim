@@ -67,6 +67,7 @@ Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-heroku'
 Plug 'tpope/vim-cucumber'
 Plug 'Keithbsmiley/rspec.vim'
+Plug 'slim-template/vim-slim'
 
 " c, c++
 Plug 'kergoth/aftersyntaxc.vim'
