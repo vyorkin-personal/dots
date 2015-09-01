@@ -41,7 +41,7 @@ plugins=(
   ant fasd battery brew cap cabal coffee docker cp gem
   git github heroku history history-substring-search jruby knife lein
   node npm osx perl python rails rake rsync ruby rvm scala sublime tmux
-  tmuxinator torrent vagrant vundle redis-cli web-search zeus bower
+  tmuxinator torrent vagrant vundle redis-cli web-search bower
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -89,9 +89,6 @@ export DOTFILES=$HOME/.dotfiles
 # load custom functions & aliases
 source $DOTFILES/index
 
-# docker env setup
-eval "$(docker-machine env default)"
-
 # powerline prompt (slow)
 # source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
@@ -102,13 +99,11 @@ prompt pure
 # setup rbenv
 eval "$(rbenv init - --no-rehash)"
 
-# use overcommit for all repositories you create/clone
-export GIT_TEMPLATE_DIR=`overcommit --template-dir`
+# use overcommit for all repositories you create/clone (carefull cuz of brew)
+# export GIT_TEMPLATE_DIR=`overcommit --template-dir`
 
 export NVM_DIR=~/.nvm
 source ~/.nvm/nvm.sh
 
 # load avn: https://github.com/wbyoung/avn
 [[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh"
-
-source $HOME/.cocos2d

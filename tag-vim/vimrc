@@ -140,7 +140,7 @@ set background=dark
 if &diff
   colorscheme fu
 else
-  colorscheme bubblegum
+  colorscheme Tomorrow-Night-Bright
 endif
 
 " conceal settings

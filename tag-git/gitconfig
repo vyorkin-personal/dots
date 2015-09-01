@@ -118,7 +118,7 @@
 [difftool]
   prompt = false
 [rerere]
-  enabled = true
+  enabled = false
 [help]
   autocorrect = 1
 [difftool "sourcetree"]

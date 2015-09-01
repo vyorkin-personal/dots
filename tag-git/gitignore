@@ -12,3 +12,4 @@ tmp/**/*
 Session.vim
 .powder
 .rspec-local
+npm-debug*
