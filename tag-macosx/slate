@@ -195,5 +195,6 @@ bind i:${hyper} focus ${terminal}
 bind o:${hyper} focus 'Finder'
 bind s:${hyper} focus 'Slack'
 bind p:${hyper} focus 'Skype'
-bind v:${hyper} focus 'nvALT'
 bind r:${hyper} focus 'Preview'
+bind v:${hyper} focus 'VirtualBox VM'
+bind w:${hyper} focus 'VMware Fusion'

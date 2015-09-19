@@ -12,7 +12,7 @@ NODEJS_COMMON_PACKAGES = %w(
   watch js-beautify nsp gitbook-cli plato
   sloc npmd@1 live-server git-guilt doctoc
   trash localtunnel svgo git+https://github.com/ramitos/jsctags.git
-  jsfmt fixmyjs jsinspect tmi speed-test
+  jsfmt fixmyjs jsinspect tmi speed-test tldr
 )
 
 namespace :install do
