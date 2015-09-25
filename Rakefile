@@ -5,7 +5,7 @@ POWERLINE_TMUX_PATH = '/usr/local/lib/python2.7/site-packages/powerline/bindings
 
 NODEJS_COMMON_PACKAGES = %w(
   bower duo grunt-cli broccoli-cli gulp yo khaos jspm
-  npm-check-updates avn avn-nvm browserify
+  npm-check-updates bower-check-updates avn avn-nvm browserify
   webpack webpack-dev-server jasmine jake madge
   forever nodemon jscs csslint how-to-npm
   protractor psi jshint eslint jsdoc
