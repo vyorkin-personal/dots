@@ -40,7 +40,7 @@ DISABLE_UPDATE_PROMPT=true
 plugins=(
   ant fasd battery brew cap cabal coffee docker cp gem
   git github heroku history history-substring-search jruby knife lein
-  node npm osx perl python rails rake rsync ruby rvm scala sublime tmux
+  node npm osx perl python rails rake rsync ruby rvm scala tmux
   tmuxinator torrent vagrant vundle redis-cli web-search bower
 )
 
