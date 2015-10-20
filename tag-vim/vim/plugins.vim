@@ -156,6 +156,9 @@ Plug 'rking/ag.vim'
 Plug 'mbbill/undotree'
 Plug 'bling/vim-airline'
 
+Plug 'xolox/vim-notes'
+Plug 'xolox/vim-misc'
+
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 
