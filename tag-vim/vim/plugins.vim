@@ -27,6 +27,7 @@ Plug 'tpope/vim-git'
 Plug 'tpope/git-bump'
 Plug 'mattn/webapi-vim'
 Plug 'mattn/gist-vim'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " color schemes
 Plug 'altercation/vim-colors-solarized'
@@ -177,4 +178,5 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'ervandew/supertab'
 Plug 'rizzatti/dash.vim'
 
+Plug 'vim-utils/vim-troll-stopper'
 Plug 'wakatime/vim-wakatime'
