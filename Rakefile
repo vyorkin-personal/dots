@@ -13,6 +13,7 @@ NODEJS_COMMON_PACKAGES = %w(
   sloc npmd@1 live-server git-guilt doctoc
   trash localtunnel svgo git+https://github.com/ramitos/jsctags.git
   jsfmt fixmyjs jsinspect tmi speed-test tldr commitizen
+  babel-cli karma-cli istanbul foreman
 )
 
 namespace :install do
@@ -24,6 +25,7 @@ namespace :install do
     Rake::Task['install:nvm'].invoke
     Rake::Task['install:prerequisites'].invoke
     Rake::Task['install:devtools_terminal'].invoke
+    Rake::Task['install:tpm'].invoke
   end
 
   desc 'setup prerequisites'
@@ -87,6 +89,13 @@ namespace :install do
   task :nvm do
     puts 'installing nvm...'
     `curl https://raw.githubusercontent.com/creationix/nvm/v0.25.3/install.sh | bash`
+    puts 'done'
+  end
+
+  desc 'install tmux plugins'
+  task :tpm do
+    puts 'installing tmux plugins...'
+    `~/.tmux/plugins/tpm/bin/install_plugins`
     puts 'done'
   end
 end
