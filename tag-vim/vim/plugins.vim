@@ -177,4 +177,4 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'ervandew/supertab'
 Plug 'rizzatti/dash.vim'
 
-" Plug 'wakatime/vim-wakatime'
+Plug 'wakatime/vim-wakatime'
