@@ -29,3 +29,9 @@ update ruby-build
 ```
 cd ~/.rbenv/plugins/ruby-build && git pull origin master
 ```
+
+# troubleshooting
+
+in case aflred can't find cask symlinks:
+[go to alfred settings and just click on the 'reset'
+button](https://github.com/caskroom/homebrew-cask/issues/9685#issuecomment-77553432)
