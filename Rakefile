@@ -95,7 +95,7 @@ namespace :install do
   desc 'install tmux plugins'
   task :tpm do
     puts 'installing tmux plugins...'
-    `~/.tmux/plugins/tpm/bin/install_plugins`
+    `~/.tmux/plugins/tpm/scripts/install_plugins`
     puts 'done'
   end
 end
