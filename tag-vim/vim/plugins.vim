@@ -27,6 +27,7 @@ Plug 'tpope/vim-git'
 Plug 'tpope/git-bump'
 Plug 'mattn/webapi-vim'
 Plug 'mattn/gist-vim'
+Plug 'airblade/vim-gitgutter'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " color schemes
