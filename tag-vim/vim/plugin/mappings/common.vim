@@ -26,7 +26,8 @@ nn <Leader><Leader> V     " enter visual model with <Leader><Leader>
 nn K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 " format the entire file
-nn <Leader>fef :normal! gg=G``<CR>
+nn <Leader>ff :normal! gg=G``<CR>
+nn <Leader>ffa :Autoformat<CR>
 
 " set text wrapping toggles
 nn <silent> <Leader>tw :set invwrap<CR>:set wrap?<CR>
