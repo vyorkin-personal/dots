@@ -104,6 +104,3 @@ eval "$(rbenv init - --no-rehash)"
 
 export NVM_DIR=~/.nvm
 source ~/.nvm/nvm.sh
-
-# load avn: https://github.com/wbyoung/avn
-[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh"

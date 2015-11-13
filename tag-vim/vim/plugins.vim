@@ -148,6 +148,9 @@ Plug 'scrooloose/syntastic'
 Plug 'myint/syntastic-extras'
 Plug 'roktas/syntastic-more'
 
+Plug '907th/vim-auto-save'
+Plug 'Chiel92/vim-autoformat'
+
 Plug 'majutsushi/tagbar'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'terryma/vim-multiple-cursors'
@@ -175,9 +178,7 @@ Plug 'wellle/tmux-complete.vim'
 
 Plug 'jez/vim-superman'
 
-" Plug 'ryanoasis/vim-devicons'
 Plug 'ervandew/supertab'
 Plug 'rizzatti/dash.vim'
 
-" Plug 'vim-utils/vim-troll-stopper'
 Plug 'wakatime/vim-wakatime'
