@@ -30,6 +30,11 @@ update ruby-build
 cd ~/.rbenv/plugins/ruby-build && git pull origin master
 ```
 
+# dont't forget
+
+* [cheat](https://github.com/chrisallenlane/cheat)
+* [tlrd](https://github.com/tldr-pages/tldr)
+
 # troubleshooting
 
 in case aflred can't find cask symlinks:
