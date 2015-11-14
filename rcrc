@@ -13,6 +13,7 @@ EXCLUDES="
   utils
   snippets
   misc
+  iterm2
 "
 
 TAGS="

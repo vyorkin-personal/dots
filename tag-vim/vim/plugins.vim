@@ -28,9 +28,6 @@ Plug 'tpope/git-bump'
 Plug 'mattn/webapi-vim'
 Plug 'mattn/gist-vim'
 
-" Plug 'airblade/vim-gitgutter'
-" Plug 'Xuyuanp/nerdtree-git-plugin'
-
 " color schemes
 Plug 'altercation/vim-colors-solarized'
 Plug 'junegunn/seoul256.vim'
