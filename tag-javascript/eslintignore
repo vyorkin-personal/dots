@@ -1,0 +1,7 @@
+node_modules/
+dist/
+coverage/
+doc/
+npm-debug*
+karma.conf.js
+karma.entry.js

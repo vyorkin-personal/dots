@@ -1,0 +1,35 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "comma-dangle": [1, "never"],
+    "func-names": 0,
+    "key-spacing": 0,
+    "space-before-function-paren": [2, {
+      "anonymous": "always",
+      "named": "never"
+    }],
+    "no-else-return": 0,
+    "no-multi-spaces": 0,
+    "quotes": [2, "single"],
+    "jsx-quotes": [2, "prefer-single"],
+    "one-var": 0,
+    "no-unused-vars": [2, {"args": "after-used", "argsIgnorePattern": "^_"}],
+    "id-length": [2, {"min": 2, "properties": "never", "exceptions": ["_", "x", "y", "i", "j", "s"]}],
+  },
+  "globals": {
+    "settings": true,
+
+    "__TEST__": true,
+    "__DEVELOPMENT__": true,
+    "__STAGING__": true,
+    "__PRODUCTION__": true,
+    "__ENVIRONMENT__": true,
+    "__CLIENT__": true,
+    "__SERVER__": true,
+    "__DEVTOOLS__": true
+  }
+}

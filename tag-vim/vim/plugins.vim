@@ -41,6 +41,7 @@ Plug 'morhetz/gruvbox'
 
 " html, css, less, sass
 Plug 'othree/html5.vim'
+Plug 'Valloric/MatchTagAlways'
 Plug 'digitaltoad/vim-jade'
 Plug 'mattn/emmet-vim'
 Plug 'groenewege/vim-less'
@@ -55,8 +56,8 @@ Plug 'vyorkin/JavaScript-Indent'
 Plug 'kchmck/vim-coffee-script'
 Plug 'marijnh/tern_for_vim'
 Plug 'mxw/vim-jsx'
-Plug 'mtscout6/vim-cjsx'
 Plug 'leshill/vim-json'
+" Plug 'mtscout6/vim-cjsx'
 
 " ruby
 Plug 'vim-ruby/vim-ruby'
