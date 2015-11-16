@@ -77,7 +77,8 @@ Plug 'vim-jp/cpp-vim'
 Plug 'octol/vim-cpp-enhanced-highlight'
 
 " rust
-Plug 'wting/rust.vim'
+Plug 'rust-lang/rust.vim'
+" Plug 'wting/rust.vim'
 
 " scala
 Plug 'derekwyatt/vim-scala'
