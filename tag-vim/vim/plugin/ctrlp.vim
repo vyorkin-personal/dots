@@ -20,7 +20,7 @@ let g:ctrlp_use_caching = 0
 let g:ctrlp_dotfiles = 0
 let g:ctrlp_clear_cache_on_exit = 1
 " i want it to be on top & stay the same size
-let g:ctrlp_match_window = 'top,order:btt,min:12,max:12,results:12'
+let g:ctrlp_match_window = 'top,order:btt,min:0,max:12,results:12'
 
 " Additional mapping for buffer search
 nn <silent> <C-b> :CtrlPBuffer<cr>
