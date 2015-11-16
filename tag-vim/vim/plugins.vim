@@ -136,9 +136,12 @@ Plug 'honza/dockerfile.vim'
 Plug 'andersoncustodio/vim-tmux'
 
 " text objects
-
 Plug 'kana/vim-textobj-user'
 Plug 'nelstrom/vim-textobj-rubyblock'
+
+" completion: supertab or YCM
+Plug 'Valloric/YouCompleteMe'
+" Plug 'ervandew/supertab'
 
 " tools
 Plug 'vim-scripts/paredit.vim'
@@ -147,7 +150,7 @@ Plug 'scrooloose/syntastic'
 Plug 'myint/syntastic-extras'
 Plug 'roktas/syntastic-more'
 
-Plug '907th/vim-auto-save'
+" Plug '907th/vim-auto-save'
 Plug 'Chiel92/vim-autoformat'
 
 Plug 'majutsushi/tagbar'
@@ -156,6 +159,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'kien/ctrlp.vim'
 Plug 'FelikZ/ctrlp-py-matcher'
 Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 Plug 'rking/ag.vim'
 Plug 'mbbill/undotree'
 Plug 'bling/vim-airline'
@@ -177,7 +181,6 @@ Plug 'wellle/tmux-complete.vim'
 
 Plug 'jez/vim-superman'
 
-Plug 'ervandew/supertab'
 Plug 'rizzatti/dash.vim'
 
 Plug 'wakatime/vim-wakatime'

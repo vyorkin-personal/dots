@@ -15,7 +15,7 @@ endif
 let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 
 " default to filename searches - so that appctrl will find application controller
-let g:ctrlp_by_filename = 1
+let g:ctrlp_by_filename = 0
 let g:ctrlp_use_caching = 0
 let g:ctrlp_dotfiles = 0
 let g:ctrlp_clear_cache_on_exit = 1
