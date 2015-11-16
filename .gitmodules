@@ -64,3 +64,6 @@
 [submodule "tag-vim/vim/bundle/Vundle.vim"]
 	path = tag-vim/vim/bundle/Vundle.vim
 	url = https://github.com/gmarik/Vundle.vim
+[submodule "tag-nvim/nvim/UltiSnips"]
+	path = tag-nvim/nvim/UltiSnips
+	url = git@github.com:vyorkin/ultisnips-snippets.git
