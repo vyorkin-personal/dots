@@ -35,6 +35,13 @@ cd ~/.rbenv/plugins/ruby-build && git pull origin master
 * [cheat](https://github.com/chrisallenlane/cheat)
 * [tlrd](https://github.com/tldr-pages/tldr)
 
+install vagrant vmware plugin (if you have a license):
+
+```
+vagrant plugin install vagrant-vmware-fusion
+vagrant plugin license vagrant-vmware-fusion license.lic
+```
+
 # troubleshooting
 
 in case aflred can't find cask symlinks:
