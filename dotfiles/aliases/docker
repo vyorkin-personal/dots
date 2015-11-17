@@ -1,13 +1,20 @@
+alias d='docker'
+alias dc='docker-compose'
+
 alias drm='docker rm'
 alias drma='docker rm $(docker ps -qa)'
+alias drml='docker rm $(docker ps -ql)'
 
 alias di='docker images'
 alias dia='docker images -a'
 
 alias dp='docker ps'
 alias dpa='docker ps -a'
+alias dpl='docker ps -l'
 
 alias dr='docker run'
+alias dri='docker run -it'
+
 alias dl='docker logs'
 alias dt='docker top'
 
@@ -18,3 +25,6 @@ alias dms='docker-machine start default'
 alias dmst='docker-machine status $(docker-machine active)'
 alias dmip='docker-machine ip $(docker-machine active)'
 alias dmi='eval $(docker-machine env $(docker-machine active))'
+
+alias dcu='docker-compose up'
+alias dcs='docker-compose stop'

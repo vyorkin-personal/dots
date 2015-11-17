@@ -18,6 +18,7 @@ brew 'kvm'        # K version manager, see https://github.com/aspnet/Home/wiki/v
 brew 'elasticsearch'
 
 brew 'z'
+brew 'cheat'
 
 brew 'gotags'
 
