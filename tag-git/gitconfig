@@ -90,6 +90,7 @@
 [format]
   pretty = format:%C(magenta)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(white)%s %C(red) [%an]%Creset
 [mergetool]
+  keepBackup = false
   prompt = false
 [mergetool "mvimdiff"]
   cmd="mvim -c 'Gdiff' $MERGED"
@@ -107,14 +108,12 @@
   ui = true
 [core]
   autocrlf = false
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/vyorkin/.gitignore
   editor = nvim
 [advice]
   statusHints = false
 [apply]
   whitespace = nowarn
-[mergetool]
-  keepBackup = false
 [difftool]
   prompt = false
 [rerere]
@@ -122,11 +121,8 @@
 [help]
   autocorrect = 1
 [difftool "sourcetree"]
-  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-  path =
-[mergetool "sourcetree"]
-  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-  trustExitCode = true
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
 [filter "media"]
 	required = true
 	clean = git media clean %f

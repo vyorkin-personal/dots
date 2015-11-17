@@ -7,3 +7,4 @@ mkdir -p ~/.tmp
 cd $HOME/.vim/plugged/tern_for_vim
 npm install
 cd -
+docker login

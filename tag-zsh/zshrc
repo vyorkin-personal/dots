@@ -99,9 +99,6 @@ prompt pure
 # setup rbenv
 eval "$(rbenv init - --no-rehash)"
 
-# setup default docker host (slow)
-# eval "$(docker-machine env default)"
-
 # use overcommit for all repositories you create/clone (carefull cuz of brew)
 # export GIT_TEMPLATE_DIR=`overcommit --template-dir`
 
