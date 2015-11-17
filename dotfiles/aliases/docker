@@ -1,0 +1,20 @@
+alias drm='docker rm'
+alias drma='docker rm $(docker ps -qa)'
+
+alias di='docker images'
+alias dia='docker images -a'
+
+alias dp='docker ps'
+alias dpa='docker ps -a'
+
+alias dr='docker run'
+alias dl='docker logs'
+alias dt='docker top'
+
+alias drmi='docker rmi'
+alias drmia='docker rmi $(docker images -qa)'
+
+alias dms='docker-machine start default'
+alias dmst='docker-machine status $(docker-machine active)'
+alias dmip='docker-machine ip $(docker-machine active)'
+alias dmi='eval $(docker-machine env $(docker-machine active))'
