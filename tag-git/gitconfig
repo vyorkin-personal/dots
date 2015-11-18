@@ -108,7 +108,7 @@
   ui = true
 [core]
   autocrlf = false
-	excludesfile = /Users/vyorkin/.gitignore
+  excludesfile = /Users/vyorkin/.gitignore
   editor = nvim
 [advice]
   statusHints = false

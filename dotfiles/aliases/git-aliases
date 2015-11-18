@@ -1,4 +1,4 @@
-alias gi='vim .gitignore'
+alias gi='nvim .gitignore'
 
 alias st='git st'
 

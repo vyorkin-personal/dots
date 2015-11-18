@@ -5,6 +5,7 @@ tap 'aspnet/k'
 tap 'thoughtbot/formulae'
 tap 'karan/karan'
 tap 'jlhonora/lsusb'
+tap 'posva/taps'
 
 brew 'caskroom/cask/brew-cask'
 
@@ -21,6 +22,9 @@ brew 'z'
 brew 'cheat'
 
 brew 'gotags'
+
+brew 'asciinema'
+brew 'catimg'
 
 # install GNU core utilities (those that come with OS X are outdated)
 # don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
