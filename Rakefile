@@ -14,6 +14,7 @@ NODEJS_COMMON_PACKAGES = %w(
   trash localtunnel svgo git+https://github.com/ramitos/jsctags.git
   jsfmt fixmyjs jsinspect tmi speed-test tldr commitizen
   babel-cli karma-cli istanbul foreman eslint-config-airbnb
+  node-debugger iron-node
 )
 
 namespace :install do
