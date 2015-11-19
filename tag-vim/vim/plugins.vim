@@ -141,8 +141,8 @@ Plug 'kana/vim-textobj-user'
 Plug 'nelstrom/vim-textobj-rubyblock'
 
 " completion: supertab or YCM
-Plug 'Valloric/YouCompleteMe'
-" Plug 'ervandew/supertab'
+" Plug 'Valloric/YouCompleteMe'
+Plug 'ervandew/supertab'
 
 " tools
 Plug 'vim-scripts/paredit.vim'
