@@ -160,7 +160,6 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'kien/ctrlp.vim'
 Plug 'FelikZ/ctrlp-py-matcher'
 Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
 Plug 'rking/ag.vim'
 Plug 'mbbill/undotree'
 Plug 'bling/vim-airline'
@@ -185,3 +184,6 @@ Plug 'jez/vim-superman'
 Plug 'rizzatti/dash.vim'
 
 Plug 'wakatime/vim-wakatime'
+
+" forked
+Plug 'vyorkin/vim-snippets'
