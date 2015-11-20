@@ -116,6 +116,9 @@ Plug 'mitsuhiko/vim-python-combined'
 Plug 'dag/vim2hs'
 Plug 'hspec/hspec.vim'
 
+" elm
+Plug 'lambdatoast/elm.vim'
+
 " arduino
 Plug 'sudar/vim-arduino-syntax'
 
