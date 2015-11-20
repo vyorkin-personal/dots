@@ -32,6 +32,8 @@ cd ~/.rbenv/plugins/ruby-build && git pull origin master
 
 # dont't forget
 
+[my gist with cVim settings](https://gist.github.com/vyorkin/711589d7f1a90954dec5)
+
 * [cheat](https://github.com/chrisallenlane/cheat)
 * [tlrd](https://github.com/tldr-pages/tldr)
 
