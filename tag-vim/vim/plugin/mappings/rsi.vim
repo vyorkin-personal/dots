@@ -6,8 +6,11 @@ im <silent> <M-r> -
 im <silent> <D-i> _
 im <silent> <D-r> -
 
-" hashrocket
+" hashrocket (e.g. ruby, ecmascript)
 im <C-h> <Space>=><Space>
+
+" arrow (e.g. elm, haskell)
+im <C-g> <Space>-><Space>
 
 " go to last edit location with ,.
 nn ,. '.
