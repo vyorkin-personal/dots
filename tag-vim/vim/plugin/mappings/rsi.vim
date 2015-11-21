@@ -7,10 +7,10 @@ im <silent> <D-i> _
 im <silent> <D-r> -
 
 " hashrocket (e.g. ruby, ecmascript)
-im <C-h> <Space>=><Space>
+im <C-h> =>
 
 " arrow (e.g. elm, haskell)
-im <C-g> <Space>-><Space>
+im <M-h> ->
 
 " go to last edit location with ,.
 nn ,. '.
