@@ -40,7 +40,7 @@ namespace :install do
   desc 'install common nodejs global packages'
   task :nodejs_packages do
     puts 'installing common nodejs global packages...'
-    `npm i -g #{NODEJS_COMMON_PACKAGES.join(' ')}`
+    `npm i --verbose -g #{NODEJS_COMMON_PACKAGES.join(' ')}`
     puts 'configuring packages...'
     `avn setup`
     puts 'done'
