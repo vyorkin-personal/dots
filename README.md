@@ -32,6 +32,12 @@ cd ~/.rbenv/plugins/ruby-build && git pull origin master
 
 # dont't forget
 
+the fucking names:
+
+* showy edge
+* seil
+* karabiner
+
 [my gist with cVim settings](https://gist.github.com/vyorkin/711589d7f1a90954dec5)
 
 * [cheat](https://github.com/chrisallenlane/cheat)
