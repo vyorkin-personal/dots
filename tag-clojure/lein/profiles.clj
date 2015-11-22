@@ -10,6 +10,7 @@
                   [lein-vanity "0.2.0"]
                   [lein-ring "0.8.11"]
                   [lein-cloudbees "1.0.5"]
+                  [venantius/ultra "0.4.0"]
                   [org.clojure/tools.trace "0.7.8"]]
         :dependencies [[alembic "0.3.2"]
                        [org.clojure/tools.nrepl "0.2.7"]]}}
