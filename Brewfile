@@ -28,6 +28,8 @@ brew 'catimg'
 
 brew 'consul'
 
+brew 'flow'
+
 # install GNU core utilities (those that come with OS X are outdated)
 # don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew 'coreutils'
