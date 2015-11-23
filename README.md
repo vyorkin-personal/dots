@@ -38,7 +38,9 @@ the fucking names:
 * seil
 * karabiner
 
-[my gist with cVim settings](https://gist.github.com/vyorkin/711589d7f1a90954dec5)
+cvim chrome extension:
+* [white theme](https://gist.github.com/vyorkin/711589d7f1a90954dec5)
+* [cvimrc](https://gist.github.com/vyorkin/aa5abd74984fc77a17e5)
 
 * [cheat](https://github.com/chrisallenlane/cheat)
 * [tlrd](https://github.com/tldr-pages/tldr)
