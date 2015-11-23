@@ -46,8 +46,9 @@ Plug 'digitaltoad/vim-jade'
 Plug 'mattn/emmet-vim'
 Plug 'groenewege/vim-less'
 Plug 'ap/vim-css-color'
-Plug 'hail2u/vim-css3-syntax'
 Plug 'cakebaker/scss-syntax.vim'
+Plug 'stephenway/postcss.vim'
+" Plug 'hail2u/vim-css3-syntax'
 
 " javascript, coffeescript, actionscript, jsx, jquery, tern
 Plug 'pangloss/vim-javascript'
