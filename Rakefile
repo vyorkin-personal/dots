@@ -6,15 +6,14 @@ POWERLINE_TMUX_PATH = '/usr/local/lib/python2.7/site-packages/powerline/bindings
 NODEJS_COMMON_PACKAGES = %w(
   bower duo grunt-cli broccoli-cli gulp yo khaos jspm
   npm-check-updates bower-check-updates avn avn-nvm browserify
-  webpack webpack-dev-server jasmine jake madge
-  forever nodemon jscs csslint how-to-npm
+  webpack jasmine jake madge forever nodemon jscs csslint how-to-npm
   protractor psi jshint eslint jsdoc stylelint doiuse
-  watch js-beautify nsp gitbook-cli plato
-  sloc npmd@1 live-server git-guilt doctoc
+  watch js-beautify nsp gitbook-cli plato sloc npmd@1 live-server git-guilt doctoc
   trash localtunnel svgo git+https://github.com/ramitos/jsctags.git
   jsfmt fixmyjs jsinspect tmi speed-test tldr commitizen
   babel-cli karma-cli istanbul foreman eslint-config-airbnb
-  iron-node disc stylelint-config-suitcss next-update
+  iron-node disc stylelint-config-suitcss next-update semantic-release-cli
+  git-issues
 )
 
 namespace :install do

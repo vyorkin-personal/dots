@@ -1,7 +1,10 @@
 dots
 ====
 
-a new age reincarnation of my dotfiles, fucking clean, made with love.
+A new age reincarnation of my dotfiles, fucking clean, made with love.
+
+P.S.: This is *my dotfiles*, there is my name & contacts everywhere. Don't
+blindly use my settings as is.
 
 installation
 ====
