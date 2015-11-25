@@ -1,2 +1,2 @@
-alias nis='npm -S'
-alias nid='npm -D'
+alias nis='npm i -S'
+alias nid='npm i -D'
