@@ -1,1 +1,5 @@
 registry=http://registry.npmjs.org/
+init-author-name=Vasiliy Yorkin
+init-author-email=vasiliy.yorkin@gmail.com
+init-author-url=https://github.com/vyorkin
+init-license=MIT
