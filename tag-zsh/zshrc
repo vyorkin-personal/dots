@@ -103,7 +103,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init - --no-rehash)"; fi
 # export GIT_TEMPLATE_DIR=`overcommit --template-dir`
 
 # speed up jvm dev env
-export LEIN_JAVA_CMD=$(which drip)
+# export LEIN_JAVA_CMD=$(which drip)
 export LEIN_JVM_OPTS=-XX:TieredStopAtLevel=1
 
 export NVM_DIR=~/.nvm
