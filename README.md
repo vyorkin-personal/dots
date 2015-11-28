@@ -9,7 +9,7 @@ blindly use my settings as is.
 installation
 ====
 
-install homebrew:
+install [homebrew](http://brew.sh/):
 ```
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
@@ -21,7 +21,7 @@ git submodule update --init
 make
 ```
 
-in case of problems with tern_for_vim:
+in case of problems with [tern_for_vim](https://github.com/ternjs/tern_for_vim):
 ```
 cd $HOME/.vim/plugged/tern_for_vim
 npm install
@@ -37,9 +37,10 @@ cd ~/.rbenv/plugins/ruby-build && git pull origin master
 
 the fucking names:
 
-* showy edge
-* seil
-* karabiner
+* [brew bundler](https://github.com/Homebrew/homebrew-bundle)
+* [showy edge](https://github.com/tekezo/ShowyEdge)
+* [seil](https://pqrs.org/osx/karabiner/seil.html.en)
+* [karabiner](https://pqrs.org/osx/karabiner/index.html.en)
 
 cvim chrome extension:
 * [white theme](https://gist.github.com/vyorkin/711589d7f1a90954dec5)
@@ -47,6 +48,10 @@ cvim chrome extension:
 
 * [cheat](https://github.com/chrisallenlane/cheat)
 * [tlrd](https://github.com/tldr-pages/tldr)
+
+# resources
+* [awesome dotfiles](https://github.com/webpro/awesome-dotfiles)
+* [how to setup tern](http://ternjs.net/doc/manual.html#configuration)
 
 install vagrant vmware plugin (if you have a license):
 
