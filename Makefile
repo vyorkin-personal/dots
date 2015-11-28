@@ -5,7 +5,7 @@ install:
 	brew install rcm
 	rcup -v -d ~/.dots
 	brew tap Homebrew/bundle
-	brew brewdle
+	brew bundle
 	rake install:all
 
 uninstall:
