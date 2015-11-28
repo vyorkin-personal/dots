@@ -1,0 +1,35 @@
+# open with Sublime Text
+function ss() {
+  if [ $# -eq 0 ]; then
+    subl .;
+  else
+    subl "$@";
+  fi;
+}
+
+# open with Atom
+function aa() {
+  if [ $# -eq 0 ]; then
+    atom .;
+  else
+    atom "$@";
+  fi;
+}
+
+# open with NeoVim
+function v() {
+  if [ $# -eq 0 ]; then
+    nvim .;
+  else
+    nvim "$@";
+  fi;
+}
+
+# open with MacVim
+function v() {
+  if [ $# -eq 0 ]; then
+    mvim .;
+  else
+    mvim "$@";
+  fi;
+}
