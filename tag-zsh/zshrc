@@ -8,7 +8,7 @@ if [ -n "$DISPLAY" -a "$TERM" = "xterm" ]; then
   export TERM=xterm-256color
 fi
 
-export EDITOR=vim
+export EDITOR=nvim
 
 if [[ -n $SSH_CONNECTION ]]; then
   # nothing to do here for now
@@ -43,6 +43,11 @@ plugins=(
   node npm osx perl python rails rake rsync ruby rvm scala tmux
   tmuxinator torrent vagrant redis-cli web-search bower
 )
+
+export DOTFILES=$HOME/.dotfiles
+
+# load custom functions & aliases
+source $DOTFILES/index
 
 source $ZSH/oh-my-zsh.sh
 
@@ -83,11 +88,6 @@ zle -N predict-on
 zle -N predict-off
 bindkey '^X1' predict-on
 bindkey '^X2' predict-off
-
-export DOTFILES=$HOME/.dotfiles
-
-# load custom functions & aliases
-source $DOTFILES/index
 
 # powerline prompt (slow)
 # source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
