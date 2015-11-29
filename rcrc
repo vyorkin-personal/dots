@@ -3,7 +3,6 @@ DOTFILES_DIRS="$HOME/.dots"
 EXCLUDES="
   rcrc
   Brewfile
-  Caskfile
   Makefile
   Rakefile
   README.md
@@ -33,7 +32,6 @@ TAGS="
   utils
   vim
   emacs
-  nvim
   zsh
 "
 

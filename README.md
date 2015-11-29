@@ -50,6 +50,7 @@ cvim chrome extension:
 * [tlrd](https://github.com/tldr-pages/tldr)
 
 # resources
+* [rcm](http://thoughtbot.github.io/rcm/rcm.7.html)
 * [awesome dotfiles](https://github.com/webpro/awesome-dotfiles)
 * [how to setup tern](http://ternjs.net/doc/manual.html#configuration)
 

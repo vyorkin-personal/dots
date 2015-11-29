@@ -1,3 +1,4 @@
+- [ ] check this out https://github.com/anishathalye/dotbot
 - [ ] learn zsh
 - [ ] clean zsh config
 - [ ] replace zsh submodule plugins with oh-my-zsh custom plugins
