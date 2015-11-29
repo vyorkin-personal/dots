@@ -135,9 +135,9 @@ set nowritebackup               " don't write backups
 set background=dark
 
 if &diff
-  colorscheme fu
+  colorscheme strange
 else
-  colorscheme fu
+  colorscheme strange
 endif
 
 " conceal settings
