@@ -66,3 +66,13 @@ vagrant plugin license vagrant-vmware-fusion license.lic
 in case aflred can't find cask symlinks:
 [go to alfred settings and just click on the 'reset'
 button](https://github.com/caskroom/homebrew-cask/issues/9685#issuecomment-77553432)
+
+macvim + python:
+```
+brew rm -f python
+brew rm -f macvim
+brew install python
+brew linkapps python
+brew install macvim --with-python --override-system-vim
+brew linkapps macvim
+```
