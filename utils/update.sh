@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # update App Store apps
 sudo softwareupdate -i -a
 

@@ -53,6 +53,7 @@ cvim chrome extension:
 * [rcm](http://thoughtbot.github.io/rcm/rcm.7.html)
 * [awesome dotfiles](https://github.com/webpro/awesome-dotfiles)
 * [how to setup tern](http://ternjs.net/doc/manual.html#configuration)
+* [fasd](https://github.com/clvv/fasd#examples)
 
 install vagrant vmware plugin (if you have a license):
 
