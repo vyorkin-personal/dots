@@ -38,7 +38,6 @@ TAGS="
 SYMLINK_DIRS="
   dotfiles:*
   dotsecrets:*
-  config
   git_template
   irssi
   weechat:*
