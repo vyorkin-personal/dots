@@ -44,12 +44,13 @@ plugins=(
   tmuxinator torrent vagrant redis-cli web-search bower
 )
 
+source $ZSH/oh-my-zsh.sh
+
 export DOTFILES=$HOME/.dotfiles
 
 # load custom functions & aliases
+# (should be after oh-my-zsh & plugins to use my overrides)
 source $DOTFILES/index
-
-source $ZSH/oh-my-zsh.sh
 
 source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
