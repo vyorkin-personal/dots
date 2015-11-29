@@ -147,7 +147,7 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 # Use scroll gesture with the Command modifier key to zoom
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
-defaults write com.apple.universalaccess closeViewScrollWheelModifiersInt -int 10485760
+defaults write com.apple.universalaccess closeViewScrollWheelModifiersInt -int 1048576
 
 # Zoom in fullscreen
 defaults write com.apple.universalaccess closeViewWindowMode -int 2
