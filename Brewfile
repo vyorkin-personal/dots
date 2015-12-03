@@ -30,17 +30,16 @@ brew 'consul'
 
 brew 'flow'
 
-# install GNU core utilities (those that come with OS X are outdated)
+# GNU core utilities (those that come with OS X are outdated)
 # don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew 'coreutils'
-# install some other useful utilities like `sponge`
+# some other useful utilities like `sponge`
 brew 'moreutils'
-# install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed
+# GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed
 brew 'findutils'
-# install GNU `sed`, overwriting the built-in `sed`
+# GNU `sed`, overwriting the built-in `sed`
 brew 'gnu-sed', args: ['default-names']
 
-# install Bash 4
 # note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before running `chsh`.
 brew 'bash'
 brew 'bash-completion'
@@ -67,7 +66,6 @@ brew 'wireshark', args: ['with-qt']
 brew 'weechat', args: ['with-python', 'with-perl']
 brew 'irssi'
 
-# install RingoJS and Narwhal
 # note that the order in which these are installed is important
 # see http://git.io/brew-narwhal-ringo.
 brew 'ringojs'
@@ -79,7 +77,7 @@ brew 'rbenv'
 
 brew 'doxygen'
 
-# install more recent versions of some OS X tools
+# more recent versions of some OS X tools
 brew 'vim', args: ['override-system-vi', 'with-lua', 'with-perl', 'with-python3', 'with-ruby']
 brew 'homebrew/dupes/grep'
 brew 'homebrew/dupes/screen'
@@ -96,7 +94,7 @@ brew 'mysql'
 brew 'redis'
 brew 'boot2docker'
 
-# install XML libs
+# XML libs
 brew 'libxml2'
 brew 'libxslt'
 
@@ -187,11 +185,6 @@ cask 'toggldesktop'
 cask 'totalspaces'
 cask 'istat-menus'
 cask 'nvalt'
-cask 'skitch'
-cask 'bittorrent-sync'
-cask 'textmate'
-cask 'anvil'
-cask 'commandq'
 cask 'mplayerx'
 cask 'onepassword'
 cask 'adium'
@@ -208,7 +201,6 @@ cask 'caskroom/versions/java7'
 cask 'intellij-idea-ce'
 cask 'aquamacs'
 cask 'arduino'
-cask 'boot2docker'
 cask 'brackets'
 cask 'breach'
 cask 'calibre'
