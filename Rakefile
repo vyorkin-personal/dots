@@ -8,7 +8,7 @@ NODEJS_COMMON_PACKAGES = %w(
   npm-check-updates bower-check-updates avn avn-nvm browserify
   webpack jasmine jake madge forever nodemon jscs csslint how-to-npm
   protractor psi jshint eslint jsdoc stylelint doiuse
-  watch js-beautify nsp gitbook-cli plato sloc npmd@1 live-server git-guilt doctoc
+  watch js-beautify nsp snyk gitbook-cli plato sloc npmd@1 live-server git-guilt doctoc
   trash localtunnel svgo git+https://github.com/ramitos/jsctags.git
   jsfmt fixmyjs jsinspect tmi speed-test tldr commitizen
   babel-cli karma-cli istanbul foreman eslint-config-airbnb
