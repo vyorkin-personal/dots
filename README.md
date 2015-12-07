@@ -55,6 +55,11 @@ cvim chrome extension:
 * [how to setup tern](http://ternjs.net/doc/manual.html#configuration)
 * [fasd](https://github.com/clvv/fasd#examples)
 
+install a new node version & migrate existing packages:
+```
+nvm install new-version --reinstall-packages-from=old-version
+```
+
 install vagrant vmware plugin (if you have a license):
 
 ```
