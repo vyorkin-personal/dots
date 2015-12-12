@@ -6,6 +6,7 @@ tap 'thoughtbot/formulae'
 tap 'karan/karan'
 tap 'jlhonora/lsusb'
 tap 'posva/taps'
+tap 'gemnasium/gemnasium'
 
 brew 'caskroom/cask/brew-cask'
 
@@ -20,6 +21,8 @@ brew 'elasticsearch'
 
 brew 'z'
 brew 'cheat'
+
+brew 'gemnasium-toolbelt'
 
 brew 'gotags'
 
