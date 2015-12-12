@@ -109,3 +109,6 @@ export LEIN_JVM_OPTS=-XX:TieredStopAtLevel=1
 
 export NVM_DIR=~/.nvm
 source ~/.nvm/nvm.sh
+
+# added by travis gem
+[ -f /Users/vyorkin/.travis/travis.sh ] && source /Users/vyorkin/.travis/travis.sh
