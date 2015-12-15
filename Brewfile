@@ -7,6 +7,7 @@ tap 'karan/karan'
 tap 'jlhonora/lsusb'
 tap 'posva/taps'
 tap 'gemnasium/gemnasium'
+tap 'phrase/brewed'
 
 brew 'caskroom/cask/brew-cask'
 
@@ -25,6 +26,7 @@ brew 'cheat'
 brew 'gemnasium-toolbelt'
 
 brew 'gotags'
+brew 'phraseapp'
 
 brew 'asciinema'
 brew 'catimg'
