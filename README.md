@@ -56,6 +56,8 @@ cvim chrome extension:
 * [how to setup tern](http://ternjs.net/doc/manual.html#configuration)
 * [fasd](https://github.com/clvv/fasd#examples)
 
+stylelintrc is taken from [stylelint-config-suitcss](https://github.com/stylelint/stylelint-config-suitcss)
+
 install a new node version & migrate existing packages:
 ```
 nvm install new-version --reinstall-packages-from=old-version

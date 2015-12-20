@@ -1,4 +1,4 @@
-" hate holding <Shift> every type i need to enter a cmd
+" hate holding <Shift> every time I need to enter a cmd
 nn ; :
 nn : ;
 
