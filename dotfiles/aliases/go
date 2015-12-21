@@ -1,0 +1,1 @@
+alias gogo='cd $GOPATH/src'

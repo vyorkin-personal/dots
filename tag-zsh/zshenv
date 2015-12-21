@@ -1,4 +1,4 @@
-export GOPATH=/usr/local/go/bin
+export GOPATH=$HOME/programming/go/
 
 export LANG=en_US.UTF-8
 export LC_ALL=$LANG
