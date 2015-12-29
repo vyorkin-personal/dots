@@ -13,3 +13,4 @@ Session.vim
 .powder
 .rspec-local
 npm-debug*
+rethinkdb_data
