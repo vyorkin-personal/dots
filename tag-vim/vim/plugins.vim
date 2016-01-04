@@ -29,7 +29,7 @@ Plug 'mattn/webapi-vim'
 Plug 'mattn/gist-vim'
 
 " color schemes
-Plug 'chriskempson/base16-vim'
+" Plug 'chriskempson/base16-vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'junegunn/seoul256.vim'
 Plug 'whatyouhide/vim-gotham'
