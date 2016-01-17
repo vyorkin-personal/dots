@@ -21,12 +21,18 @@ Plug 'Wolfy87/vim-expand'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'vim-scripts/restore_view.vim'
 
+" navigation & search
+Plug 'junegunn/vim-pseudocl'
+Plug 'junegunn/vim-oblique'
+Plug 'kshenoy/vim-signature'
+
 " git
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
 Plug 'tpope/git-bump'
 Plug 'mattn/webapi-vim'
 Plug 'mattn/gist-vim'
+Plug 'junegunn/gv.vim'
 
 " color schemes
 " Plug 'chriskempson/base16-vim'
@@ -59,7 +65,6 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'marijnh/tern_for_vim'
 Plug 'mxw/vim-jsx'
 Plug 'leshill/vim-json'
-" Plug 'mtscout6/vim-cjsx'
 
 " ruby
 Plug 'vim-ruby/vim-ruby'
