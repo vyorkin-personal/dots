@@ -12,7 +12,7 @@ NODEJS_COMMON_PACKAGES = %w(
   trash localtunnel svgo git+https://github.com/ramitos/jsctags.git
   jsfmt fixmyjs jsinspect tmi speed-test tldr commitizen
   babel-cli karma-cli istanbul foreman eslint-config-airbnb
-  iron-node disc stylelint-config-suitcss next-update semantic-release-cli
+  iron-node devtool disc stylelint-config-suitcss next-update semantic-release-cli
   git-issues exact-semver fixpack cli-real-favicon greenkeeper
 )
 
