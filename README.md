@@ -56,7 +56,7 @@ cvim chrome extension:
 * [how to setup tern](http://ternjs.net/doc/manual.html#configuration)
 * [fasd](https://github.com/clvv/fasd#examples)
 
-stylelintrc is taken from [stylelint-config-suitcss](https://github.com/stylelint/stylelint-config-suitcss)
+To run local eslint npm module and fallback to global I use [this tiny vim plugin](https://github.com/mtscout6/syntastic-local-eslint.vim).
 
 install a new node version & migrate existing packages:
 ```
