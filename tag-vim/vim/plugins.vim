@@ -65,6 +65,7 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'marijnh/tern_for_vim'
 Plug 'mxw/vim-jsx'
 Plug 'leshill/vim-json'
+" Plug 'pmsorhaindo/syntastic-local-eslint.vim'
 
 " ruby
 Plug 'vim-ruby/vim-ruby'

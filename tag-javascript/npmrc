@@ -4,3 +4,6 @@ init-author-email=vasiliy.yorkin@gmail.com
 init-author-url=https://github.com/vyorkin
 init-license=MIT
 save-exact=true
+username=vyorkin
+email=vasiliy.yorkin@gmail.com
+progress=false
