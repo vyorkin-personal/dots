@@ -20,6 +20,7 @@ Abolish asteriod asteroid
 
 Abolish extarct extract
 
-Abolish onCLick onClick
+Abolish onCL{i,I}ck onClick
+Abolish ture true
 
 Abolish vkonta{tke,ke} vkontakte

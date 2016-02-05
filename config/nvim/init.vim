@@ -142,7 +142,7 @@ endif
 
 " conceal settings
 set conceallevel=2              " concealed text is completely hidden
-set concealcursor=c             " don't reveal the conceals unless on insert or visual modes
+set concealcursor=nc            " don't reveal the conceals unless on insert or visual modes
 
 " allow mispelings when :wq-ing
 cabbrev ew :wq

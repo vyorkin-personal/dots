@@ -1,7 +1,7 @@
 " common
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-endwise'              " helps to end certain structures automatically
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
@@ -60,12 +60,11 @@ Plug 'stephenway/postcss.vim'
 " javascript, coffeescript, actionscript, jsx, jquery, tern
 Plug 'pangloss/vim-javascript'
 Plug 'othree/javascript-libraries-syntax.vim'
-Plug 'vyorkin/JavaScript-Indent'
 Plug 'kchmck/vim-coffee-script'
 Plug 'marijnh/tern_for_vim'
 Plug 'mxw/vim-jsx'
 Plug 'leshill/vim-json'
-" Plug 'pmsorhaindo/syntastic-local-eslint.vim'
+" Plug 'vyorkin/JavaScript-Indent'
 
 " ruby
 Plug 'vim-ruby/vim-ruby'
