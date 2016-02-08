@@ -134,11 +134,14 @@ set nowritebackup               " don't write backups
 
 set background=dark
 
-if &diff
+if &background=="dark"
   colorscheme strange
 else
   colorscheme strange
 endif
+
+" colorscheme switching for vimdiff
+au FilterWritePre * if &diff | colorscheme fu | AirlineTheme tomorrow | endif
 
 " conceal settings
 set conceallevel=2              " concealed text is completely hidden
@@ -175,6 +178,3 @@ augroup ftdetection
   au BufRead,BufNewFile *.es6 set filetype=javascript
   au BufRead,BufNewFile *.nvim set filetype=vim
 augroup END
-
-" colorscheme switching for vimdiff
-au FilterWritePre * if &diff | colorscheme fu | AirlineTheme tomorrow | endif

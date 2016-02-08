@@ -21,6 +21,18 @@ Abolish asteriod asteroid
 Abolish extarct extract
 
 Abolish onCL{i,I}ck onClick
-Abolish ture true
+
+Abolish tu{re,er} true
+Abolish fa{sle,sel} false
+Abolish nujmber number
+
+Abolish erorr error
+Abolish misn mins
+Abolish recat react
+Abolish {E,e}nought {}nough
 
 Abolish vkonta{tke,ke} vkontakte
+
+" more advanced example, keep it here.
+"
+" Abolish {,in}consistant{,ly} {}consistent{}

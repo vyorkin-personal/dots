@@ -136,11 +136,14 @@ endif
 set noswapfile                  " don't use buffer swap files
 set nowritebackup               " don't write backups
 
-set background=dark
-  colorscheme strange
+if &background=="dark"
+  colorscheme solarized
 else
-  colorscheme strange
+  colorscheme solarized
 endif
+
+" colorscheme switching for vimdiff
+au FilterWritePre * if &diff | colorscheme fu | AirlineTheme tomorrow | endif
 
 " conceal settings
 set conceallevel=2              " concealed text is completely hidden
@@ -168,6 +171,3 @@ augroup ftdetection
   au BufRead,BufNewFile *.es6 set filetype=javascript
   au BufRead,BufNewFile *.nvim set filetype=vim
 augroup END
-
-" colorscheme switching for vimdiff
-au FilterWritePre * if &diff | colorscheme fu | AirlineTheme tomorrow | endif

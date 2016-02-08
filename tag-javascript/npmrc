@@ -7,3 +7,4 @@ save-exact=true
 username=vyorkin
 email=vasiliy.yorkin@gmail.com
 progress=false
+flex-sdk:npm_cmd_ran=install
