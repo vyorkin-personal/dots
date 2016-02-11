@@ -186,6 +186,7 @@ bind j:${hyper} focus down
 
 # App bindings
 
+bind b:${hyper} focus 'Helium'
 bind e:${hyper} focus ${browser}
 bind u:${hyper} focus ${editor}
 bind x:${hyper} focus 'Xcode'

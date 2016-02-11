@@ -30,6 +30,7 @@ Abolish erorr error
 Abolish misn mins
 Abolish recat react
 Abolish {E,e}nought {}nough
+Abolish {A,a}ctinos actions
 
 Abolish vkonta{tke,ke} vkontakte
 
