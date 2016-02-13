@@ -24,10 +24,12 @@ Abolish onCL{i,I}ck onClick
 
 Abolish tu{re,er} true
 Abolish fa{sle,sel} false
-Abolish nujmber number
+Abolish nu{bm,jmb}er number
 
 Abolish erorr error
 Abolish misn mins
+Abolish msth smth
+Abolish redner render
 Abolish recat react
 Abolish {E,e}nought {}nough
 Abolish {A,a}ctinos actions
