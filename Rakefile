@@ -13,7 +13,7 @@ NODEJS_COMMON_PACKAGES = %w(
   jsfmt fixmyjs jsinspect tmi speed-test tldr commitizen
   babel-cli karma-cli istanbul foreman eslint-config-airbnb
   iron-node devtool disc stylelint-config-suitcss next-update semantic-release-cli
-  git-issues exact-semver fixpack cli-real-favicon greenkeeper npm-which
+  git-issues exact-semver fixpack cli-real-favicon greenkeeper npm-which budo
 )
 
 namespace :install do
