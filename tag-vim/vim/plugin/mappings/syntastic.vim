@@ -1,1 +1,1 @@
-nn <Leader>st :SyntasticToggleMode<CR>
+nn <Leader>tt :SyntasticToggleMode<CR>

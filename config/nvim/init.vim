@@ -47,7 +47,7 @@ set visualbell                  " no sounds
 set lazyredraw                  " don't redraw while in macros
 set ruler                       " always display the current cursor position (row, col)
 set ttyfast                     " use fast terminal connection
-set shortmess=atI               " use short messages, skip :intro, truncate file msg to fit on the cmd line
+set shortmess=atIO              " use short messages, skip :intro, truncate file msg to fit on the cmd line
 
 " folding
 set foldnestmax=3               " deepest fold in 3 levels

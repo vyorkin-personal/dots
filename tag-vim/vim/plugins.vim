@@ -3,15 +3,15 @@ Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'              " helps to end certain structures automatically
 Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-unimpaired'
-Plug 'tpope/vim-scriptease'
-Plug 'tpope/vim-vinegar'
-Plug 'tpope/vim-eunuch'
-Plug 'tpope/vim-dispatch'
-Plug 'tpope/vim-rsi'
-Plug 'tpope/vim-sleuth'
-Plug 'tpope/vim-obsession'
+Plug 'tpope/vim-surround'             " quoting/parenthesizing
+Plug 'tpope/vim-unimpaired'           " complementary pairs of mappings
+Plug 'tpope/vim-scriptease'           " a Vim plugin for Vim plugins
+Plug 'tpope/vim-vinegar'              " netrw enhancer
+Plug 'tpope/vim-eunuch'               " unix shell commands in Vim
+Plug 'tpope/vim-dispatch'             " asynchronous build and test dispatcher
+Plug 'tpope/vim-rsi'                  " emacs mappings for insert and command line modes
+Plug 'tpope/vim-sleuth'               " heuristically set buffer options
+Plug 'tpope/vim-obsession'            " session management
 Plug 'tpope/vim-capslock'
 Plug 'tpope/vim-projectionist'
 
@@ -23,7 +23,7 @@ Plug 'vim-scripts/restore_view.vim'
 
 " navigation & search
 Plug 'junegunn/vim-pseudocl'
-Plug 'junegunn/vim-oblique'
+Plug 'junegunn/vim-oblique'           " Improved /-search
 Plug 'kshenoy/vim-signature'
 
 " git
@@ -153,7 +153,9 @@ Plug 'nelstrom/vim-textobj-rubyblock'
 " completion: supertab or YCM
 " Plug 'Valloric/YouCompleteMe'
 " Plug 'ervandew/supertab'
-Plug 'Shougo/deoplete.nvim'
+
+" it hangs while I type shit
+" Plug 'Shougo/deoplete.nvim'
 
 " tools
 Plug 'vim-scripts/paredit.vim'
@@ -178,8 +180,10 @@ Plug 'bling/vim-airline'
 Plug 'xolox/vim-notes'
 Plug 'xolox/vim-misc'
 
-Plug 'scrooloose/nerdtree'
-Plug 'jistr/vim-nerdtree-tabs'
+" use netrw + vinegar instead
+"
+" Plug 'scrooloose/nerdtree'
+" Plug 'jistr/vim-nerdtree-tabs'
 
 Plug 'EinfachToll/DidYouMean'
 Plug 'dietsche/vim-lastplace'
