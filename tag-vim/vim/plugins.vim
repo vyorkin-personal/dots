@@ -180,10 +180,10 @@ Plug 'bling/vim-airline'
 Plug 'xolox/vim-notes'
 Plug 'xolox/vim-misc'
 
-" use netrw + vinegar instead
+" try to use netrw + vinegar instead
 "
-" Plug 'scrooloose/nerdtree'
-" Plug 'jistr/vim-nerdtree-tabs'
+Plug 'scrooloose/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
 
 Plug 'EinfachToll/DidYouMean'
 Plug 'dietsche/vim-lastplace'
