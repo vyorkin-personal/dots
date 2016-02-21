@@ -30,7 +30,7 @@ brew 'phraseapp'
 
 brew 'asciinema'
 brew 'catimg'
-
+brew 'rlwrap'
 brew 'consul'
 
 brew 'flow'
