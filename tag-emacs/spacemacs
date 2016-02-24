@@ -19,28 +19,58 @@
      ;; ----------------------------------------------------------------
      auto-completion
      better-defaults
+     chrome
+     osx
+     tmux
+     eyebrowse
+     finance
      emacs-lisp
      git
      github
      markdown
+     latex
      colors
-     ;; org
-     ;; (shell :variables
-     ;;        shell-default-height 30
-     ;;        shell-default-position 'bottom)
+     org
+     dash
+     unimpaired
+     (wakatime :variables
+               wakatime-api-key "8edc001e-fc44-4efd-9d4c-1f4bd6805f8e"
+               wakatime-cli-path "/usr/local/bin/wakatime")
+     (shell :variables
+            shell-default-shell 'eshell
+            shell-default-height 30
+            shell-default-position 'bottom)
      ;; syntax-checking
      version-control
      ;; around 100 additional themes
      themes-megapack
-     ruby
-     html
-     javascript
+     theming
+     octave
+     rust
      clojure
+     scheme
+     elm
+     purescript
+     typescript
+     (ruby :variables
+           ruby-version-manager 'rbenv
+           ruby-test-runner 'rspec)
+     elixir
+     go
+     python
+     html
+     yaml
+     javascript
      erlang
      haskell
      c-c++
      ansible
      dockerfile
+     emoji
+     games
+     ranger
+     erc
+     jabber
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -75,25 +105,27 @@ before layers configuration."
    dotspacemacs-startup-banner nil
    ;; List of items to show in the startup buffer. If nil it is disabled.
    ;; Possible values are: `recents' `bookmarks' `projects'."
-   dotspacemacs-startup-lists '(recents projects)
+   dotspacemacs-startup-lists '(recents bookmarks projects)
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(obsidian
+   dotspacemacs-themes '(solarized-dark
+                         solarized-light
+                         dracula
+                         omtose-phellack
+                         majapahit
+                         monokai
+                         spacemacs-dark
+                         spacemacs-light
                          ujelly
                          zenburn
-                         monokai
-                         solarized-light
-                         solarized-dark
-                         spacemacs-light
-                         spacemacs-dark
                          leuven)
    ;; If non nil the cursor color matches the state color.
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
    dotspacemacs-default-font '("Source Code Pro"
-                               :size 13
+                               :size 12
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -148,7 +180,7 @@ before layers configuration."
    ;; Transparency can be toggled through `toggle-transparency'.
    dotspacemacs-inactive-transparency 90
    ;; If non nil unicode symbols are displayed in the mode line.
-   dotspacemacs-mode-line-unicode-symbols t
+   dotspacemacs-mode-line-unicode-symbols nil
    ;; If non nil smooth scrolling (native-scrolling) is enabled. Smooth
    ;; scrolling overrides the default behavior of Emacs which recenters the
    ;; point when it reaches the top or bottom of the screen.
@@ -170,7 +202,6 @@ before layers configuration."
    )
 
   ;; User initialization goes here
-  (setq-default ruby-enable-ruby-on-rails-support t)
   )
 
 (defun dotspacemacs/config ()
@@ -181,7 +212,21 @@ layers configuration."
   (define-key global-map (kbd "C--") 'text-scale-decrease)
 
   (setq clojure-enable-fancify-symbols t)
+  (setq cider-cljs-lein-repl "(do (use 'figwheel-sidecar.repl-api) (start-figwheel!) (cljs-repl))")
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(paradox-github-token t))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(company-tooltip-common ((t (:inherit company-tooltip :weight bold :underline nil))))
+ '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :weight bold :underline nil)))))

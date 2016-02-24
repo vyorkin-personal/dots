@@ -28,7 +28,7 @@ config keyboardLayout qwerty
 # App aliases
 
 alias browser 'Google Chrome'
-alias editor 'MacVim'
+alias editor 'Emacs'
 alias terminal 'iTerm'
 alias mail 'Mailbox (Beta)'
 
@@ -95,6 +95,7 @@ layout 2monitors 'Messages':REPEAT            ${2-leftmost}
 
 layout 1monitor ${terminal}:MAIN_FIRST        ${1-full}
 layout 1monitor 'Sublime Text 2':MAIN_FIRST   ${1-left}
+
 layout 1monitor ${editor}:MAIN_FIRST          ${1-left}
 layout 1monitor 'Safari':REPEAT               ${1-full}
 layout 1monitor ${browser}:REPEAT             ${1-full}

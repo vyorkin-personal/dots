@@ -124,6 +124,8 @@ brew 'hashpump'
 cask 'xquartz'
 brew 'imagemagick', args: ['with-webp', 'with-x11']
 
+brew 'terminal-notifier'
+
 brew 'lynx'
 brew 'node'
 brew 'iojs'
@@ -235,7 +237,7 @@ cask 'font-inconsolata'
 cask 'font-vollkorn'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
-cask 'font-comic-neue'
+# cask 'font-comic-neue'
 cask 'font-courier-prime'
 cask 'font-source-serif-pro'
 
