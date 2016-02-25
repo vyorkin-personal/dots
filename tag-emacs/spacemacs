@@ -22,6 +22,7 @@
      chrome
      osx
      tmux
+     deft
      eyebrowse
      finance
      emacs-lisp
@@ -29,8 +30,11 @@
      github
      markdown
      latex
-     colors
-     org
+     (colors :variables
+             colors-enable-rainbow-identifiers t
+             colors-enable-nyan-cat-progress-bar (display-graphic-p))
+     (org :variables
+          org-enable-github-support t)
      dash
      unimpaired
      (wakatime :variables
@@ -45,6 +49,7 @@
      ;; around 100 additional themes
      themes-megapack
      theming
+     gnus
      octave
      rust
      clojure
@@ -55,18 +60,21 @@
      (ruby :variables
            ruby-version-manager 'rbenv
            ruby-test-runner 'rspec)
+     ruby-on-rails
      elixir
      go
      python
      html
      yaml
      javascript
+     react
      erlang
      haskell
      c-c++
      ansible
      dockerfile
      emoji
+     search-engine
      games
      ranger
      erc
@@ -93,7 +101,7 @@ before layers configuration."
   (setq-default
    ;; Either `vim' or `emacs'. Evil is always enabled but if the variable
    ;; is `emacs' then the `holy-mode' is enabled at startup.
-   dotspacemacs-editing-style 'vim
+   dotspacemacs-editing-style 'hybrid
    ;; If non nil output loading progress in `*Messages*' buffer.
    dotspacemacs-verbose-loading nil
    ;; Specify the startup banner. Default value is `official', it displays
@@ -204,15 +212,145 @@ before layers configuration."
   ;; User initialization goes here
   )
 
-(defun dotspacemacs/config ()
+(defun dotspacemacs/user-config ()
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
   (define-key global-map (kbd "C-+") 'text-scale-increase)
   (define-key global-map (kbd "C--") 'text-scale-decrease)
 
+  (setq powerline-default-separator nil)
+  (setq neo-theme 'nerd)
+
   (setq clojure-enable-fancify-symbols t)
   (setq cider-cljs-lein-repl "(do (use 'figwheel-sidecar.repl-api) (start-figwheel!) (cljs-repl))")
+
+  (setq-default
+   ;; js2-mode
+   js2-basic-offset 2
+   ;; web-mode
+   css-indent-offset 2
+   web-mode-markup-indent-offset 2
+   web-mode-css-indent-offset 2
+   web-mode-code-indent-offset 2
+   web-mode-attr-indent-offset 2)
+
+  (with-eval-after-load 'web-mode
+    (add-to-list 'web-mode-indentation-params '("lineup-args" . nil))
+    (add-to-list 'web-mode-indentation-params '("lineup-concats" . nil))
+    (add-to-list 'web-mode-indentation-params '("lineup-calls" . nil)))
+
+  (defun my-setup-indent (n)
+    ;; web development
+    (setq coffee-tab-width n) ; coffeescript
+    (setq javascript-indent-level n) ; javascript-mode
+    (setq js-indent-level n) ; js-mode
+    (setq js2-basic-offset n) ; js2-mode
+    (setq web-mode-markup-indent-offset n) ; web-mode, html tag in html file
+    (setq web-mode-css-indent-offset n) ; web-mode, css in html file
+    (setq web-mode-code-indent-offset n) ; web-mode, js code in html file
+    (setq css-indent-offset n) ; css-mode
+    )
+
+  ;; left here as an example
+  (defun my-office-code-style ()
+    (interactive)
+    (message "Office code style")
+    (setq indent-tabs-mode t) ; use tab instead of space
+    (my-setup-indent 4) ; indent 4 spaces width
+    )
+
+  (defun my-personal-code-style ()
+    (interactive)
+    (message "Personal code style")
+    (setq indent-tabs-mode nil) ; use space instead of tab
+    (my-setup-indent 2) ; indent 2 spaces width
+    )
+
+  (my-personal-code-style)
+
+  (setq undo-tree-auto-save-history t
+        undo-tree-history-directory-alist
+        `(("." . ,(concat spacemacs-cache-directory "undo"))))
+  (unless (file-exists-p (concat spacemacs-cache-directory "undo"))
+    (make-directory (concat spacemacs-cache-directory "undo")))
+
+  ;; For storing erc passwords
+  (load "~/.ercpass")
+  (require 'erc-services)
+  (erc-services-mode 1)
+
+  (setq erc-hide-list '("JOIN" "KICK" "NICK" "PART" "QUIT" "MODE"))
+  (setq erc-nickserv-passwords
+        `((freenode
+           (("vyorkin" . ,freenode-pass)))
+          ))
+  (setq erc-prompt-for-nickserv-password nil)
+
+  (defmacro erc-autojoin (&rest args)
+    `(add-hook 'erc-after-connect
+               '(lambda (server nick)
+                  (cond
+                   ,@(mapcar (lambda (servers+channels)
+                               (let ((servers (car servers+channels))
+                                     (channels (cdr servers+channels)))
+                                 `((member erc-session-server ',servers)
+                                   (mapc 'erc-join-channel ',channels))))
+                             args)))))
+
+  (erc-autojoin
+   (("irc.freenode.net")
+    "reactjs"
+    "emacs"
+    "postgresql"
+    "Node.js"
+    "programming"
+    "clojure"
+    "clojurescript"
+    "haskell"))
+
+  ;; Get email, and store in nnml
+  (setq gnus-secondary-select-methods
+        '(
+          (nnimap "gmail"
+                  (nnimap-address
+                   "imap.gmail.com")
+                  (nnimap-server-port 993)
+                  (nnimap-stream ssl))
+          ))
+
+  ;; Send email via Gmail:
+  (setq message-send-mail-function 'smtpmail-send-it
+        smtpmail-default-smtp-server "smtp.gmail.com")
+
+  ;; Archive outgoing email in Sent folder on imap.gmail.com:
+  (setq gnus-message-archive-method '(nnimap "imap.gmail.com")
+        gnus-message-archive-group "[Gmail]/Sent Mail")
+
+  ;; set return email address based on incoming email address
+  (setq gnus-posting-styles
+        '(((header "to" "address@outlook.com")
+           (address "address@outlook.com"))
+          ((header "to" "address@gmail.com")
+           (address "address@gmail.com"))))
+
+  ;; store email in ~/gmail directory
+  (setq nnml-directory "~/gmail")
+  (setq message-directory "~/gmail")
+
+  (setq deft-extensions '("org" "md" "txt"))
+
+  (setq jabber-account-list '(
+                              ("vyorkin@livecoding.tv"
+                               (:network-server . "chat.livecoding.tv")
+                               (:port . 5223)
+                               (:connection-type . ssl))
+
+                              ("vasiliy.yorkin@gmail.com"
+                               (:network-server . "talk.google.com")
+                               (:port . 5223)
+                               (:connection-type . ssl))
+                              ))
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
