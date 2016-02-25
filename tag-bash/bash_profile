@@ -1,5 +1,1 @@
 [[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
-
-# 1) Add manymo to PATH for scripting
-# 2) Add CLI utils from postgresapp, see http://postgresapp.com/documentation/cli-tools.html
-export PATH=$PATH:$HOME/.manymo/bin:/Applications/Postgres.app/Contents/Versions/9.3/bin

@@ -1,4 +1,8 @@
 export PATH="$PATH:$HOME/.rbenv/shims:/$HOME/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/$HOME/.local/bin:/usr/games:/usr/local/games:$HOME/.cabal/bin:$HOME/Library/Haskell/bin:./node_modules/.bin"
 
+# 1) Add manymo to PATH for scripting
+# 2) Add CLI utils from postgresapp, see http://postgresapp.com/documentation/cli-tools.html
+export PATH=$PATH:$HOME/.manymo/bin:/Applications/Postgres.app/Contents/Versions/9.3/bin
+
 export LANG=en_US.UTF-8
 export LC_ALL=$LANG
