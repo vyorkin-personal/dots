@@ -41,6 +41,7 @@ the fucking names:
 * [showy edge](https://github.com/tekezo/ShowyEdge)
 * [seil](https://pqrs.org/osx/karabiner/seil.html.en)
 * [karabiner](https://pqrs.org/osx/karabiner/index.html.en)
+* [Ilya Birman typography](http://ilyabirman.ru/projects/typography-layout/)
 
 cvim chrome extension:
 * [white theme](https://gist.github.com/vyorkin/711589d7f1a90954dec5)
