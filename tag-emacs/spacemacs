@@ -31,8 +31,7 @@
      markdown
      latex
      (colors :variables
-             colors-enable-rainbow-identifiers t
-             colors-enable-nyan-cat-progress-bar (display-graphic-p))
+             colors-enable-rainbow-identifiers t)
      (org :variables
           org-enable-github-support t)
      dash
@@ -216,11 +215,24 @@ before layers configuration."
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
-  (define-key global-map (kbd "C-+") 'text-scale-increase)
-  (define-key global-map (kbd "C--") 'text-scale-decrease)
+  (define-key evil-motion-state-map ";" 'evil-ex)
+
+  ;; These mappings interfere with other spacemacs defaults
+
+  ;; (define-key global-map (kbd "C-l") 'evil-window-right)
+  ;; (define-key global-map (kbd "C-h") 'evil-window-left)
+  ;; (define-key global-map (kbd "C-k") 'evil-window-up)
+  ;; (define-key global-map (kbd "C-j") 'evil-window-down)
+
+  ;; Show only files tracked by git in helm-projectile
+  (setq projectile-git-command "git ls-files -zc --exclude-standard")
+  (bind-key (kbd "C-SPC") 'helm-projectile)
 
   (setq powerline-default-separator nil)
   (setq neo-theme 'nerd)
+
+  (setq cider-repl-history-size 1000)
+  (setq cider-overlays-use-font-lock t)
 
   (setq clojure-enable-fancify-symbols t)
   (setq cider-cljs-lein-repl "(do (use 'figwheel-sidecar.repl-api) (start-figwheel!) (cljs-repl))")
