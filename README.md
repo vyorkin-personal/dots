@@ -57,9 +57,10 @@ cvim chrome extension:
 * [how to setup tern](http://ternjs.net/doc/manual.html#configuration)
 * [fasd](https://github.com/clvv/fasd#examples)
 
-How to install Emacs:
+How to install Emacs + Spacemacs:
 ```
 brew install emacs --HEAD --use-git-head --with-cocoa --with-gnutls --with-rsvg --with-imagemagick
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 ```
 
 To run local eslint npm module and fallback to global I use [this tiny vim plugin](https://github.com/mtscout6/syntastic-local-eslint.vim).
