@@ -135,9 +135,9 @@ set nowritebackup               " don't write backups
 set background=dark
 
 if &background=="dark"
-  colorscheme solarized
+  colorscheme fu
 else
-  colorscheme solarized
+  colorscheme fu
 endif
 
 " colorscheme switching for vimdiff
@@ -155,8 +155,11 @@ cabbrev qw :wq
 runtime macros/matchit.vim
 
 " hack to make <c-h> mappings work
-" see:
+"
+" btw it won't work without this:
 " https://github.com/neovim/neovim/issues/2048#issuecomment-78045837
+"
+" for more info see:
 " https://github.com/neovim/neovim/issues/2294
 if has('nvim')
   nmap <BS> <C-W>h

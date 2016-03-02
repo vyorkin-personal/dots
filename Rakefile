@@ -14,6 +14,7 @@ NODEJS_COMMON_PACKAGES = %w(
   babel-cli karma-cli istanbul foreman eslint-config-airbnb
   iron-node devtool disc stylelint-config-suitcss next-update semantic-release-cli
   git-issues exact-semver fixpack cli-real-favicon greenkeeper npm-which budo
+  del-cli
 )
 
 namespace :install do
@@ -95,7 +96,7 @@ namespace :install do
   desc 'install tmux plugins'
   task :tpm do
     puts 'installing tmux plugins...'
-    `~/.tmux/plugins/tpm/scripts/install_plugins`
+    `~/.tmux/plugins/tpm/scripts/install_plugins.sh`
     puts 'done'
   end
 end

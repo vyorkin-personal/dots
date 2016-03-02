@@ -34,7 +34,6 @@
              colors-enable-rainbow-identifiers t)
      (org :variables
           org-enable-github-support t)
-     dash
      unimpaired
      (wakatime :variables
                wakatime-api-key "8edc001e-fc44-4efd-9d4c-1f4bd6805f8e"
@@ -59,6 +58,7 @@
      (ruby :variables
            ruby-version-manager 'rbenv
            ruby-test-runner 'rspec)
+     dash
      ruby-on-rails
      elixir
      go
@@ -116,7 +116,8 @@ before layers configuration."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(solarized-dark
+   dotspacemacs-themes '(ujelly
+                         solarized-dark
                          solarized-light
                          dracula
                          omtose-phellack
@@ -124,7 +125,6 @@ before layers configuration."
                          monokai
                          spacemacs-dark
                          spacemacs-light
-                         ujelly
                          zenburn
                          leuven)
    ;; If non nil the cursor color matches the state color.
@@ -378,5 +378,6 @@ layers configuration."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(default ((t (:family "Source Code Pro" :foundry "nil" :slant normal :weight normal :height 120 :width normal))))
  '(company-tooltip-common ((t (:inherit company-tooltip :weight bold :underline nil))))
  '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :weight bold :underline nil)))))

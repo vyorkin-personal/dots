@@ -57,6 +57,14 @@ cvim chrome extension:
 * [how to setup tern](http://ternjs.net/doc/manual.html#configuration)
 * [fasd](https://github.com/clvv/fasd#examples)
 
+NeoVim terminfo fix for OSX:
+
+https://github.com/neovim/neovim/issues/2048#issuecomment-78045837
+```
+infocmp $TERM | sed 's/kbs=^[hH]/kbs=\\177/' > $TERM.ti
+tic $TERM.ti
+```
+
 How to install Emacs + Spacemacs:
 ```
 brew install emacs --HEAD --use-git-head --with-cocoa --with-gnutls --with-rsvg --with-imagemagick
