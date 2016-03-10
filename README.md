@@ -21,6 +21,9 @@ git submodule update --init
 make
 ```
 
+syntastic eslint won't work until you install
+[eslint_d](https://github.com/mantoni/eslint_d.js)
+
 in case of problems with [tern_for_vim](https://github.com/ternjs/tern_for_vim):
 ```
 cd $HOME/.vim/plugged/tern_for_vim

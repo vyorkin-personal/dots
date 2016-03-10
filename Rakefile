@@ -7,14 +7,14 @@ NODEJS_COMMON_PACKAGES = %w(
   bower duo grunt-cli broccoli-cli gulp yo khaos jspm
   npm-check-updates bower-check-updates avn avn-nvm browserify
   webpack jasmine jake madge forever nodemon jscs csslint how-to-npm
-  protractor psi jshint eslint babel-eslint jsdoc stylelint doiuse
+  protractor psi jshint eslint eslint_d babel-eslint jsdoc stylelint doiuse
   watch js-beautify nsp snyk gitbook-cli plato sloc npmd@1 live-server git-guilt doctoc
   trash localtunnel svgo git+https://github.com/ramitos/jsctags.git
   jsfmt fixmyjs jsinspect tmi speed-test tldr commitizen
   babel-cli karma-cli istanbul foreman eslint-config-airbnb
   iron-node devtool disc stylelint-config-suitcss next-update semantic-release-cli
   git-issues exact-semver fixpack cli-real-favicon greenkeeper npm-which budo
-  del-cli json-package npm-quick-run center-code gtni
+  del-cli json-package npm-quick-run center-code gtni alex
 )
 
 namespace :install do
