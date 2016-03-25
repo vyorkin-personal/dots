@@ -4,5 +4,10 @@ export PATH="$PATH:$HOME/.rbenv/shims:/$HOME/.rbenv/bin:/usr/local/sbin:/usr/loc
 # 2) Add CLI utils from postgresapp, see http://postgresapp.com/documentation/cli-tools.html
 export PATH=$PATH:$HOME/.manymo/bin:/Applications/Postgres.app/Contents/Versions/9.3/bin
 
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+export GOPATH=$HOME/programming/go/
+
 export LANG=en_US.UTF-8
 export LC_ALL=$LANG

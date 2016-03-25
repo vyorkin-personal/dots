@@ -1,5 +1,3 @@
-export GOPATH=$HOME/programming/go/
-
 export LANG=en_US.UTF-8
 export LC_ALL=$LANG
 
@@ -8,7 +6,3 @@ export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 export NODE_REPL_HISTORY_FILE=$HOME/.noderepl_history
 
 source ~/.dotsecrets/secret_tokens
-
-# 1) Add manymo to PATH for scripting
-# 2) Add CLI utils from postgresapp, see http://postgresapp.com/documentation/cli-tools.html
-export PATH=$PATH:$HOME/.manymo/bin:/Applications/Postgres.app/Contents/Versions/9.3/bin
