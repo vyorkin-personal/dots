@@ -29,7 +29,7 @@ Abolish nu{bm,jmb}er number
 
 Abolish erorr error
 Abolish misn mins
-Abolish recat react
+Abolish r{eca,aec}t react
 Abolish {E,e}nought {}nough
 Abolish {A,a}ctinos actions
 
