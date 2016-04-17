@@ -57,13 +57,16 @@ Plug 'cakebaker/scss-syntax.vim'
 Plug 'stephenway/postcss.vim'
 " Plug 'hail2u/vim-css3-syntax'
 
-" javascript, coffeescript, actionscript, jsx, jquery, tern
+" javascript, typescript, coffeescript,
+" actionscript, jsx, jquery, tern
 Plug 'pangloss/vim-javascript'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'kchmck/vim-coffee-script'
 Plug 'marijnh/tern_for_vim'
 Plug 'mxw/vim-jsx'
 Plug 'leshill/vim-json'
+Plug 'Quramy/tsuquyomi'
+Plug 'leafgarland/typescript-vim'
 " Plug 'vyorkin/JavaScript-Indent'
 
 " ruby
