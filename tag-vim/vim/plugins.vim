@@ -46,7 +46,7 @@ Plug 'morhetz/gruvbox'
 
 " languages, ft, syntax
 
-" html, css, less, sass
+" html, css, less, sass, stylus
 Plug 'othree/html5.vim'
 Plug 'Valloric/MatchTagAlways'
 Plug 'digitaltoad/vim-jade'
@@ -55,19 +55,29 @@ Plug 'groenewege/vim-less'
 Plug 'ap/vim-css-color'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'stephenway/postcss.vim'
+Plug 'wavded/vim-stylus'
 " Plug 'hail2u/vim-css3-syntax'
 
-" javascript, typescript, coffeescript,
-" actionscript, jsx, jquery, tern
+" javascript, jsx, json, tern
 Plug 'pangloss/vim-javascript'
+Plug 'othree/yajs.vim'
+Plug 'othree/es.next.syntax.vim'
 Plug 'othree/javascript-libraries-syntax.vim'
-Plug 'kchmck/vim-coffee-script'
-Plug 'marijnh/tern_for_vim'
 Plug 'mxw/vim-jsx'
-Plug 'leshill/vim-json'
+Plug 'sheerun/vim-json'
+Plug 'marijnh/tern_for_vim'
+Plug 'briancollins/vim-jst'
+" Plug 'vyorkin/JavaScript-Indent'
+
+" coffeescript
+Plug 'kchmck/vim-coffee-script'
+
+" typescript
 Plug 'Quramy/tsuquyomi'
 Plug 'leafgarland/typescript-vim'
-" Plug 'vyorkin/JavaScript-Indent'
+
+" julia
+Plug 'dcjones/julia-minimalist-vim'
 
 " ruby
 Plug 'vim-ruby/vim-ruby'
@@ -78,12 +88,15 @@ Plug 'tpope/vim-rbenv'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-heroku'
 Plug 'tpope/vim-cucumber'
-Plug 'Keithbsmiley/rspec.vim'
+Plug 'keith/rspec.vim'
 Plug 'slim-template/vim-slim'
+
+" latex
+Plug 'LaTeX-Box-Team/LaTeX-Box'
 
 " c, c++
 Plug 'kergoth/aftersyntaxc.vim'
-Plug 'vim-jp/cpp-vim'
+Plug 'vim-jp/vim-cpp'
 Plug 'octol/vim-cpp-enhanced-highlight'
 
 " rust
@@ -95,15 +108,14 @@ Plug 'derekwyatt/vim-scala'
 
 " swift
 Plug 'toyamarinyon/vim-swift'
-
-" elixir
-Plug 'elixir-lang/vim-elixir'
+" Plug 'keith/swift.vim'
 
 " ocaml
 Plug 'jrk/vim-ocaml'
 
-" erlang
-Plug 'jimenezrick/vimerl'
+" erlang, elixir
+Plug 'vim-erlang/vim-erlang-runtime'
+Plug 'elixir-lang/vim-elixir'
 
 " go
 Plug 'fatih/vim-go'
@@ -123,8 +135,9 @@ Plug 'vim-perl/vim-perl'
 Plug 'mitsuhiko/vim-python-combined'
 
 " haskell
-Plug 'dag/vim2hs'
+Plug 'neovimhaskell/haskell-vim'
 Plug 'hspec/hspec.vim'
+" Plug 'dag/vim2hs'
 
 " elm
 Plug 'lambdatoast/elm.vim'
@@ -137,6 +150,9 @@ Plug 'tpope/vim-markdown'
 Plug 'jtratner/vim-flavored-markdown'
 Plug 'nelstrom/vim-markdown-preview'
 
+" liquid
+Plug 'tpope/vim-liquid'
+
 " nginx
 Plug 'mutewinter/nginx.vim'
 
@@ -146,10 +162,20 @@ Plug 'vim-scripts/octave.vim--'
 " docker
 Plug 'honza/dockerfile.vim'
 
+" ansible
+Plug 'pearofducks/ansible-vim'
+
 " tmux
 " Plug 'andersoncustodio/vim-tmux'
 " Plug 'keith/tmux.vim'
-Plug 'tmux-plugins/vim-tmux'
+" Plug 'tmux-plugins/vim-tmux'
+
+Plug 'sheerun/vim-yardoc'
+Plug 'stephpy/vim-yaml'
+Plug 'uarun/vim-protobuf'
+Plug 'spwhitt/vim-nix'
+Plug 'tikhomirov/vim-glsl'
+Plug 'zah/nim.vim'
 
 " text objects
 Plug 'kana/vim-textobj-user'
