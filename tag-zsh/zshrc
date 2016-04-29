@@ -54,20 +54,20 @@ source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 
 source $HOME/.zsh-history-substring-search/zsh-history-substring-search.zsh
-# source $HOME/.zsh-autosuggestions/autosuggestions.zsh
+source $HOME/.zsh-autosuggestions/autosuggestions.zsh
 
 export AUTOSUGGESTION_HIGHLIGHT_COLOR='fg=11'
 
 # enable autosuggestions automatically
-# zle-line-init() {
-#   zle autosuggest-start
-# }
-# zle -N zle-line-init
+zle-line-init() {
+  zle autosuggest-start
+}
+zle -N zle-line-init
 
 # use ctrl+t to toggle autosuggestions(hopefully this wont be needed as
 # zsh-autosuggestions is designed to be unobtrusive)
-# bindkey '^T' autosuggest-toggle
-# bindkey '^f' vi-forward-word
+bindkey '^T' autosuggest-toggle
+bindkey '^f' vi-forward-word
 
 # bind P and N for EMACS mode
 bindkey -M emacs '^P' history-substring-search-up

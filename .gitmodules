@@ -67,3 +67,6 @@
 [submodule "config/nvim/UltiSnips"]
 	path = config/nvim/UltiSnips
 	url = git@github.com:vyorkin-personal/ultisnips-snippets.git
+[submodule "iterm2/themes/over130"]
+	path = iterm2/themes/over130
+	url = https://github.com/mbadolato/iTerm2-Color-Schemes.git

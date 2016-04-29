@@ -147,7 +147,9 @@ Plug 'vim-scripts/octave.vim--'
 Plug 'honza/dockerfile.vim'
 
 " tmux
-Plug 'andersoncustodio/vim-tmux'
+" Plug 'andersoncustodio/vim-tmux'
+" Plug 'keith/tmux.vim'
+Plug 'tmux-plugins/vim-tmux'
 
 " text objects
 Plug 'kana/vim-textobj-user'
