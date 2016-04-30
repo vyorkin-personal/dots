@@ -21,11 +21,11 @@ set noballooneval             " dont show this crazy distracting thing
 
 " duplication here left intentionally
 if has("gui_gtk2")
-  set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline\ Plus\ Nerd\ File\ Types:h14
+  set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline\ Plus\ Nerd\ File\ Types:h12
 elseif has("gui_macvim")
-  set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline\ Plus\ Nerd\ File\ Types:h14
+  set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline\ Plus\ Nerd\ File\ Types:h12
 elseif has("gui_win32")
-  set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline\ Plus\ Nerd\ File\ Types:h14
+  set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline\ Plus\ Nerd\ File\ Types:h12
 endif
 
 " set transparency=20

@@ -40,6 +40,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'junegunn/seoul256.vim'
 Plug 'whatyouhide/vim-gotham'
 Plug 'MichaelMalick/vim-colors-bluedrake'
+Plug 'wimstefan/Lightning'
 
 Plug 'jeetsukumaran/vim-nefertiti'
 Plug 'morhetz/gruvbox'

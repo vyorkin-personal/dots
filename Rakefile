@@ -11,7 +11,8 @@ NODEJS_COMMON_PACKAGES = %w(
   watch js-beautify nsp snyk gitbook-cli plato sloc npmd@1 live-server git-guilt doctoc
   trash localtunnel svgo git+https://github.com/ramitos/jsctags.git
   jsfmt fixmyjs jsinspect tmi speed-test tldr commitizen
-  babel-cli karma-cli istanbul foreman eslint-config-airbnb
+  babel-cli babel-preset-es2015 babel-preset-stage-0 babel-preset-react
+  karma-cli istanbul foreman eslint-config-airbnb
   iron-node devtool disc stylelint-config-suitcss next-update semantic-release-cli
   git-issues exact-semver fixpack cli-real-favicon greenkeeper npm-which budo
   del-cli json-package npm-quick-run center-code gtni alex
