@@ -1,6 +1,7 @@
 tap 'caskroom/fonts'
 tap 'neovim/neovim'
 tap 'thoughtbot/formulae'
+tap 'd12frosted/emacs-plus'
 
 brew 'caskroom/cask/brew-cask'
 
@@ -24,6 +25,8 @@ brew 'nmap'
 brew 'fish'
 brew 'zsh'
 
+brew 'emacs-plus', args: ['with-cocoa', 'with-gnutls', 'with-librsvg', 'with-imagemagick', 'with-spacemacs-icon]
+
 brew 'weechat', args: ['with-python', 'with-perl']
 
 brew 'rbenv'
@@ -34,6 +37,8 @@ brew 'neovim'
 
 brew 'python'
 brew 'python3'
+
+brew 'sbt'
 
 brew 'ghc'
 brew 'cabal-install'

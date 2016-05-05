@@ -74,6 +74,14 @@ brew install emacs --HEAD --use-git-head --with-cocoa --with-gnutls --with-rsvg 
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 ```
 
+Don't forget to create the `.ercpass` file in your home dir:
+
+```
+(setq freenode-password "your-password-goes-here")
+(setq freenode-nick "your-password-goes-here")
+(setq freenode-full-name "your-password-goes-here")
+```
+
 To run local eslint npm module and fallback to global I use [this tiny vim plugin](https://github.com/mtscout6/syntastic-local-eslint.vim).
 
 install a new node version & migrate existing packages:

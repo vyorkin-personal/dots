@@ -27,9 +27,9 @@ config keyboardLayout qwerty
 
 # App aliases
 
-alias browser 'Google Chrome'
+alias browser 'Chrome'
 alias editor 'Emacs'
-alias terminal 'iTerm'
+alias terminal 'iTerm2'
 alias mail 'Mailbox (Beta)'
 
 # Monitor aliases

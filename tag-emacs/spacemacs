@@ -116,7 +116,8 @@ before layers configuration."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(solarized-dark
+   dotspacemacs-themes '(material-light
+                         solarized-dark
                          solarized-light
                          dracula
                          omtose-phellack
@@ -169,10 +170,10 @@ before layers configuration."
    dotspacemacs-loading-progress-bar t
    ;; If non nil the frame is fullscreen when Emacs starts up.
    ;; (Emacs 24.4+ only)
-   dotspacemacs-fullscreen-at-startup t
+   dotspacemacs-fullscreen-at-startup nil
    ;; If non nil `spacemacs/toggle-fullscreen' will not use native fullscreen.
    ;; Use to disable fullscreen animations in OSX."
-   dotspacemacs-fullscreen-use-non-native t
+   dotspacemacs-fullscreen-use-non-native nil
    ;; If non nil the frame is maximized when Emacs starts up.
    ;; Takes effect only if `dotspacemacs-fullscreen-at-startup' is nil.
    ;; (Emacs 24.4+ only)
@@ -294,7 +295,7 @@ layers configuration."
   (setq erc-hide-list '("JOIN" "KICK" "NICK" "PART" "QUIT" "MODE"))
   (setq erc-nickserv-passwords
         `((freenode
-           (("vyorkin" . ,freenode-pass)))
+           (("vyorkin" . ,freenode-password)))
           ))
   (setq erc-prompt-for-nickserv-password nil)
 
@@ -371,7 +372,8 @@ layers configuration."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(paradox-github-token t))
+ '(paradox-github-token t)
+ '(wakatime-cli-path "/usr/local/bin/wakatime"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

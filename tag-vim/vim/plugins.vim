@@ -125,12 +125,14 @@ Plug 'fatih/vim-go'
 Plug 'vim-perl/vim-perl'
 
 " clojure
-" Plug 'tpope/vim-fireplace'
+Plug 'tpope/vim-fireplace'
+Plug 'tpope/vim-classpath'
+Plug 'guns/vim-clojure-static'
+Plug 'guns/vim-clojure-highlight'
+Plug 'vim-scripts/vim-niji'
+
+" it's slow: https://github.com/tpope/vim-salve#faq
 " Plug 'tpope/vim-salve'
-" Plug 'tpope/vim-classpath'
-" Plug 'guns/vim-clojure-static'
-" Plug 'guns/vim-clojure-highlight'
-" Plug 'vim-scripts/vim-niji'
 
 " python
 Plug 'mitsuhiko/vim-python-combined'

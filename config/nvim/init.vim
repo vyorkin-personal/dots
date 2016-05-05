@@ -135,9 +135,9 @@ set nowritebackup               " don't write backups
 set background=dark
 
 if &background=="dark"
-  colorscheme Tomorrow
+  colorscheme fu
 else
-  colorscheme Tomorrow
+  colorscheme fu
 endif
 
 " colorscheme switching for vimdiff
