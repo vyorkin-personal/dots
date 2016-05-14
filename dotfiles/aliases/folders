@@ -9,7 +9,7 @@ alias play='cd ~/projects/play'
 alias avr='cd ~/projects/play/avr'
 alias arduino='cd ~/projects/play/arduino'
 
-alias gh='cd ~/projects/github'
+alias gith='cd ~/projects/github'
 
 alias gamedev='cd ~/gamedev'
 

@@ -45,6 +45,8 @@ the fucking names:
 * [seil](https://pqrs.org/osx/karabiner/seil.html.en)
 * [karabiner](https://pqrs.org/osx/karabiner/index.html.en)
 * [Ilya Birman typography](http://ilyabirman.ru/projects/typography-layout/)
+* [gitsome](https://github.com/donnemartin/gitsome)
+* [z](https://github.com/rupa/z)
 
 cvim chrome extension:
 * [white theme](https://gist.github.com/vyorkin/711589d7f1a90954dec5)
@@ -95,6 +97,12 @@ install vagrant vmware plugin (if you have a license):
 vagrant plugin install vagrant-vmware-fusion
 vagrant plugin license vagrant-vmware-fusion license.lic
 ```
+
+install gitsome:
+
+```
+sudo -H pip3 install gitsome
+````
 
 # troubleshooting
 

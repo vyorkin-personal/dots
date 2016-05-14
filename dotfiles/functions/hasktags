@@ -1,0 +1,4 @@
+runhasktags() {
+  # use --etags instead of --ctags for emacs
+  # hasktags --ignore-close-implementation --ctags .; sort tags
+}

@@ -74,8 +74,9 @@ Plug 'briancollins/vim-jst'
 Plug 'kchmck/vim-coffee-script'
 
 " typescript
-Plug 'Quramy/tsuquyomi'
+" Plug 'Quramy/tsuquyomi'
 Plug 'leafgarland/typescript-vim'
+Plug 'Shougo/vimproc.vim'
 
 " julia
 Plug 'dcjones/julia-minimalist-vim'

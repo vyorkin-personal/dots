@@ -88,6 +88,8 @@ zle -N predict-off
 bindkey '^X1' predict-on
 bindkey '^X2' predict-off
 
+. `brew --prefix`/etc/profile.d/z.sh
+
 # powerline prompt (slow)
 # source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 

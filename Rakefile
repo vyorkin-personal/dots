@@ -15,7 +15,7 @@ NODEJS_COMMON_PACKAGES = %w(
   karma-cli istanbul foreman eslint-config-airbnb
   iron-node devtool disc stylelint-config-suitcss next-update semantic-release-cli
   git-issues exact-semver fixpack cli-real-favicon greenkeeper npm-which budo
-  del-cli json-package npm-quick-run center-code gtni alex
+  del-cli json-package npm-quick-run center-code gtni alex typings
 )
 
 namespace :install do
