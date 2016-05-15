@@ -104,6 +104,10 @@ install gitsome:
 sudo -H pip3 install gitsome
 ````
 
+haskell tags:
+[hasktags](https://hackage.haskell.org/package/hasktags) +
+[haskdogs](https://github.com/grwlf/haskdogs)
+
 # troubleshooting
 
 in case aflred can't find cask symlinks:
