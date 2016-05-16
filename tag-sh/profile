@@ -2,7 +2,7 @@ export PATH="$PATH:$HOME/.rbenv/shims:/$HOME/.rbenv/bin:$HOME/.local/bin:/usr/lo
 
 # 1) Add manymo to PATH for scripting
 # 2) Add CLI utils from postgresapp, see http://postgresapp.com/documentation/cli-tools.html
-export PATH=$PATH:$HOME/.manymo/bin:/Applications/Postgres.app/Contents/Versions/9.3/bin
+export PATH=$PATH:$HOME/.manymo/bin:/Applications/Postgres.app/Contents/Versions/latest/bin
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
