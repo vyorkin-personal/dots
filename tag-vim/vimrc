@@ -137,9 +137,9 @@ set noswapfile                  " don't use buffer swap files
 set nowritebackup               " don't write backups
 
 if &background=="dark"
-  colorscheme fu
+  colorscheme strange
 else
-  colorscheme fu
+  colorscheme strange
 endif
 
 " colorscheme switching for vimdiff
