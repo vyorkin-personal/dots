@@ -38,6 +38,13 @@ servers = (
     use_ssl = "no";
     ssl_verify = "no";
     autoconnect = "yes";
+  },
+  {
+    address = "kinetic.oftc.net";
+    chatnet = "kinetic";
+    port = "6667";
+    use_ssl = "no";
+    ssl_verify = "no";
   }
 );
 
@@ -106,6 +113,7 @@ chatnets = {
   SILC = { type = "SILC"; };
   freenode = { type = "IRC"; };
   rusnet = { type = "IRC"; };
+  kinetic = { type = "IRC"; };
 };
 
 channels = (
@@ -120,7 +128,8 @@ channels = (
   { name = "#pry"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#angularjs"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#sidekiq"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#ansible"; chatnet = "freenode"; autojoin = "yes"; }
+  { name = "#ansible"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#hobnob"; chatnet = "kinetic"; autojoin = "yes"; }
 );
 
 aliases = {
