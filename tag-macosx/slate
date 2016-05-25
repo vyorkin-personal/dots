@@ -27,7 +27,7 @@ config keyboardLayout qwerty
 
 # App aliases
 
-alias browser 'Goodle Chrome'
+alias browser 'Google Chrome'
 alias editor 'Emacs'
 alias terminal 'iTerm2'
 alias mail 'Nylas N1'
