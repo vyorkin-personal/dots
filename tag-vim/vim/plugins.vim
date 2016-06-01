@@ -78,6 +78,9 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'leafgarland/typescript-vim'
 Plug 'Shougo/vimproc.vim'
 
+" flowtype
+Plug 'flowtype/vim-flow'
+
 " julia
 Plug 'dcjones/julia-minimalist-vim'
 

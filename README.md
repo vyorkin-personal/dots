@@ -84,6 +84,11 @@ Don't forget to create the `.ercpass` file in your home dir:
 (setq freenode-full-name "your-password-goes-here")
 ```
 
+To suppress environment variable warnings put the following line in your `dotspacemacs/user-init`:
+```
+(setq exec-path-from-shell-arguments '("-l"))
+```
+
 To run local eslint npm module and fallback to global I use [this tiny vim plugin](https://github.com/mtscout6/syntastic-local-eslint.vim).
 
 install a new node version & migrate existing packages:
