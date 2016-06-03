@@ -77,6 +77,9 @@ Plug 'kchmck/vim-coffee-script'
 " Plug 'Quramy/tsuquyomi'
 Plug 'leafgarland/typescript-vim'
 Plug 'Shougo/vimproc.vim'
+" Plug 'clausreinke/typescript-tools.vim'
+" Plug 'mhartington/vim-typings'
+" Plug 'Quramy/vim-dtsm'
 
 " flowtype
 Plug 'flowtype/vim-flow'
