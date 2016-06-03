@@ -5,8 +5,10 @@ let g:syntastic_css_checkers = ['stylelint']
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exec = 'eslint_d'
 
-let g:syntastic_typescript_checkers = ['tslint', 'tsc']
-" let g:syntastic_typescript_checkers = ['tsuquyomi']
+let g:syntastic_typescript_checkers = ['tsuquyomi']
+let g:tsuquyomi_disable_quickfix = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
 
 let g:syntastic_haml_checkers = ['haml_lint']
 let g:syntastic_html_checkers = ['']
