@@ -82,7 +82,7 @@ Plug 'Shougo/vimproc.vim'
 " Plug 'Quramy/vim-dtsm'
 
 " flowtype
-Plug 'flowtype/vim-flow'
+" Plug 'flowtype/vim-flow'
 
 " julia
 Plug 'dcjones/julia-minimalist-vim'
