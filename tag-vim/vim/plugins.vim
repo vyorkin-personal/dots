@@ -44,7 +44,6 @@ Plug 'junegunn/seoul256.vim'
 Plug 'whatyouhide/vim-gotham'
 Plug 'MichaelMalick/vim-colors-bluedrake'
 Plug 'wimstefan/Lightning'
-
 Plug 'jeetsukumaran/vim-nefertiti'
 Plug 'morhetz/gruvbox'
 Plug 'ninja/sky'
@@ -202,9 +201,9 @@ Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'ervandew/supertab'
 
 " it hangs while I type shit
-Plug 'Shougo/deoplete.nvim'
-Plug 'carlitux/deoplete-ternjs'
-Plug 'mhartington/deoplete-typescript'
+" Plug 'Shougo/deoplete.nvim'
+" Plug 'carlitux/deoplete-ternjs'
+" Plug 'mhartington/deoplete-typescript'
 
 " tools
 Plug 'vim-scripts/paredit.vim'
