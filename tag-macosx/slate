@@ -187,11 +187,13 @@ bind j:${hyper} focus down
 
 # App bindings
 
+bind q:${hyper} focus 'Telegram'
 bind b:${hyper} focus 'Helium'
+bind a:${hyper} focus 'Atom'
 bind e:${hyper} focus ${browser}
 bind f:${hyper} focus ${editor}
 bind x:${hyper} focus 'Xcode'
-bind g:${hyper} focus 'gitter'
+bind g:${hyper} focus 'Gitter'
 bind m:${hyper} focus ${mail}
 bind i:${hyper} focus ${terminal}
 bind o:${hyper} focus 'Finder'

@@ -16,7 +16,7 @@ NODEJS_COMMON_PACKAGES = %w(
   iron-node devtool disc stylelint-config-suitcss next-update semantic-release-cli
   git-issues exact-semver fixpack cli-real-favicon greenkeeper npm-which budo
   del-cli json-package npm-quick-run center-code gtni alex typings
-  tern recli
+  tern recli webpack-validator all-nvm available-versions manpm center-code
 )
 
 namespace :install do

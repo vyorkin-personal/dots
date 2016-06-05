@@ -112,3 +112,5 @@ source ~/.nvm/nvm.sh
 
 # added by travis gem
 [ -f /Users/vyorkin/.travis/travis.sh ] && source /Users/vyorkin/.travis/travis.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

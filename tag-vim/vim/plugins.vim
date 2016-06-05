@@ -32,6 +32,9 @@ Plug 'tpope/vim-git'
 Plug 'tpope/git-bump'
 Plug 'mattn/webapi-vim'
 Plug 'mattn/gist-vim'
+Plug 'idanarye/vim-merginal'
+Plug 'int3/vim-extradite'
+Plug 'gregsexton/gitv'
 Plug 'junegunn/gv.vim'
 
 " color schemes
@@ -44,6 +47,8 @@ Plug 'wimstefan/Lightning'
 
 Plug 'jeetsukumaran/vim-nefertiti'
 Plug 'morhetz/gruvbox'
+Plug 'ninja/sky'
+Plug 'geoffharcourt/one-dark.vim'
 
 " languages, ft, syntax
 
@@ -64,6 +69,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'othree/yajs.vim'
 Plug 'othree/es.next.syntax.vim'
 Plug 'othree/javascript-libraries-syntax.vim'
+Plug '1995eaton/vim-better-javascript-completion'
 Plug 'mxw/vim-jsx'
 Plug 'sheerun/vim-json'
 Plug 'marijnh/tern_for_vim'
@@ -193,10 +199,12 @@ Plug 'nelstrom/vim-textobj-rubyblock'
 
 " completion: supertab or YCM
 " Plug 'Valloric/YouCompleteMe'
-" Plug 'ervandew/supertab'
+Plug 'ervandew/supertab'
 
 " it hangs while I type shit
-" Plug 'Shougo/deoplete.nvim'
+Plug 'Shougo/deoplete.nvim'
+Plug 'carlitux/deoplete-ternjs'
+Plug 'mhartington/deoplete-typescript'
 
 " tools
 Plug 'vim-scripts/paredit.vim'
@@ -208,15 +216,28 @@ Plug 'roktas/syntastic-more'
 " Plug '907th/vim-auto-save'
 Plug 'Chiel92/vim-autoformat'
 
+" unusable with fast keyrepeat
+" Plug 'terryma/vim-smooth-scroll'
+
+Plug 'Konfekt/FastFold'
+Plug 'duff/vim-bufonly'
+
 Plug 'majutsushi/tagbar'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'kien/ctrlp.vim'
-Plug 'FelikZ/ctrlp-py-matcher'
+Plug 'matze/vim-move'
+
+" fzf or ctrlp
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+Plug 'junegunn/fzf.vim'
+" Plug 'kien/ctrlp.vim'
+" Plug 'FelikZ/ctrlp-py-matcher'
+
 Plug 'SirVer/ultisnips'
 Plug 'rking/ag.vim'
 Plug 'mbbill/undotree'
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 Plug 'xolox/vim-notes'
 Plug 'xolox/vim-misc'
