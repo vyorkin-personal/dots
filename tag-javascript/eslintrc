@@ -1,35 +1,56 @@
 {
-  "extends": "airbnb",
+  "extends": "standard",
+
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+
   "env": {
     "browser": true,
-    "node": true
+    "node": true,
+    "mocha": true
   },
+
+  "plugins": [
+    "react",
+    "jsx-a11y"
+  ],
+
   "rules": {
-    "comma-dangle": [1, "never"],
-    "func-names": 0,
-    "key-spacing": 0,
-    "space-before-function-paren": [2, {
-      "anonymous": "always",
-      "named": "never"
-    }],
-    "no-else-return": 0,
-    "no-multi-spaces": 0,
-    "quotes": [2, "single"],
-    "jsx-quotes": [2, "prefer-single"],
-    "one-var": 0,
-    "no-unused-vars": [2, {"args": "after-used", "argsIgnorePattern": "^_"}],
-    "id-length": [2, {"min": 2, "properties": "never", "exceptions": ["_", "x", "y", "i", "j", "s"]}],
+    "no-confusing-arrow": 0,
+    "semi": ["error", "always"],
+    "comma-dangle": ["error", "always-multiline"],
+    "operator-linebreak": ["error", "after"],
+
+    "react/jsx-uses-vars": 1
+
+    "jsx-a11y/img-uses-alt": 0,
+    "jsx-a11y/redundant-alt": 0,
+    "jsx-a11y/valid-aria-role": 0,
   },
+
   "globals": {
+    "React": true,
+    "ReactDOM": true,
+
     "settings": true,
 
-    "__TEST__": true,
+    "$": true,
+    "gulp": true,
+    "debug": true,
+    "logger": true,
+    "argv": true,
+    "env": true,
+
     "__DEVELOPMENT__": true,
-    "__STAGING__": true,
     "__PRODUCTION__": true,
     "__ENVIRONMENT__": true,
-    "__CLIENT__": true,
-    "__SERVER__": true,
-    "__DEVTOOLS__": true
+    "__DEBUG__": true,
+    "__VERBOSE__": true,
+    "__PROFILE__": true
   }
 }

@@ -14,6 +14,7 @@ Session.vim
 .rspec-local
 npm-debug*
 rethinkdb_data
+.tern-port
 
 *~
 \#*\#
