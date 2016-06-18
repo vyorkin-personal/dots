@@ -12,12 +12,24 @@ NODEJS_COMMON_PACKAGES = %w(
   trash localtunnel svgo git+https://github.com/ramitos/jsctags.git
   jsfmt fixmyjs jsinspect tmi speed-test tldr commitizen
   babel-cli babel-preset-es2015 babel-preset-stage-0 babel-preset-react
-  karma-cli istanbul foreman eslint-config-airbnb
+  karma-cli istanbul foreman 
   iron-node devtool disc stylelint-config-suitcss next-update semantic-release-cli
   git-issues exact-semver fixpack cli-real-favicon greenkeeper npm-which budo
   del-cli json-package npm-quick-run center-code gtni alex typings
   tern recli webpack-validator all-nvm available-versions manpm center-code
-  chrome-webstore-upload-cli
+  typed-css-modules
+  chrome-webstore-upload-cli 
+
+  eslint-config-airbnb
+  eslint-config-standard
+  eslint-plugin-standard
+  eslint-plugin-immutable
+  eslint-plugin-import
+  eslint-plugin-jsx-a11y
+  eslint-plugin-lodash-fp
+  eslint-plugin-prefer-object-spread
+  eslint-plugin-promise
+  eslint-plugin-react
 )
 
 namespace :install do

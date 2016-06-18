@@ -2,7 +2,7 @@ let $FZF_DEFAULT_COMMAND = 'ag -l -g ""'
 
 nn <silent> <C-q> :Files<CR>
 nn <silent> <C-s> :Snippets<CR>
-nn <silent> <C-c> :Commits<CR>
+nn <silent> <C-e> :Commits<CR>
 nn <silent> <C-b> :Buffers<CR>
 nn <silent> <C-t> :Tags<CR>
 nn <silent> <C-x> :Colors<CR>

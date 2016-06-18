@@ -4,4 +4,4 @@ let g:javascript_conceal = 1
 let g:javascript_enable_domhtml_css = 1
 let g:javascript_fold = 0
 
-let g:used_javascript_libs = 'jquery,underscore,angularjs,react,redux,flux,mocha,jasmine'
+let g:used_javascript_libs = 'jquery,lodash,angularjs,react,redux,flux,mocha,jasmine'
