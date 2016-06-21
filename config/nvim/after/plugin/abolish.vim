@@ -31,6 +31,7 @@ Abolish misn mins
 Abolish msth smth
 Abolish redner render
 Abolish r{eca,aec}t react
+Abolish REact react
 Abolish {E,e}nought {}nough
 Abolish {A,a}ctinos actions
 
