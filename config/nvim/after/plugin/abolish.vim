@@ -36,6 +36,7 @@ Abolish {E,e}nought {}nough
 Abolish {A,a}ctinos actions
 
 Abolish vkonta{tke,ke} vkontakte
+Abolish beacuse because
 
 " more advanced example, keep it here.
 "

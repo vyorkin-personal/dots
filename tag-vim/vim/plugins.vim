@@ -198,7 +198,9 @@ Plug 'nelstrom/vim-textobj-rubyblock'
 
 " completion: supertab or YCM
 " Plug 'Valloric/YouCompleteMe'
-Plug 'ervandew/supertab'
+" Plug 'ervandew/supertab'
+
+Plug 'ajh17/VimCompletesMe'
 
 " it hangs while I type shit
 " Plug 'Shougo/deoplete.nvim'
@@ -256,6 +258,7 @@ Plug 'vitalk/vim-simple-todo'
 Plug 'wellle/tmux-complete.vim'
 
 Plug 'jez/vim-superman'
+" Plug 'dhruvasagar/vim-table-mode'
 
 Plug 'rizzatti/dash.vim'
 
