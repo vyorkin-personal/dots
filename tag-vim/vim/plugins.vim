@@ -48,6 +48,17 @@ Plug 'jeetsukumaran/vim-nefertiti'
 Plug 'morhetz/gruvbox'
 Plug 'ninja/sky'
 Plug 'geoffharcourt/one-dark.vim'
+Plug 'tyrannicaltoucan/vim-deep-space'
+
+Plug 'RussellBradley/vim-rockets-away'
+Plug 'vim-scripts/Sift'
+Plug 'RussellBradley/vim-kings-away'
+Plug 'RussellBradley/vim-celtics-away'
+Plug 'drzaal/vert-laiton'
+Plug 'RussellBradley/vim-lakers-away'
+Plug 'vim-scripts/oceandeep'
+Plug 'AlessandroYorba/Alduin'
+Plug 'kocakosm/hilal'
 
 " languages, ft, syntax
 
