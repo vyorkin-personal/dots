@@ -37,6 +37,7 @@ Abolish {A,a}ctinos actions
 
 Abolish vkonta{tke,ke} vkontakte
 Abolish beacuse because
+Abolish {}mtpy {}mpty
 
 " more advanced example, keep it here.
 "
