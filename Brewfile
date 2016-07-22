@@ -14,9 +14,12 @@ brew 'rlwrap'
 brew 'consul'
 
 brew 'flow'
+brew 'hub'
 
 brew 'bash'
 brew 'bash-completion'
+
+brew 'wifi-password'
 
 brew 'wget', args: ['enable-iri']
 brew 'reattach-to-user-namespace'
