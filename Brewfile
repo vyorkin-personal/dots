@@ -15,6 +15,7 @@ brew 'consul'
 
 brew 'flow'
 brew 'hub'
+brew 'watchman'
 
 brew 'bash'
 brew 'bash-completion'

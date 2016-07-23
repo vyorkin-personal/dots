@@ -21,6 +21,7 @@ NODEJS_COMMON_PACKAGES = %w(
   conventional-recommended-bump
   typed-css-modules
   chrome-webstore-upload-cli 
+  react-native-cli
 
   eslint-config-airbnb
   eslint-config-standard
