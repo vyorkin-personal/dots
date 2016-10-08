@@ -22,7 +22,8 @@ NODEJS_COMMON_PACKAGES = %w(
   typed-css-modules
   chrome-webstore-upload-cli 
   react-native-cli
-
+  rnpm
+  gatsby
   eslint-config-airbnb
   eslint-config-standard
   eslint-plugin-standard
@@ -33,6 +34,8 @@ NODEJS_COMMON_PACKAGES = %w(
   eslint-plugin-prefer-object-spread
   eslint-plugin-promise
   eslint-plugin-react
+  create-webpack-config
+  react-create-app
 )
 
 namespace :install do

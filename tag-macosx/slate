@@ -148,7 +148,7 @@ bind e:cmd ${showNormalHint}
 # The HYPER key
 # ======================================
 
-alias hyper ctrl;shift;alt;cmd
+alias hyper ctrl;alt;cmd
 
 bind z:${hyper} undo
 

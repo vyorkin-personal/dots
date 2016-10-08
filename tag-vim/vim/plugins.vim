@@ -19,6 +19,7 @@ Plug 'chrisbra/vim-diff-enhanced'
 Plug 'terryma/vim-expand-region'
 Plug 'Wolfy87/vim-expand'
 Plug 'AndrewRadev/splitjoin.vim'
+Plug 'godlygeek/tabular'
 Plug 'vim-scripts/restore_view.vim'
 
 " navigation & search
@@ -161,6 +162,7 @@ Plug 'vim-scripts/vim-niji'
 Plug 'mitsuhiko/vim-python-combined'
 
 " haskell
+Plug 'eagletmt/ghcmod-vim'
 Plug 'neovimhaskell/haskell-vim'
 Plug 'hspec/hspec.vim'
 " Plug 'dag/vim2hs'
