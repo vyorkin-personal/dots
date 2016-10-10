@@ -12,7 +12,7 @@ Plug 'tpope/vim-dispatch'             " asynchronous build and test dispatcher
 Plug 'tpope/vim-rsi'                  " emacs mappings for insert and command line modes
 Plug 'tpope/vim-sleuth'               " heuristically set buffer options
 Plug 'tpope/vim-obsession'            " session management
-Plug 'tpope/vim-capslock'
+Plug 'tpope/vim-capslock'             " software capslock (gC or <C-G>c)
 Plug 'tpope/vim-projectionist'
 
 Plug 'chrisbra/vim-diff-enhanced'
@@ -20,7 +20,7 @@ Plug 'terryma/vim-expand-region'
 Plug 'Wolfy87/vim-expand'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'godlygeek/tabular'
-Plug 'vim-scripts/restore_view.vim'
+" Plug 'vim-scripts/restore_view.vim'
 
 " navigation & search
 Plug 'junegunn/vim-pseudocl'
@@ -92,7 +92,8 @@ Plug 'kchmck/vim-coffee-script'
 
 " typescript
 Plug 'Quramy/tsuquyomi'
-Plug 'leafgarland/typescript-vim'
+" Plug 'leafgarland/typescript-vim'
+Plug 'HerringtonDarkholme/yats.vim'
 Plug 'Shougo/vimproc.vim'
 " Plug 'clausreinke/typescript-tools.vim'
 " Plug 'mhartington/vim-typings'
@@ -165,6 +166,7 @@ Plug 'mitsuhiko/vim-python-combined'
 Plug 'eagletmt/ghcmod-vim'
 Plug 'neovimhaskell/haskell-vim'
 Plug 'hspec/hspec.vim'
+Plug 'eagletmt/neco-ghc'
 " Plug 'dag/vim2hs'
 
 " elm
