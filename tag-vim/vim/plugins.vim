@@ -92,8 +92,8 @@ Plug 'kchmck/vim-coffee-script'
 
 " typescript
 Plug 'Quramy/tsuquyomi'
-" Plug 'leafgarland/typescript-vim'
-Plug 'HerringtonDarkholme/yats.vim'
+Plug 'leafgarland/typescript-vim'
+" Plug 'HerringtonDarkholme/yats.vim'
 Plug 'Shougo/vimproc.vim'
 " Plug 'clausreinke/typescript-tools.vim'
 " Plug 'mhartington/vim-typings'

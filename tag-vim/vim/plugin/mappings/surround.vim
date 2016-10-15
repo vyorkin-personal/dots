@@ -1,5 +1,6 @@
-" ,# surround a word with #{ruby interpolation}
+" ,# surround a word with #
 nm ,# ysiw#
+" #{ruby interpolation}
 vn ,# c#{<C-R>"}<ESC>
 
 " ," surround a word with "quotes"

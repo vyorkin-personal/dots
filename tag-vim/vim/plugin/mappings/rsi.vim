@@ -2,7 +2,7 @@
 im <silent> <M-i> _
 im <silent> <M-r> -
 
-" same but with Cmd on Mac
+" same but with Cmd on MacVim
 im <silent> <D-i> _
 im <silent> <D-r> -
 
