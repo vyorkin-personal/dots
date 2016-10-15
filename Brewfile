@@ -8,6 +8,7 @@ brew 'caskroom/cask/brew-cask'
 brew 'z'
 brew 'cheat'
 
+brew 'yarn'
 brew 'asciinema'
 brew 'catimg'
 brew 'rlwrap'

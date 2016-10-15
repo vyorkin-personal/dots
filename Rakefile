@@ -36,6 +36,7 @@ NODEJS_COMMON_PACKAGES = %w(
   eslint-plugin-react
   create-webpack-config
   react-create-app
+  node-pre-gyp
 )
 
 namespace :install do
