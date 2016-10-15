@@ -7,11 +7,10 @@ NODEJS_COMMON_PACKAGES = %w(
   bower duo grunt-cli broccoli-cli gulp yo khaos jspm
   npm-check-updates bower-check-updates avn avn-nvm browserify
   webpack jasmine jake madge forever nodemon jscs csslint how-to-npm
-  protractor psi jshint eslint eslint_d babel-eslint jsdoc stylelint doiuse
+  protractor psi jshint eslint eslint_d jsdoc stylelint doiuse
   watch js-beautify nsp snyk gitbook-cli plato sloc npmd@1 live-server git-guilt doctoc
   trash localtunnel svgo git+https://github.com/ramitos/jsctags.git
   jsfmt fixmyjs jsinspect tmi speed-test tldr commitizen
-  babel-cli babel-preset-es2015 babel-preset-stage-0 babel-preset-react
   karma-cli istanbul foreman 
   iron-node devtool disc stylelint-config-suitcss next-update semantic-release-cli
   git-issues exact-semver fixpack cli-real-favicon greenkeeper npm-which budo
@@ -24,16 +23,6 @@ NODEJS_COMMON_PACKAGES = %w(
   react-native-cli
   rnpm
   gatsby
-  eslint-config-airbnb
-  eslint-config-standard
-  eslint-plugin-standard
-  eslint-plugin-immutable
-  eslint-plugin-import
-  eslint-plugin-jsx-a11y
-  eslint-plugin-lodash-fp
-  eslint-plugin-prefer-object-spread
-  eslint-plugin-promise
-  eslint-plugin-react
   create-webpack-config
   react-create-app
   node-pre-gyp
