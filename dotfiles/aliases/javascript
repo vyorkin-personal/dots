@@ -1,6 +1,7 @@
 alias yai='yarn install'
 
 alias ya='yarn add'
+alias yad='yard add --dev'
 alias yap='yarn add --peer'
 alias yao='yarn add --optional'
 
