@@ -8,7 +8,7 @@ config checkDefaultsOnLoad true
 config focusCheckWidthMax 3000
 
 config windowHintsShowIcons true
-config windowHintsIgnoreHiddenWindows false
+config windowHintsIgnoreHiddenWindows true
 config windowHintsSpread true
 config windowHintsSpreadPadding 12
 config windowHintsSpreadSearchWidth 40
@@ -30,12 +30,12 @@ config keyboardLayout qwerty
 alias browser 'Google Chrome'
 alias editor 'Emacs'
 alias terminal 'iTerm2'
-alias mail 'Nylas N1'
+alias mail 'Airmail'
 
 # Monitor aliases
 
 alias mon-laptop 0
-alias mon-dell   1
+alias mon-big 1
 
 # Misc aliases
 
@@ -65,26 +65,26 @@ alias 1-full        move screenOriginX;screenOriginY screenSizeX;screenSizeY ${m
 alias 1-left        move screenOriginX;screenOriginY screenSizeX/2;screenSizeY ${mon-laptop}
 alias 1-right       move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY ${mon-laptop}
 
-alias 2-left        move screenOriginX;screenOriginY screenSizeX/2;screenSizeY ${mon-dell}
-alias 2-right       move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY ${mon-dell}
-alias 2-righttop    move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY/2 ${mon-dell}
-alias 2-rightbottom move screenOriginX+screenSizeX/2;screenOriginY+screenSizeY/2 screenSizeX/2;screenSizeY/2 ${mon-dell}
+alias 2-left        move screenOriginX;screenOriginY screenSizeX/2;screenSizeY ${mon-big}
+alias 2-right       move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY ${mon-big}
+alias 2-righttop    move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY/2 ${mon-big}
+alias 2-rightbottom move screenOriginX+screenSizeX/2;screenOriginY+screenSizeY/2 screenSizeX/2;screenSizeY/2 ${mon-big}
 
-alias 2-rightmost   move screenOriginX+screenSizeX/4;screenOriginY screenSizeX/4;screenSizeY ${mon-dell}
-alias 2-rightless   move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/4;screenSizeY ${mon-dell}
+alias 2-rightmost   move screenOriginX+screenSizeX/4;screenOriginY screenSizeX/4;screenSizeY ${mon-big}
+alias 2-rightless   move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/4;screenSizeY ${mon-big}
 
-alias 2-leftmost    move screenOriginX;screenOriginY screenSizeX/4;screenSizeY ${mon-dell}
-alias 2-leftless    move screenOriginX+screenSizeX/4;screenOriginY screenSizeX/4;screenSizeY ${mon-dell}
+alias 2-leftmost    move screenOriginX;screenOriginY screenSizeX/4;screenSizeY ${mon-big}
+alias 2-leftless    move screenOriginX+screenSizeX/4;screenOriginY screenSizeX/4;screenSizeY ${mon-big}
 
 # 2 Monitor layout
 
 layout 2monitors ${terminal}:MAIN_FIRST       ${2-rightbottom} | ${1-left}
 layout 2monitors 'Safari':REPEAT              ${2-left}
 layout 2monitors ${browser}:REPEAT            ${2-left}
-layout 2monitors 'Sublime Text 2':REPEAT      ${1-full}
+layout 2monitors 'Emacs':REPEAT               ${1-full}
 layout 2monitors ${editor}:REPEAT             ${1-full}
 layout 2monitors ${mail}:MAIN_FIRST           ${2-left}
-layout 2monitors 'Path Finder':MAIN_FIRST     ${2-righttop}
+layout 2monitors 'Finder':MAIN_FIRST          ${2-righttop}
 layout 2monitors 'Xcode':REPEAT               ${1-full}
 layout 2monitors 'Eclipse':REPEAT             ${1-full}
 layout 2monitors 'iTunes':REPEAT              ${1-full}
@@ -94,13 +94,13 @@ layout 2monitors 'Messages':REPEAT            ${2-leftmost}
 # 1 Monitor layout
 
 layout 1monitor ${terminal}:MAIN_FIRST        ${1-full}
-layout 1monitor 'Sublime Text 2':MAIN_FIRST   ${1-left}
+layout 1monitor 'Emacs':MAIN_FIRST   ${1-left}
 
 layout 1monitor ${editor}:MAIN_FIRST          ${1-left}
 layout 1monitor 'Safari':REPEAT               ${1-full}
 layout 1monitor ${browser}:REPEAT             ${1-full}
 layout 1monitor ${mail}:MAIN_FIRST            ${1-full}
-layout 1monitor 'Path Finder':MAIN_FIRST      ${1-full}
+layout 1monitor 'Finder':MAIN_FIRST           ${1-full}
 layout 1monitor 'Xcode':REPEAT                ${1-full}
 layout 1monitor 'Eclipse':REPEAT              ${1-full}
 layout 1monitor 'iTunes':REPEAT               ${1-full}
@@ -109,8 +109,30 @@ layout 1monitor 'Messages':REPEAT             ${1-left}
 
 # Default Layouts
 
-default 2monitors resolutions:${mon-laptop};${mon-dell}
+default 2monitors resolutions:${mon-laptop};${mon-big}
 default 1monitor  resolutions:${mon-laptop}
+
+bind k:cmd;alt focus behind
+bind j:cmd;alt focus behind
+
+bind e:cmd ${showNormalHint}
+
+# Grid
+
+bind g:cmd grid padding:5 0:8,3 1:6,2
+
+# Location bindings
+
+bind u:cmd;ctrl ${lefthalf}
+bind i:cmd;ctrl ${righthalf}
+
+bind g:cmd;ctrl ${leftmost}
+bind r:cmd;ctrl ${full}
+bind ;:cmd;ctrl ${rightmost}
+
+bind e:cmd;ctrl ${center}
+bind t:cmd;ctrl ${relax}
+bind y:cmd;ctrl ${takeiteasy}
 
 # Numpad location bindings
 
@@ -132,17 +154,6 @@ bind pad. focus behind
 bind pad* layout 2monitors
 bind pad/ layout 1monitor
 
-# Nudge Bindings
-
-bind l:shift;alt nudge +5% +0
-bind h:shift;alt nudge -5% +0
-bind k:shift;alt nudge +0 -5%
-bind j:shift;alt nudge +0 +5%
-
-bind k:cmd;alt focus behind
-bind j:cmd;alt focus behind
-
-bind e:cmd ${showNormalHint}
 
 # ======================================
 # The HYPER key
@@ -152,38 +163,9 @@ alias hyper ctrl;alt;cmd
 
 bind z:${hyper} undo
 
-# Grid
-
-bind g:cmd grid padding:5 0:8,3 1:6,2
-
-# Location bindings
-bind u:cmd;ctrl ${lefthalf}
-bind i:cmd;ctrl ${righthalf}
-
-bind h:cmd;ctrl ${leftless}
-bind g:cmd;ctrl ${leftmost}
-
-bind r:cmd;ctrl ${full}
-
-bind l:cmd;ctrl ${rightless}
-bind ;:cmd;ctrl ${rightmost}
-
-bind e:cmd;ctrl ${center}
-bind t:cmd;ctrl ${relax}
-bind y:cmd;ctrl ${takeiteasy}
-
 bind n:${hyper} throw next
-
 bind 2:${hyper} layout 2monitors
-
 bind 1:${hyper} layout 1monitor
-
-# Focus Bindings
-
-bind l:${hyper} focus right
-bind h:${hyper} focus left
-bind k:${hyper} focus up
-bind j:${hyper} focus down
 
 # App bindings
 
