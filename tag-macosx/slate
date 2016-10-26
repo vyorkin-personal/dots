@@ -94,7 +94,7 @@ layout 2monitors 'Messages':REPEAT            ${2-leftmost}
 # 1 Monitor layout
 
 layout 1monitor ${terminal}:MAIN_FIRST        ${1-full}
-layout 1monitor 'Emacs':MAIN_FIRST   ${1-left}
+layout 1monitor 'Emacs':MAIN_FIRST            ${1-left}
 
 layout 1monitor ${editor}:MAIN_FIRST          ${1-left}
 layout 1monitor 'Safari':REPEAT               ${1-full}
@@ -164,8 +164,9 @@ alias hyper ctrl;alt;cmd
 bind z:${hyper} undo
 
 bind n:${hyper} throw next
-bind 2:${hyper} layout 2monitors
-bind 1:${hyper} layout 1monitor
+
+# bind 2:${hyper} layout 2monitors
+# bind 1:${hyper} layout 1monitor
 
 # App bindings
 

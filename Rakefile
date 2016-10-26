@@ -26,6 +26,7 @@ NODEJS_COMMON_PACKAGES = %w(
   create-webpack-config
   react-create-app
   node-pre-gyp
+  npm-upgrade
 )
 
 namespace :install do
