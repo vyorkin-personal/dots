@@ -15,6 +15,8 @@ Plug 'tpope/vim-obsession'            " session management
 Plug 'tpope/vim-capslock'             " software capslock (gC or <C-G>c)
 Plug 'tpope/vim-projectionist'
 
+" Plug 'w0rp/ale'
+
 Plug 'chrisbra/vim-diff-enhanced'
 Plug 'terryma/vim-expand-region'
 Plug 'Wolfy87/vim-expand'
