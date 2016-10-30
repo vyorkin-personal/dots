@@ -102,7 +102,7 @@ Plug 'Shougo/vimproc.vim'
 " Plug 'Quramy/vim-dtsm'
 
 " flowtype
-" Plug 'flowtype/vim-flow'
+Plug 'flowtype/vim-flow'
 
 " julia
 Plug 'dcjones/julia-minimalist-vim'
@@ -139,7 +139,8 @@ Plug 'toyamarinyon/vim-swift'
 " Plug 'keith/swift.vim'
 
 " ocaml
-Plug 'jrk/vim-ocaml'
+" Plug 'jrk/vim-ocaml'
+Plug 'rgrinberg/vim-ocaml'
 
 " erlang, elixir
 Plug 'vim-erlang/vim-erlang-runtime'
