@@ -2,7 +2,8 @@ let g:syntastic_aggregate_errors = 1
 
 let g:syntastic_css_checkers = ['stylelint']
 
-let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_checkers = ['eslint', 'flow']
+let g:syntastic_javascript_flow_exe = 'flow'
 let g:syntastic_javascript_eslint_exec = 'eslint_d'
 
 let g:syntastic_typescript_checkers = ['tsuquyomi']
@@ -27,10 +28,10 @@ let g:syntastic_check_on_wq = 0
 
 " let g:syntastic_error_symbol = '>'
 " let g:syntastic_warning_symbol = '*'
-let g:syntastic_error_symbol = '✖'
-let g:syntastic_warning_symbol = '►'
+let g:syntastic_error_symbol = 'x'
+let g:syntastic_warning_symbol = '>'
 let g:syntastic_style_error_symbol = '~'
-let g:syntastic_style_warning_symbol = '⚠'
+let g:syntastic_style_warning_symbol = '!'
 
 let g:syntastic_enable_balloons = 0
 let g:syntastic_enable_highlighting = 1
