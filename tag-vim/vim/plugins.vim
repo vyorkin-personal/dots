@@ -65,7 +65,7 @@ Plug 'kocakosm/hilal'
 
 " languages, ft, syntax
 
-" html, css, less, sass, stylus
+" html, css, less, sass, stylus, sugarss
 Plug 'othree/html5.vim'
 Plug 'Valloric/MatchTagAlways'
 Plug 'digitaltoad/vim-jade'
@@ -75,6 +75,7 @@ Plug 'ap/vim-css-color'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'stephenway/postcss.vim'
 Plug 'wavded/vim-stylus'
+Plug 'hhsnopek/vim-sugarss'
 " Plug 'hail2u/vim-css3-syntax'
 
 " javascript, jsx, json, tern
