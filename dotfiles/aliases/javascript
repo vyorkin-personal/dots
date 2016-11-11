@@ -2,6 +2,7 @@ alias yai='yarn install'
 
 alias ya='yarn add'
 alias yag='yarn global add'
+alias yagu='yarn global remove'
 alias yad='yarn add --dev'
 alias yap='yarn add --peer'
 alias yao='yarn add --optional'

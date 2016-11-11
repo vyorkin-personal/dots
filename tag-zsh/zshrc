@@ -107,8 +107,8 @@ if which rbenv > /dev/null; then eval "$(rbenv init - --no-rehash)"; fi
 # export LEIN_JAVA_CMD=$(which drip)
 export LEIN_JVM_OPTS=-XX:TieredStopAtLevel=1
 
-export NVM_DIR=~/.nvm
-source ~/.nvm/nvm.sh
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # added by travis gem
 [ -f /Users/vyorkin/.travis/travis.sh ] && source /Users/vyorkin/.travis/travis.sh
