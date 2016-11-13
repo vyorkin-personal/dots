@@ -154,12 +154,11 @@ bind pad. focus behind
 bind pad* layout 2monitors
 bind pad/ layout 1monitor
 
-
 # ======================================
 # The HYPER key
 # ======================================
 
-alias hyper ctrl;alt;cmd
+alias hyper ctrl;alt;cmd;shift
 
 bind z:${hyper} undo
 
