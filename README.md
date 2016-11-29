@@ -48,6 +48,7 @@ the fucking names:
 * [gitsome](https://github.com/donnemartin/gitsome)
 * [z](https://github.com/rupa/z)
 * [helium](http://heliumfloats.com/)
+* [gg](https://github.com/qw3rtman/gg)
 
 cvim chrome extension:
 * [white theme](https://gist.github.com/vyorkin/711589d7f1a90954dec5)

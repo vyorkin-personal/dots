@@ -22,6 +22,7 @@ Plug 'terryma/vim-expand-region'
 Plug 'Wolfy87/vim-expand'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'godlygeek/tabular'
+" Plug 'FooSoft/vim-argwrap'          " Alternative to splitjoin
 " Plug 'vim-scripts/restore_view.vim'
 
 " navigation & search
@@ -39,6 +40,7 @@ Plug 'idanarye/vim-merginal'
 Plug 'int3/vim-extradite'
 Plug 'gregsexton/gitv'
 Plug 'junegunn/gv.vim'
+Plug 'airblade/vim-gitgutter'
 
 " color schemes
 " Plug 'chriskempson/base16-vim'
@@ -88,6 +90,7 @@ Plug '1995eaton/vim-better-javascript-completion'
 Plug 'sheerun/vim-json'
 Plug 'marijnh/tern_for_vim'
 Plug 'briancollins/vim-jst'
+Plug 'alunny/pegjs-vim'
 " Plug 'vyorkin/JavaScript-Indent'
 
 " coffeescript
@@ -213,6 +216,8 @@ Plug 'zah/nim.vim'
 
 " text objects
 Plug 'kana/vim-textobj-user'
+Plug 'wellle/targets.vim'
+Plug 'michaeljsmith/vim-indent-object'
 Plug 'nelstrom/vim-textobj-rubyblock'
 
 " completion: supertab or YCM
@@ -225,6 +230,7 @@ Plug 'ajh17/VimCompletesMe'
 " Plug 'Shougo/deoplete.nvim'
 " Plug 'carlitux/deoplete-ternjs'
 " Plug 'mhartington/deoplete-typescript'
+" Plug 'steelsojka/deoplete-flow'
 
 " tools
 Plug 'vim-scripts/paredit.vim'
@@ -253,7 +259,6 @@ Plug 'junegunn/fzf.vim'
 " Plug 'kien/ctrlp.vim'
 " Plug 'FelikZ/ctrlp-py-matcher'
 
-Plug 'SirVer/ultisnips'
 Plug 'rking/ag.vim'
 Plug 'mbbill/undotree'
 Plug 'vim-airline/vim-airline'
@@ -283,5 +288,7 @@ Plug 'rizzatti/dash.vim'
 
 Plug 'wakatime/vim-wakatime'
 
-" forked
+" snippets
+Plug 'SirVer/ultisnips'
+Plug 'ahmedelgabri/vim-ava-snippets'
 Plug 'vyorkin/vim-snippets'
