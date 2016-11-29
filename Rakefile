@@ -27,6 +27,7 @@ NODEJS_COMMON_PACKAGES = %w(
   react-create-app
   node-pre-gyp
   npm-upgrade
+  yarn-completions
 )
 
 namespace :install do
