@@ -49,6 +49,7 @@ the fucking names:
 * [z](https://github.com/rupa/z)
 * [helium](http://heliumfloats.com/)
 * [gg](https://github.com/qw3rtman/gg)
+* [rainbowstream](https://github.com/DTVD/rainbowstream)
 
 cvim chrome extension:
 * [white theme](https://gist.github.com/vyorkin/711589d7f1a90954dec5)

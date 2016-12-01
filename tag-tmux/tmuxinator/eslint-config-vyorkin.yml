@@ -1,0 +1,15 @@
+# ~/.tmuxinator/eslint-config-vyorkin.yml
+
+name: eslint-config-vyorkin
+root: ~/projects/github/eslint-config-vyorkin
+
+startup_window: editor
+startup_pane: 1
+
+windows:
+  - editor:
+      layout: main-horizontal
+      panes:
+        - nvim
+        - j scripts
+  - git: git summary
