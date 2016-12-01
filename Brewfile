@@ -2,11 +2,13 @@ tap 'caskroom/fonts'
 tap 'neovim/neovim'
 tap 'thoughtbot/formulae'
 tap 'd12frosted/emacs-plus'
+tap 'Goles/battery'
 
 brew 'caskroom/cask/brew-cask'
 
 brew 'z'
 brew 'cheat'
+brew 'battery'
 
 brew 'yarn'
 brew 'asciinema'
