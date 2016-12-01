@@ -14,6 +14,7 @@ Plug 'tpope/vim-sleuth'               " heuristically set buffer options
 Plug 'tpope/vim-obsession'            " session management
 Plug 'tpope/vim-capslock'             " software capslock (gC or <C-G>c)
 Plug 'tpope/vim-projectionist'
+Plug 'tpope/vim-speeddating'
 
 " Plug 'w0rp/ale'
 
@@ -205,7 +206,7 @@ Plug 'pearofducks/ansible-vim'
 " tmux
 " Plug 'andersoncustodio/vim-tmux'
 " Plug 'keith/tmux.vim'
-" Plug 'tmux-plugins/vim-tmux'
+Plug 'tmux-plugins/vim-tmux'
 
 Plug 'sheerun/vim-yardoc'
 Plug 'stephpy/vim-yaml'
@@ -278,8 +279,10 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 
 Plug 'mhinz/vim-signify'
-Plug 'vitalk/vim-simple-todo'
 Plug 'wellle/tmux-complete.vim'
+Plug 'vitalk/vim-simple-todo'
+" Plug 'dhruvasagar/vim-dotoo'
+" Plug 'jceb/vim-orgmode'
 
 Plug 'jez/vim-superman'
 " Plug 'dhruvasagar/vim-table-mode'

@@ -1,1 +1,1 @@
-let g:simple_todo_map_keys = 0
+" let g:simple_todo_map_keys = 0
