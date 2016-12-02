@@ -1,0 +1,15 @@
+# ~/.tmuxinator/otk.yml
+
+name: options-toolkit-js
+root: ~/projects/work/exante/options-toolkit-js
+
+startup_window: editor
+startup_pane: 1
+
+windows:
+  - editor:
+      layout: be01,193x45,0,0[193x34,0,0,0,193x11,0,35,2]
+      panes:
+        - nvim
+        -
+  - git: git summary

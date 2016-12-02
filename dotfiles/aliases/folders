@@ -5,6 +5,8 @@ alias docs='cd ~/Documents'
 
 # Projects
 alias work='cd ~/projects/work'
+alias otk='cd ~/projects/work/exante/options-toolkit-js'
+alias egg='cd ~/projects/work/exante/eggshell-site'
 alias play='cd ~/projects/play'
 alias avr='cd ~/projects/play/avr'
 alias arduino='cd ~/projects/play/arduino'
