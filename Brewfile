@@ -3,9 +3,11 @@ tap 'neovim/neovim'
 tap 'thoughtbot/formulae'
 tap 'd12frosted/emacs-plus'
 tap 'Goles/battery'
+tap 'simeji/jid'
 
 brew 'caskroom/cask/brew-cask'
 
+brew 'jid'
 brew 'z'
 brew 'cheat'
 brew 'battery'
