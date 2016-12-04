@@ -15,6 +15,7 @@ Session.vim
 npm-debug*
 rethinkdb_data
 .tern-port
+.vscode
 
 *~
 \#*\#

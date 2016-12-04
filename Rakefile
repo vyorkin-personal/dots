@@ -6,8 +6,8 @@ POWERLINE_TMUX_PATH = '/usr/local/lib/python2.7/site-packages/powerline/bindings
 NODEJS_COMMON_PACKAGES = %w(
   bower duo grunt-cli broccoli-cli gulp yo khaos jspm
   npm-check-updates bower-check-updates avn avn-nvm browserify
-  webpack jasmine jake madge forever nodemon jscs csslint how-to-npm
-  protractor psi jshint eslint eslint_d jsdoc stylelint doiuse
+  madge forever nodemon jscs csslint how-to-npm
+  psi eslint eslint_d jsdoc stylelint doiuse
   watch js-beautify nsp snyk gitbook-cli plato sloc npmd@1 live-server git-guilt doctoc
   trash localtunnel svgo git+https://github.com/ramitos/jsctags.git
   jsfmt fixmyjs jsinspect tmi speed-test tldr commitizen
@@ -21,8 +21,6 @@ NODEJS_COMMON_PACKAGES = %w(
   typed-css-modules
   chrome-webstore-upload-cli 
   react-native-cli
-  rnpm
-  gatsby
   create-webpack-config
   react-create-app
   node-pre-gyp
