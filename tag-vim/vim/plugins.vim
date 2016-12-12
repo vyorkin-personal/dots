@@ -280,6 +280,7 @@ Plug 'junegunn/limelight.vim'
 
 Plug 'mhinz/vim-signify'
 Plug 'wellle/tmux-complete.vim'
+Plug 'vimwiki/vimwiki'
 Plug 'vitalk/vim-simple-todo'
 " Plug 'dhruvasagar/vim-dotoo'
 " Plug 'jceb/vim-orgmode'

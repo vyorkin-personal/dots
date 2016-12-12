@@ -12,4 +12,8 @@ windows:
       panes:
         - nvim
         -
-  - git: git summary
+  - watch:
+      layout: main-horizontal
+      panes:
+        - npm run tcm:watch
+        - npm run test:watch
