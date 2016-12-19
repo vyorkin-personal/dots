@@ -14,7 +14,9 @@ NODEJS_COMMON_PACKAGES = %w(
   karma-cli istanbul foreman 
   iron-node devtool disc stylelint-config-suitcss next-update semantic-release-cli
   git-issues exact-semver fixpack cli-real-favicon greenkeeper npm-which budo
-  del-cli json-package npm-quick-run center-code gtni alex typings
+  del-cli
+  json-package
+  npm-quick-run center-code gtni alex typings
   tern recli webpack-validator all-nvm available-versions manpm center-code
   conventional-changelog-cli
   conventional-recommended-bump
