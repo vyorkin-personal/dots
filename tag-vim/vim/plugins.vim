@@ -92,6 +92,7 @@ Plug 'sheerun/vim-json'
 Plug 'marijnh/tern_for_vim'
 Plug 'briancollins/vim-jst'
 Plug 'alunny/pegjs-vim'
+Plug 'wizicer/vim-jison'
 " Plug 'vyorkin/JavaScript-Indent'
 
 " coffeescript
@@ -260,6 +261,7 @@ Plug 'junegunn/fzf.vim'
 " Plug 'kien/ctrlp.vim'
 " Plug 'FelikZ/ctrlp-py-matcher'
 
+Plug 'dyng/ctrlsf.vim'
 Plug 'rking/ag.vim'
 Plug 'mbbill/undotree'
 Plug 'vim-airline/vim-airline'
