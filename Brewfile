@@ -11,7 +11,7 @@ brew 'jid'
 brew 'z'
 brew 'cheat'
 brew 'battery'
-
+brew 'jenv'
 brew 'yarn'
 brew 'asciinema'
 brew 'catimg'

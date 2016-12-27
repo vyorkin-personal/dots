@@ -97,16 +97,13 @@ bindkey '^X2' predict-off
 autoload -U promptinit && promptinit
 prompt pure
 
-# setup rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init - --no-rehash)"; fi
-
 # use overcommit for all repositories you create/clone (carefull cuz of brew)
 # export GIT_TEMPLATE_DIR=`overcommit --template-dir`
 
-# speed up jvm dev env
+# speed up jvm for leiningen dev env
 # export LEIN_JAVA_CMD=$(which drip)
 export LEIN_JVM_OPTS=-XX:TieredStopAtLevel=1
-export JAVA_HOME=$(/usr/libexec/java_home)
+# export JAVA_HOME=$(/usr/libexec/java_home)
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
@@ -115,7 +112,11 @@ export NVM_DIR="$HOME/.nvm"
 [ -f /Users/vyorkin/.travis/travis.sh ] && source /Users/vyorkin/.travis/travis.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export PATH="$HOME/.yarn/bin:$HOME/apache-maven-3.3.9/bin:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.jenv/bin:$HOME/apache-maven-3.3.9/bin:$PATH"
+
+# setup rbenv & jenv
+if which rbenv > /dev/null; then eval "$(rbenv init - --no-rehash)"; fi
+if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 
 # tabtab source for yarn package
 # uninstall by removing these lines or running `tabtab uninstall yarn`
