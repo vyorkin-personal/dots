@@ -7,6 +7,8 @@ tap 'simeji/jid'
 
 brew 'caskroom/cask/brew-cask'
 
+brew 'ocaml'
+brew 'opam'
 brew 'jrnl'
 brew 'pstree'
 brew 'jid'
