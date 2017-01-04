@@ -121,3 +121,6 @@ if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 # tabtab source for yarn package
 # uninstall by removing these lines or running `tabtab uninstall yarn`
 [[ -f /Users/vyorkin/.yarn-cache/.global/node_modules/yarn-completions/node_modules/tabtab/.completions/yarn.zsh ]] && . /Users/vyorkin/.yarn-cache/.global/node_modules/yarn-completions/node_modules/tabtab/.completions/yarn.zsh
+
+# OPAM configuration
+source $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
