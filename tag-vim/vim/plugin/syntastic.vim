@@ -12,6 +12,8 @@ let g:tsuquyomi_disable_quickfix = 1
 let g:syntastic_haml_checkers = ['haml_lint']
 let g:syntastic_html_checkers = ['']
 
+let g:syntastic_ocaml_checkers = ['merlin']
+
 let g:syntastic_make_checkers = ['gnumake']
 let g:syntastic_gitcommit_checkers = ['language_check']
 let g:syntastic_python_checkers = ['pyflakes_with_warnings']
