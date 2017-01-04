@@ -7,6 +7,8 @@ tap 'simeji/jid'
 
 brew 'caskroom/cask/brew-cask'
 
+brew 'jrnl'
+brew 'pstree'
 brew 'jid'
 brew 'z'
 brew 'cheat'
