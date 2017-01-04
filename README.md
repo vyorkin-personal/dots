@@ -117,6 +117,12 @@ haskell tags:
 [hasktags](https://hackage.haskell.org/package/hasktags) +
 [haskdogs](https://github.com/grwlf/haskdogs)
 
+ocaml:
+
+* install ocaml & opam
+* `opam init`
+* `opam install merlin`
+
 # troubleshooting
 
 in case aflred can't find cask symlinks:
