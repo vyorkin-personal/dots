@@ -123,6 +123,9 @@ ocaml:
 * `opam init`
 * `opam install merlin`
 
+[merlin + vim
+setup instruction](https://github.com/ocaml/merlin/wiki/vim-from-scratch)
+
 # troubleshooting
 
 in case aflred can't find cask symlinks:
