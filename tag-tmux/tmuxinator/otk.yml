@@ -16,4 +16,4 @@ windows:
       layout: main-horizontal
       panes:
         - npm run tcm:watch
-        - npm run test:watch
+        -

@@ -40,9 +40,8 @@ brew 'fish'
 brew 'zsh'
 
 brew 'emacs-plus', args: ['with-cocoa', 'with-gnutls', 'with-librsvg', 'with-imagemagick', 'with-spacemacs-icon]
-
 brew 'weechat', args: ['with-python', 'with-perl']
-
+brew 'ledger', args: ['with-python']
 brew 'rbenv'
 
 # more recent versions of some OS X tools
