@@ -117,6 +117,8 @@ haskell tags:
 [hasktags](https://hackage.haskell.org/package/hasktags) +
 [haskdogs](https://github.com/grwlf/haskdogs)
 
+Mac OS X Sierra & OpenSSH: [OpenSSH updates in macOS 10.12.2](https://developer.apple.com/library/content/technotes/tn2449/_index.html#//apple_ref/doc/uid/DTS40017589)
+
 ocaml:
 
 * install ocaml & opam
