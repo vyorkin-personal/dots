@@ -32,6 +32,7 @@ brew 'bash-completion'
 brew 'wifi-password'
 brew 'git-extras'
 
+brew 'thefuck'
 brew 'wget', args: ['enable-iri']
 brew 'reattach-to-user-namespace'
 brew 'rcm'          # rc file (dotfile) management
