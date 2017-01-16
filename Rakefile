@@ -5,7 +5,7 @@ POWERLINE_TMUX_PATH = '/usr/local/lib/python2.7/site-packages/powerline/bindings
 
 NODEJS_COMMON_PACKAGES = %w(
   bower duo grunt-cli broccoli-cli gulp yo khaos jspm
-  npm-check-updates bower-check-updates avn avn-nvm browserify
+  npm-check npm-check-updates bower-check-updates avn avn-nvm browserify
   madge forever nodemon jscs csslint how-to-npm
   psi eslint eslint_d jsdoc stylelint doiuse
   watch js-beautify nsp snyk gitbook-cli plato sloc npmd@1 live-server git-guilt doctoc
@@ -102,7 +102,7 @@ namespace :install do
   desc 'install node version manager'
   task :nvm do
     puts 'installing nvm...'
-    `curl https://raw.githubusercontent.com/creationix/nvm/v0.25.3/install.sh | bash`
+    `curl https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash`
     puts 'done'
   end
 
