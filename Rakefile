@@ -24,11 +24,12 @@ NODEJS_COMMON_PACKAGES = %w(
   chrome-webstore-upload-cli 
   react-native-cli
   create-webpack-config
-  react-create-app
+  create-react-app
   node-pre-gyp
   npm-upgrade
   yarn-completions
   pkgcount
+  typescript-formatter
 )
 
 namespace :install do
