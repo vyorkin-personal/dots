@@ -97,6 +97,8 @@ else
     hi Special ctermfg=214 guifg=#FFA500
     hi Type ctermfg=246 guifg=#999999 cterm=none gui=none
 
+    hi FoldColumn ctermbg=0 guibg=#000000
+
     " Folds
     hi Folded ctermfg=222 guifg=#FBD485 ctermbg=234 guibg=#1c1c1c cterm=none gui=none
 endif

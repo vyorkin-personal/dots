@@ -28,6 +28,7 @@ NODEJS_COMMON_PACKAGES = %w(
   node-pre-gyp
   npm-upgrade
   yarn-completions
+  pkgcount
 )
 
 namespace :install do

@@ -28,7 +28,6 @@
      osx
      tmux
      deft
-     eyebrowse
      finance
      emacs-lisp
      git
@@ -39,7 +38,6 @@
              colors-enable-rainbow-identifiers t)
      (org :variables
           org-enable-github-support t)
-     unimpaired
      ;; (wakatime :variables
      ;;           wakatime-api-key "8edc001e-fc44-4efd-9d4c-1f4bd6805f8e"
      ;;           wakatime-cli-path "/usr/local/bin/wakatime")
@@ -76,7 +74,6 @@
      haskell
      c-c++
      ansible
-     dockerfile
      emoji
      search-engine
      games
