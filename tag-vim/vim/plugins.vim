@@ -182,6 +182,12 @@ Plug 'eagletmt/neco-ghc'
 " elm
 Plug 'lambdatoast/elm.vim'
 
+" purescript
+Plug 'raichoo/purescript-vim'
+
+" idris
+Plug 'idris-hackers/idris-vim'
+
 " arduino
 Plug 'sudar/vim-arduino-syntax'
 

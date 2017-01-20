@@ -126,6 +126,9 @@ bind g:cmd grid padding:5 0:8,3 1:6,2
 bind u:cmd;ctrl ${lefthalf}
 bind i:cmd;ctrl ${righthalf}
 
+bind h:cmd;ctrl ${leftless}
+bind l:cmd;ctrl ${rightless}
+
 bind g:cmd;ctrl ${leftmost}
 bind r:cmd;ctrl ${full}
 bind ;:cmd;ctrl ${rightmost}
@@ -137,15 +140,19 @@ bind y:cmd;ctrl ${takeiteasy}
 # Numpad location bindings
 
 bind pad0 ${showHintsLeftHand}
-bind pad1 ${leftless}
 bind pad2 push bottom bar-resize:screenSizeY/2
 
+bind pad1 ${leftless}
 bind pad3 ${rightless}
+
 bind pad4 ${lefthalf}
-bind pad5 ${full}
 bind pad6 ${righthalf}
-bind pad7 ${leftmost}
+
+bind pad5 ${full}
+
 bind pad8 push top bar-resize:screenSizeY/2
+
+bind pad7 ${leftmost}
 bind pad9 ${rightmost}
 
 bind pad+ throw next
