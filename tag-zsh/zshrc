@@ -104,7 +104,7 @@ prompt pure
 # speed up jvm for leiningen dev env
 # export LEIN_JAVA_CMD=$(which drip)
 export LEIN_JVM_OPTS=-XX:TieredStopAtLevel=1
-# export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_HOME=$(/usr/libexec/java_home)
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm

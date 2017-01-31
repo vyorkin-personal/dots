@@ -20,6 +20,7 @@ NODEJS_COMMON_PACKAGES = %w(
   typed-css-modules chrome-webstore-upload-cli react-native-cli
   create-webpack-config create-react-app node-pre-gyp npm-upgrade
   yarn-completions pkgcount typescript-formatter pulp
+  git-recall
 )
 
 namespace :install do
