@@ -6,7 +6,7 @@ let g:syntastic_javascript_checkers = ['eslint', 'flow']
 let g:syntastic_javascript_flow_exe = 'flow'
 let g:syntastic_javascript_eslint_exec = 'eslint_d'
 
-let g:syntastic_typescript_checkers = ['tsuquyomi', 'tslint']
+let g:syntastic_typescript_checkers = ['tsuquyomi', 'tslint --type-check --project tsconfig.json']
 let g:tsuquyomi_disable_quickfix = 1
 
 let g:syntastic_haml_checkers = ['haml_lint']
@@ -28,8 +28,6 @@ let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-", "lacks 
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
-" let g:syntastic_error_symbol = '>'
-" let g:syntastic_warning_symbol = '*'
 let g:syntastic_error_symbol = 'x'
 let g:syntastic_warning_symbol = '>'
 let g:syntastic_style_error_symbol = '~'
