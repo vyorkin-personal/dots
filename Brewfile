@@ -7,6 +7,8 @@ tap 'simeji/jid'
 
 brew 'caskroom/cask/brew-cask'
 
+brew 'kubectl'
+brew 'leiningen'
 brew 'purescript'
 brew 'ocaml'
 brew 'opam'

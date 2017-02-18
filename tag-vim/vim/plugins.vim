@@ -249,7 +249,8 @@ Plug 'myint/syntastic-extras'
 Plug 'roktas/syntastic-more'
 
 " Plug '907th/vim-auto-save'
-Plug 'Chiel92/vim-autoformat'
+" Plug 'Chiel92/vim-autoformat'
+Plug 'sbdchd/neoformat'
 
 " unusable with fast keyrepeat
 " Plug 'terryma/vim-smooth-scroll'

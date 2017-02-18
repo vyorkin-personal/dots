@@ -178,7 +178,6 @@ bind n:${hyper} throw next
 
 bind q:${hyper} focus 'Telegram'
 bind b:${hyper} focus 'Helium'
-bind a:${hyper} focus 'Atom'
 bind e:${hyper} focus ${browser}
 bind f:${hyper} focus ${editor}
 bind x:${hyper} focus 'Xcode'

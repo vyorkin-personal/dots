@@ -27,7 +27,7 @@ nn K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 " format the entire file
 nn <Leader>ff :normal! gg=G``<CR>
-nn <Leader>ffa :Autoformat<CR>
+nn <Leader>ffa :Neoformat<CR>
 
 " set text wrapping toggles
 nn <silent> <Leader>tw :set invwrap<CR>:set wrap?<CR>
