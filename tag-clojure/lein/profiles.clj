@@ -5,6 +5,7 @@
 
 {:user {:plugins [[lein-dotenv "1.0.0"]
                   [lein-exec "0.3.5"]
+                  [lein-environ "1.1.0"]
                   [lein-pprint "1.1.2"]
                   [lein-kibit "0.1.3"]
                   [jonase/eastwood "0.2.3"]

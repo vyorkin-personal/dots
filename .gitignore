@@ -7,6 +7,7 @@ tag-vim/vim/plugged/
 tag-vim/vim/sessions
 tag-vim/vim/.netrwhist
 tag-vim/vim/bundle
+tag-ruby/bundle/cache
 
 config/nvim/.netrwhist
 config/nvim/view/*

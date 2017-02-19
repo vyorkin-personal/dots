@@ -1,0 +1,27 @@
+# ~/.tmuxinator/spersy.yml
+
+name: spersy
+root: ~/projects/work/spersy
+
+startup_window: main
+startup_pane: 1
+
+windows:
+  - main:
+      root: ~/projects/work/spersy/spersy_black
+      layout: be01,193x45,0,0[193x34,0,0,0,193x11,0,35,2]
+      panes:
+        - nvim
+        - lein repl
+  - black:
+      root: ~/projects/work/spersy/spersy_black
+      layout: main-horizontal
+      panes:
+        - lein run server
+        -
+  - red:
+      root: ~/projects/work/spersy/spersy_red
+      layout: be01,193x45,0,0[193x34,0,0,0,193x11,0,35,2]
+      panes:
+        - nvim
+        - bundle exec puma -p 3000 -C puma.rb
