@@ -17,7 +17,7 @@ windows:
       root: ~/projects/work/spersy/spersy_black
       layout: main-horizontal
       panes:
-        - lein run server
+        - lein run server 4000
         -
   - red:
       root: ~/projects/work/spersy/spersy_red

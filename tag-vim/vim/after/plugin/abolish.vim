@@ -38,6 +38,8 @@ Abolish beacuse because
 Abolish {E,e}mtpy {}mpty
 Abolish {F,f}tler {}lter
 
+Abolish {I,i}nstru{em}nts instruments
+
 " more advanced example, keep it here.
 "
 " Abolish {,in}consistant{,ly} {}consistent{}
