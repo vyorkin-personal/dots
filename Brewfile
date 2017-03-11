@@ -122,6 +122,8 @@ cask 'font-source-sans-pro'
 cask 'font-courier-prime'
 cask 'font-source-serif-pro'
 
+cask 'amethyst'
+
 # quick look plugins:
 # https://github.com/sindresorhus/quick-look-plugins
 cask 'qlcolorcode'
@@ -134,4 +136,3 @@ cask 'betterzipql'
 cask 'qlimagesize'
 cask 'webpquicklook'
 cask 'suspicious-package'
-cask 'amethyst'

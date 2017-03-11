@@ -8,10 +8,10 @@
 [alias]
   count = !git shortlog -sn
 
-  a = add                           # add
+  a = add
   aa = add -A
   au = add -u
-  chunkyadd = add --patch           # stage commits chunk by chunk
+  chunkyadd = add --patch
 
   # branch
   b = branch -v
@@ -84,9 +84,6 @@
   svnr = svn rebase
   svnd = svn dcommit
   svnl = svn log --oneline --show-commit
-
-  st = !open -a SourceTree .
-  ctags = !.git/hooks/ctags
 [format]
   pretty = format:%C(magenta)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(white)%s %C(red) [%an]%Creset
 [mergetool]
@@ -108,7 +105,7 @@
   ui = true
 [core]
   autocrlf = false
-  excludesfile = /Users/vyorkin/.gitignore
+  excludesfile = $HOME/.gitignore
   editor = nvim
 [advice]
   statusHints = false
@@ -120,13 +117,10 @@
   enabled = false
 [help]
   autocorrect = 1
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
 [filter "media"]
-	required = true
-	clean = git media clean %f
-	smudge = git media smudge %f
+  required = true
+  clean = git media clean %f
+  smudge = git media smudge %f
 [log]
   decorate = short
 [init]
@@ -138,10 +132,7 @@
 [commit]
   template = ~/.gitmessage
 [filter "lfs"]
-	clean = git lfs clean %f
-	smudge = git lfs smudge %f
-	required = true
-[git-up "bundler"]
-	check = true
-[git-up "fetch"]
-	all = true
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
